@@ -6,6 +6,67 @@ export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 const read = p => fs.readFileSync(path.join(root,p), 'utf8');
 const write = (p, value) => {fs.mkdirSync(path.dirname(p), {recursive:true});fs.writeFileSync(p,value);};
 const oldOrigin = 'https://tomespot-test.nuttymink33.chatgpt.site';
+const searchPages = {
+  'index.html': {
+    title:'東京の駐輪場マップ｜電動キックボード・自転車・バイク｜トメスポ',
+    description:'東京の電動キックボード駐輪場、自転車駐輪場、バイク駐輪場を地図と一覧で検索。一時利用・定期利用の料金や受入条件を比較できます。横浜市神奈川区の自転車・バイク駐輪場も一部掲載。トメスポ / Tomespot by muko。'
+  },
+  'kickboard-parking.html': {
+    title:'東京の電動キックボード駐輪場｜停める場所・料金を探す｜トメスポ',
+    heading:'東京の電動キックボード駐輪場・停める場所',
+    description:'電動キックボードをどこに止めるか迷ったら、東京の電動キックボード駐輪場を地域別に検索。一時利用・定期利用の料金、個人所有のキックボードの受入条件、公式案内を確認できます。',
+    questions:[
+      ['電動キックボードをどこに止める？','目的地近くの電動キックボード駐輪場を探し、特定小型原動機付自転車など自分の車両区分が利用できるか確認してください。自転車対応だけでは電動キックボードも停められるとは限りません。'],
+      ['「キックボード駐車場」で探している場合も使えますか？','トメスポでは、個人所有の電動キックボードを停める場所を駐輪場として掲載しています。施設ごとの車両条件、指定区画、料金、申請の要否を確認できます。シェアサービスの返却ポートとは異なります。'],
+      ['一時利用と定期利用はどう違いますか？','短時間の買い物などには一時利用、通勤など継続して利用する場合には定期利用の条件を確認してください。年度・年期登録の施設も定期利用から探せます。申請や登録シールが必要な場合があります。']
+    ]
+  },
+  'bicycle-parking.html': {
+    title:'東京・横浜市神奈川区の自転車駐輪場｜料金・定期利用｜トメスポ',
+    heading:'東京・横浜市神奈川区の自転車駐輪場',
+    description:'東京・横浜市神奈川区の自転車駐輪場を駅や地域から検索。一時利用、無料時間、定期利用の料金や利用条件を確認し、目的地近くで自転車を停める場所を探せます。',
+    questions:[['自転車駐輪場の料金や無料時間はどこで確認できますか？','施設の詳細から一時利用・定期利用の料金と利用条件を確認できます。無料時間の設定や利用時間は施設によって異なります。最新の料金や募集状況は公式案内をご確認ください。']]
+  },
+  'motorcycle-parking.html': {
+    title:'東京・横浜市神奈川区のバイク駐輪場・原付駐輪場｜トメスポ',
+    heading:'東京・横浜市神奈川区のバイク駐輪場・原付駐輪場',
+    description:'東京・横浜市神奈川区のバイク駐輪場・原付駐輪場を地域別に検索。排気量や車両区分の受入条件、一時利用・定期利用の料金を確認し、バイクを停める場所を探せます。',
+    questions:[['原付を停められる駐輪場なら、どのバイクでも利用できますか？','原付対応の施設でも、すべてのバイクが利用できるとは限りません。排気量、車幅、車長、指定区画などの受入条件を施設ごとに確認してください。']]
+  }
+};
+function searchHTML(html,file,siteUrl) {
+  const escape=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+  const pretty=siteUrl.endsWith('.pages.dev');
+  const publicPath=file==='index.html'?'/':'/'+(pretty?file.replace(/\.html$/,''):file);
+  const canonical=siteUrl+publicPath;
+  html=html.replace(/<link\s+rel="canonical"[^>]*>/g,'').replace(/<meta\s+property="og:url"[^>]*>/g,'');
+  html=html.replace('</head>',`<link rel="canonical" href="${escape(canonical)}"><meta property="og:url" content="${escape(canonical)}"></head>`);
+  // Structured data uses the same URLs as canonicals; ordinary links can keep .html for GitHub compatibility.
+  html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(_,data)=>{
+    const obj=JSON.parse(data),visit=value=>typeof value==='string'&&pretty&&value.startsWith(siteUrl)?value.replace(/\.html(?=[#?]|$)/,''):Array.isArray(value)?value.map(visit):value&&typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,visit(v)])):value;
+    return '<script type="application/ld+json">'+JSON.stringify(visit(obj)).replaceAll('<','\\u003c')+'</script>';
+  });
+  const page=searchPages[file];
+  if(page){
+    html=html.replace(/<title>[^<]*<\/title>/,`<title>${escape(page.title)}</title>`)
+      .replace(/<meta name="description"[^>]*>/,`<meta name="description" content="${escape(page.description)}">`)
+      .replace(/<meta property="og:title"[^>]*>/,`<meta property="og:title" content="${escape(page.title)}">`)
+      .replace(/<meta property="og:description"[^>]*>/,`<meta property="og:description" content="${escape(page.description)}">`);
+    if(file==='index.html'){
+      html=html.replace(/(<h1 data-i18n="title">)[\s\S]*?(<\/h1>)/,'$1'+escape(page.title)+'$2').replace(/(<p data-i18n="description">)[\s\S]*?(<\/p>)/,'$1'+escape(page.description)+'$2');
+      const website={'@context':'https://schema.org','@type':'WebSite','@id':siteUrl+'/#website',url:siteUrl+'/',name:'トメスポ',alternateName:['Tomespot','muko Tomespot'],description:page.description,inLanguage:['ja','zh-Hans','zh-Hant','en'],publisher:{'@type':'Organization',name:'muko'}};
+      html=html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g,'').replace('</head>','<script type="application/ld+json">'+JSON.stringify(website)+'</script></head>');
+    }else{
+      html=html.replace(/<h1>[^<]*<\/h1><p>[^<]*<\/p>/,`<h1>${escape(page.heading)}</h1><p>${escape(page.description)}</p>`);
+      html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(_,data)=>{
+        const obj=JSON.parse(data);if(obj['@type']==='CollectionPage')Object.assign(obj,{name:page.heading,description:page.description,url:canonical});
+        return '<script type="application/ld+json">'+JSON.stringify(obj).replaceAll('<','\\u003c')+'</script>';
+      });
+      html=html.replace('<h2>地域別の',`<section aria-labelledby="parking-guide"><h2 id="parking-guide">駐輪場の探し方・よくある質問</h2>${page.questions.map(([q,a])=>`<h3>${escape(q)}</h3><p>${escape(a)}</p>`).join('')}</section><h2>地域別の`);
+    }
+  }
+  return html;
+}
 function serializedHTML(source, marker) {
   const line = source.slice(source.indexOf(marker) + marker.length);
   const literal=line.trimStart().match(/^"(?:[^"\\]|\\.)*"/s);
@@ -95,6 +156,14 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
         .replace("+offset);", "+offset));")
         .replace("fetch(tomespotApi('/api/comments',{", "fetch(tomespotApi('/api/comments'),{")
         .replaceAll('a.href=url;', 'a.href=tomespotApi(url);').replaceAll('img.src=url;', 'img.src=tomespotApi(url);');
+      if(rel.endsWith('.html'))body=searchHTML(body,rel,siteUrl);
+      if(rel==='locales.json'){
+        const messages=JSON.parse(body);
+        messages.title.ja=searchPages['index.html'].title;
+        messages.description.ja=searchPages['index.html'].description;
+        body=JSON.stringify(messages);
+      }
+      if(rel==='sitemap.xml'&&siteUrl.endsWith('.pages.dev'))body=body.replace(/\.html(?=<\/loc>)/g,'');
       write(path.join(output,rel),body);
     }
   }
@@ -102,20 +171,21 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   let html=rewrite(standardizeTerms(serializedHTML(read('source/app/map-html.ts'),'export const html = ')));
   html=html.replace('href="/admin.html" id="admin-link" hidden',`href="${isSupabase?'/admin.html':apiBase+'/admin'}" id="admin-link"`)
     .replace('<script defer src="app.js"></script>','<script src="config.js"></script><script defer src="app.js"></script>');
-  write(path.join(output,'index.html'),html);
+  write(path.join(output,'index.html'),searchHTML(html,'index.html',siteUrl));
   write(path.join(output,'config.js'),`window.TOMESPOT_CONFIG=${JSON.stringify({apiBase,siteUrl,...(isSupabase?{supabaseUrl:apiBase.split('/functions/')[0],supabaseKey}:{})})};\nfunction tomespotApi(p){return /^(https?:|blob:)/.test(p)?p:window.TOMESPOT_CONFIG.apiBase+p;}\n`);
   if(isSupabase){
     let admin=serializedHTML(read('source/app/admin/route.ts'),'const html=');
     admin=admin.replace('/signin-with-chatgpt?return_to=%2Fadmin','#login')
       .replace('<script src="/admin.js" defer></script>','<script src="/config.js"></script><script src="/admin-auth.js" defer></script><script src="/admin.js" defer></script>')
       .replace('<h1 data-i18n="adminTitle">','<section id="login"><form id="admin-login"><label>Email<input name="email" type="email" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button type="submit">ログイン / 登录 / Sign in</button><p id="login-status" role="status"></p></form><button id="admin-logout" type="button">ログアウト / 退出 / Sign out</button></section><h1 data-i18n="adminTitle">');
+    admin=admin.replace('</head>','<meta name="robots" content="noindex,nofollow"></head>');
     write(path.join(output,'admin.html'),admin);
     let adminJS=read('source/public/admin.js').replace('function renderCards(){','function renderCards(){clearAdminPhotos();').replaceAll('link.href=url;', 'link.href="#";').replaceAll('img.src=url;', 'loadAdminPhoto(url,img,link);');
     write(path.join(output,'admin.js'),adminJS);
     write(path.join(output,'admin-auth.js'),read('supabase/admin-auth.js'));
   }
   write(path.join(output,'.nojekyll'),'');
-  write(path.join(output,'404.html'),'<!doctype html><meta charset="utf-8"><title>Tomespot</title><p>ページが見つかりません / 页面不存在。</p><a href="/">Tomespot</a>');
+  write(path.join(output,'404.html'),'<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Tomespot</title><p>ページが見つかりません / 页面不存在。</p><a href="/">Tomespot</a>');
   return output;
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
