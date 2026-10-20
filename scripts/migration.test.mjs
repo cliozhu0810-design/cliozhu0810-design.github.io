@@ -119,7 +119,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
     const cityReports=['kawaguchi','toshima'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
-    const expectedFacilities=new Set([...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
+    const expectedFacilities=new Set(['fk-ikebukuro2','seibu-minami-ikebukuro',...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
     assert.deepEqual(new Set(fs.readdirSync(path.join(out,'parking')).map(f=>f.replace(/\.html$/,''))),expectedFacilities);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
     const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);
@@ -134,6 +134,9 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
         assert.ok(fs.existsSync(path.join(out,local==='/'?'index.html':local)),file+' missing '+local);
       }
     }
+    assert.ok(!fs.existsSync(path.join(out,'ikebukuro-kickboard-parking.html')));
+    assert.ok(!fs.readFileSync(path.join(out,'app.js'),'utf8').includes('scooter-reference-guide'));
+    for(const id of ['16037','16041','toshima-sunshine-west','fk-ikebukuro2','seibu-minami-ikebukuro'])assert.ok(fs.readFileSync(path.join(out,'parking',id+'.html'),'utf8').includes('class="reference-evidence"'));
     assert.ok(!fs.existsSync(path.join(out,'admin.js')));
     assert.ok(!fs.existsSync(path.join(out,'batch-09-review.html')));
     assert.ok(!fs.readFileSync(path.join(out,'sitemap.xml'),'utf8').includes('<loc>'+frontend+'/parking/kanagawa-no-such-place'));
@@ -143,7 +146,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.equal(new Set(urls).size,urls.length,'sitemap must not contain duplicate canonical URLs');
     const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
     const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
-    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/ikebukuro-kickboard-parking',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
     assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
