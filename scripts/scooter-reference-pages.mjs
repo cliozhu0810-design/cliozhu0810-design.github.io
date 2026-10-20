@@ -5,6 +5,7 @@ const safeURL=url=>{try{return new URL(url).protocol==='https:'?url:'';}catch{re
 export function referenceHTML(q){return (q.referenceEvidence||[]).map(e=>`<aside class="reference-evidence" style="border:1px solid #c9a660;border-radius:12px;padding:16px;margin:16px 0;background:#fff9ec"><strong>${esc(e.label)}</strong><p>${esc(e.summary)}</p>${(e.details||[]).map(d=>`<p>${esc(d)}</p>`).join('')}<p>閲覧日：${esc(e.checked)}。参考情報は現在の受入許可・料金を保証しません。</p><ul>${(e.sources||[]).filter(s=>safeURL(s.url)).map(s=>`<li><a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a>${s.published?'（資料日：'+esc(s.published)+'）':''}</li>`).join('')}</ul></aside>`).join('');}
 export function addScooterReferencePage({root,output,siteUrl}){
  const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/ikebukuro-scooter-references.json'),'utf8'));
+ fs.copyFileSync(path.join(root,'source/public/ikebukuro-scooter-references.json'),path.join(output,'ikebukuro-scooter-references.json'));
  const candidates=[['fk-ikebukuro2-listing','fk-ikebukuro2'],['seibu-minami-ikebukuro','seibu-minami-ikebukuro']];
  const canonical=p=>siteUrl+p+(siteUrl.endsWith('.pages.dev')?'':'.html');
  const links=[];
