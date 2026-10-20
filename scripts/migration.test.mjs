@@ -74,7 +74,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/href="\/about.html"/);
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
-    assert.equal(fs.readdirSync(path.join(out,'parking')).length,1433);
+    assert.equal(fs.readdirSync(path.join(out,'parking')).length,1437);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
     const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);
     for(const file of walk(out)) {
@@ -94,7 +94,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     const sitemap=fs.readFileSync(path.join(out,'sitemap.xml'),'utf8');
     assert.ok(!sitemap.includes('.html</loc>'));
     const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-    assert.equal(new Set(urls).size,1439);
+    assert.equal(new Set(urls).size,1443);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
       const p=new URL(url).pathname;
@@ -144,4 +144,24 @@ test('Maps trial keeps disputed addresses and separates bicycle, motorcycle and 
   assert.match(vehicles.profiles[bay.id].motorcycle.publishedFeesRaw,/2時間/);
   const disputed=parking.places.find(p=>p.id==='yk-14102-cyca-949');
   assert.match(disputed.address,/亀住町/);assert.ok(!disputed.address.includes('緑園'));
+});
+
+test('Nishikawaguchi adds motorcycle facilities without applying time-based fees to monthly spaces',async()=>{
+  const parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
+  const vehicles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'),'utf8'));
+  const places=parking.places.filter(p=>p.regionalBatch==='nishikawaguchi-2026-10-20');
+  assert.equal(places.length,4);
+  for(const p of places){
+    assert.equal(p.ward,'埼玉県川口市');assert.ok(Number.isFinite(p.lat)&&Number.isFinite(p.lng));
+    const profiles=vehicles.profiles[p.id];assert.equal(profiles.motorcycle.admissionStatus,'confirmed');
+    assert.equal(profiles.privateElectricScooter.admissionStatus,'unknown');
+    assert.equal((await call('/api/comments?facility='+p.id)).status,200);
+  }
+  assert.equal(vehicles.profiles['nishi-east-coin'].motorcycle.temporaryStatus,'confirmed');
+  assert.match(vehicles.profiles['nishi-east-coin'].motorcycle.classesRaw.join(' '),/原付限定/);
+  for(const id of ['nishi-shiinoki-monthly','nishi-bikepark-30250','nishi-npc-341470']){
+    assert.equal(vehicles.profiles[id].motorcycle.temporaryStatus,'not_offered');
+    assert.equal(vehicles.profiles[id].motorcycle.regularStatus,'confirmed_application_required');
+  }
+  assert.ok(!places.some(p=>p.name==='西川口自転車駐車場'));
 });
