@@ -74,7 +74,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/href="\/about.html"/);
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
-    assert.equal(fs.readdirSync(path.join(out,'parking')).length,1437);
+    assert.equal(fs.readdirSync(path.join(out,'parking')).length,1494);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
     const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);
     for(const file of walk(out)) {
@@ -94,7 +94,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     const sitemap=fs.readFileSync(path.join(out,'sitemap.xml'),'utf8');
     assert.ok(!sitemap.includes('.html</loc>'));
     const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-    assert.equal(new Set(urls).size,1443);
+    assert.equal(new Set(urls).size,1501);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
       const p=new URL(url).pathname;
@@ -164,4 +164,39 @@ test('Nishikawaguchi adds motorcycle facilities without applying time-based fees
     assert.equal(vehicles.profiles[id].motorcycle.regularStatus,'confirmed_application_required');
   }
   assert.ok(!places.some(p=>p.name==='西川口自転車駐車場'));
+});
+
+test('Kawaguchi audit separates current fees, annual permits, vehicle classes and unlocated facilities',async()=>{
+ const parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
+ const vehicles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'),'utf8'));
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/kawaguchi-review.json'),'utf8'));
+ const batch=parking.places.filter(p=>p.regionalBatch==='kawaguchi-2026-10-20');
+ assert.equal(batch.length,57);assert.equal(report.records.length,61);
+ assert.equal(new Set(parking.places.map(p=>p.id)).size,parking.places.length);
+ assert.equal(batch.filter(p=>p.researchCategory==='municipal-managed').length,16);
+ const annual=batch.filter(p=>p.researchCategory==='municipal-annual');assert.equal(annual.length,18);
+ assert.equal(annual.filter(p=>vehicles.profiles[p.id].motorcycle.admissionStatus==='confirmed').length,11);
+ assert.equal(batch.filter(p=>!p.displayEligible).length,8);
+ for(const p of batch){
+  if(p.displayEligible)assert.ok(p.lat>35.7&&p.lat<35.95&&p.lng>139.6&&p.lng<139.85);
+  else {assert.equal(p.lat,null);assert.equal(p.lng,null);}
+  assert.equal((await call('/api/comments?facility='+p.id)).status,200);
+ }
+ assert.ok(!batch.some(p=>p.name==='西川口自転車駐車場'));
+ assert.match(vehicles.profiles['kawaguchi-city-50990'].motorcycle.publishedFeesRaw,/300円/);
+ assert.match(vehicles.profiles['kawaguchi-city-51002'].motorcycle.classesRaw.join(' '),/白ナンバー/);
+ assert.equal(vehicles.profiles['kawaguchi-city-51001'].bicycle.temporaryStatus,'not_offered');
+ assert.equal(vehicles.profiles['kawaguchi-city-50996'].motorcycle.regularStatus,'not_offered');
+ assert.equal(vehicles.profiles['kawaguchi-city-51003'].motorcycle.admissionStatus,'unknown');
+ assert.equal(vehicles.profiles['kawaguchi-city-51002'].privateElectricScooter.admissionStatus,'confirmed');
+ assert.equal(vehicles.profiles['kawaguchi-kspit-moto'].privateElectricScooter.admissionStatus,'unknown');
+ assert.match(vehicles.profiles['kawaguchi-kspit-moto'].motorcycle.publishedFeesRaw,/126cc以上.*600円/);
+ assert.equal(vehicles.profiles['kawaguchi-kspit-moto'].motorcycle.feeEffectiveDate,'2026-10-01');
+ for(const p of annual){const q=vehicles.profiles[p.id].motorcycle;if(q.admissionStatus==='confirmed'){assert.equal(q.temporaryStatus,'not_offered');assert.equal(q.regularStatus,'confirmed_annual_registration_required');assert.equal(q.registrationPeriod.end,'2027-09-30');}}
+ assert.ok(report.historicalMapRows.some(r=>r.status==='outside_kawaguchi'));
+ assert.ok(report.historicalMapRows.some(r=>r.sourceDate==='2018-09'));
+ assert.equal(report.candidates.filter(r=>r.status==='same_name_google_position_conflicts_with_operator').length,5);
+ const repark=parking.places.find(p=>p.id==='kawaguchi-repark-15139');
+ assert.ok(Math.abs(repark.lat-35.831816667)<0.00001);
+ assert.equal(repark.coordinateStatus,'operator_published_reference_point_not_entrance_surveyed');
 });
