@@ -130,3 +130,18 @@ test('map regions identify prefectures locally and do not infer another region f
   vm.runInContext('updateMapRegion()',context);
   assert.equal(label.textContent,'');assert.equal(heading.hidden,true);assert.equal(heading.ready,false);
 });
+
+test('Maps trial keeps disputed addresses and separates bicycle, motorcycle and scooter evidence',()=>{
+  const parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
+  const vehicles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'),'utf8'));
+  const bay=parking.places.find(p=>p.id==='yk-14102-bayquarter');
+  assert.equal(bay.displayEligible,true);assert.ok(Number.isFinite(bay.lat)&&Number.isFinite(bay.lng));
+  assert.ok(bay.locationNotice);assert.equal(bay.positionPrecision,'facility-point');
+  assert.equal(vehicles.profiles[bay.id].bicycle.admissionStatus,'confirmed');
+  assert.equal(vehicles.profiles[bay.id].motorcycle.admissionStatus,'confirmed');
+  assert.equal(vehicles.profiles[bay.id].privateElectricScooter.admissionStatus,'unknown');
+  assert.match(vehicles.profiles[bay.id].bicycle.publishedFeesRaw,/3時間/);
+  assert.match(vehicles.profiles[bay.id].motorcycle.publishedFeesRaw,/2時間/);
+  const disputed=parking.places.find(p=>p.id==='yk-14102-cyca-949');
+  assert.match(disputed.address,/亀住町/);assert.ok(!disputed.address.includes('緑園'));
+});
