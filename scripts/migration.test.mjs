@@ -30,9 +30,10 @@ const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.
 test('scooter references retain uncertainty, separate shared ports and monthly listings, and escape third-party text',()=>{
  const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/ikebukuro-scooter-references.json')));
  const profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
- assert.equal(report.entries.length,6);assert.equal(report.googleReviewChecks.length,3);
+ assert.equal(report.entries.length,8);assert.equal(report.googleReviewChecks.length,3);
  for(const e of report.entries){assert.equal(e.admissionConfirmed,false);assert.ok(e.sources.length);assert.equal(e.checked,'2026-10-21');for(const id of e.facilityIds||[])assert.equal(profiles[id].privateElectricScooter.admissionStatus,'unknown');}
  const listing=report.entries.find(e=>e.kind==='listing');assert.match(listing.summary,/月極契約.*時間貸しではありません/);assert.match(listing.details.join(' '),/満車・空き待ち/);
+ assert.match(report.entries.find(e=>e.id==='seibu-minami-ikebukuro').summary,/私有車.*確認できません/);assert.match(report.entries.find(e=>e.id==='outside-area-lock-experience').summary,/池袋.*ではありません/);assert.match(profiles['16055'].bicycle.publishedFeesRaw,/5時間ごと110円/);
  const port=report.entries.find(e=>e.kind==='shared_port');assert.match(port.summary,/私有.*確認する資料ではありません/);
  const html=referenceHTML({referenceEvidence:[{label:'参考',summary:'<img src=x onerror=alert(1)>',checked:'2026-10-21',sources:[{url:'javascript:alert(1)',label:'bad'},{url:'https://example.com/',label:'source'}]}]});
  assert.ok(!html.includes('<img'));assert.ok(!html.includes('href="javascript:'));assert.ok(html.includes('&lt;img'));assert.ok(html.includes('href="https://example.com/"'));
