@@ -58,7 +58,7 @@ export function buildSupabaseBackend() {
 export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}) {
   const config=JSON.parse(read('deploy-config.json'));
   apiBase=(apiBase||process.env.TOMESPOT_API_URL||config.apiBase||'').replace(/\/$/,'');
-  siteUrl=(siteUrl||config.siteUrl).replace(/\/$/,'');
+  siteUrl=(siteUrl||process.env.TOMESPOT_SITE_URL||config.siteUrl).replace(/\/$/,'');
   if (!/^https:\/\/[^/]+(?:\/functions\/v1\/tomespot)?$/.test(apiBase)) throw Error('Set TOMESPOT_API_URL to your deployed backend URL before publishing.');
   if (!/^https:\/\/[^/]+$/.test(siteUrl)) throw Error('Use the root repository cliozhu0810-design.github.io; siteUrl must be an HTTPS origin.');
   const isSupabase=apiBase.endsWith('/functions/v1/tomespot');
