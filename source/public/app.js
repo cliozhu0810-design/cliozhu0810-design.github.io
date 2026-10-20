@@ -71,7 +71,7 @@ function filtered(){const q=normalize($('search').value);return state.places.map
  if(p.displayEligible===false||p.status==='rejected')return false;
  if(p.status==='unknown'&&!$('unknown').checked)return false;
  if(state.mode==='temporary'&&!p.temporary)return false;
- if(state.mode==='monthly'&&!p.monthly)return false;
+ if(state.mode==='monthly'&&!p.monthly&&!p.annual)return false;
  if(state.mode==='annual'&&!p.annual)return false;
  if($('ward').value&&p.ward!==$('ward').value)return false;
  if(state.savedOnly&&!state.favorites.has(p.id))return false;
