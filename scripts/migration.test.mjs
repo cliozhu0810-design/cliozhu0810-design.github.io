@@ -26,6 +26,35 @@ async function token(overrides={}) {
   return unsigned+'.'+Buffer.from(await crypto.subtle.sign('RSASSA-PKCS1-v1_5',keys.privateKey,new TextEncoder().encode(unsigned))).toString('base64url');
 }
 const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places[0].id;
+test('Toshima review separates classes, current operator fees, registration, duplicates and disputed positions',()=>{
+ const parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places;
+ const profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/toshima-review.json')));
+ assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);
+ assert.equal(report.records.length,71);assert.equal(report.records.filter(r=>r.category==='added').length,15);
+ assert.equal(report.googleComparisons.length,52);assert.equal(report.googleComparisons.filter(r=>r.facilityId).length,29);
+ for(const r of report.records){assert.ok(profiles[r.id]);for(const q of Object.values(profiles[r.id]))assert.equal(q.checked,report.checked);}
+ assert.match(profiles['toshima-sunshine-west'].motorcycle.publishedFeesRaw,/2時間400円/);
+ assert.match(profiles['toshima-sunshine-north'].bicycle.publishedFeesRaw,/2時間150円/);
+ assert.equal(profiles['toshima-sunshine-east'].motorcycle.admissionStatus,'rejected');
+ assert.equal(profiles['16041'].motorcycle.publishedFeesRaw,'1時間100円');
+ assert.match(profiles['toshima-times-station-bike'].motorcycle.publishedFeesRaw,/60分100円/);
+ assert.match(profiles['toshima-times-higashi13-bike'].motorcycle.publishedFeesRaw,/60分220円/);
+ assert.match(profiles['16004'].motorcycle.classesRaw.join(' '),/4\.0kW.*白ナンバー/);
+ assert.equal(profiles['toshima-higashi-registration'].motorcycle.regularStatus,'confirmed_annual_registration_required');
+ assert.equal(profiles['toshima-higashi-registration'].motorcycle.temporaryStatus,'not_offered');
+ assert.equal(profiles['16040'].bicycle.temporaryStatus,'confirmed');assert.equal(profiles['16040'].bicycle.regularStatus,'confirmed_application_required');
+ assert.equal(parking.find(p=>p.id==='toshima-civic-center').accessScope,'facility_users_only');
+ for(const id of ['16004','16005']){assert.equal(parking.find(p=>p.id===id).displayEligible,false);assert.equal(parking.find(p=>p.id===id).coordinateStatus,'official_google_location_conflict');}
+ for(const [alias,canonical]of [['repark-8240','16041'],['repark-11931','16048']]){const p=parking.find(p=>p.id===alias);assert.equal(p.displayEligible,false);assert.equal(p.canonicalFacilityId,canonical);}
+ for(const r of report.records)assert.equal(profiles[r.id].privateElectricScooter.admissionStatus,'unknown');
+ const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8'),context=vm.createContext({localStorage:{getItem:()=>null},document:{getElementById:()=>null}});
+ vm.runInContext(app.slice(0,app.indexOf("$('search').addEventListener")),context);
+ context.places=parking;vm.runInContext('state.places=places',context);
+ // The resolver is defined after the listener section, so evaluate that function alone.
+ vm.runInContext(app.match(/function canonicalPlaceId\(id\)\{[^\n]+\}/)[0],context);
+ assert.equal(vm.runInContext('canonicalPlaceId("repark-8240")',context),'16041');
+});
 const call=(p,options={})=>worker.fetch(new Request(backend+p,options),env);
 test('rejects forged identity, wrong JWT signature, audience, email and expired JWT',async()=>{
   assert.equal((await call('/api/admin/comments',{headers:{'oai-authenticated-user-id':'fake','oai-authenticated-user-email':env.ADMIN_EMAIL}})).status,403);
@@ -74,7 +103,9 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/href="\/about.html"/);
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
-    assert.equal(fs.readdirSync(path.join(out,'parking')).length,1494);
+    const cityReports=['kawaguchi','toshima'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
+    const expectedFacilities=new Set([...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
+    assert.deepEqual(new Set(fs.readdirSync(path.join(out,'parking')).map(f=>f.replace(/\.html$/,''))),expectedFacilities);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
     const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);
     for(const file of walk(out)) {
@@ -94,7 +125,11 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     const sitemap=fs.readFileSync(path.join(out,'sitemap.xml'),'utf8');
     assert.ok(!sitemap.includes('.html</loc>'));
     const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-    assert.equal(new Set(urls).size,1501);
+    assert.equal(new Set(urls).size,urls.length,'sitemap must not contain duplicate canonical URLs');
+    const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
+    const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
+    for(const p of ['/about','/kawaguchi-parking','/toshima-parking',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
       const p=new URL(url).pathname;

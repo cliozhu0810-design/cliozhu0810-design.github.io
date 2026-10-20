@@ -4,6 +4,7 @@ import {stripTypeScriptTypes} from 'node:module';
 import {fileURLToPath} from 'node:url';
 import {addRegionalPages} from './regional-pages.mjs';
 import {addKawaguchiPages} from './kawaguchi-pages.mjs';
+import {addToshimaPages} from './toshima-pages.mjs';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = p => fs.readFileSync(path.join(root,p), 'utf8');
 const write = (p, value) => {fs.mkdirSync(path.dirname(p), {recursive:true});fs.writeFileSync(p,value);};
@@ -190,6 +191,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   write(path.join(output,'about.html'),searchHTML(aboutHTML(),'about.html',siteUrl));
   addRegionalPages({root,output,siteUrl});
   addKawaguchiPages({root,output,siteUrl});
+  addToshimaPages({root,output,siteUrl});
   write(path.join(output,'config.js'),`window.TOMESPOT_CONFIG=${JSON.stringify({apiBase,siteUrl,...(isSupabase?{supabaseUrl:apiBase.split('/functions/')[0],supabaseKey}:{})})};\nfunction tomespotApi(p){return /^(https?:|blob:)/.test(p)?p:window.TOMESPOT_CONFIG.apiBase+p;}\n`);
   if(isSupabase){
     let admin=serializedHTML(read('source/app/admin/route.ts'),'const html=');
