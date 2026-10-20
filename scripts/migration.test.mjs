@@ -135,6 +135,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
       }
     }
     assert.ok(!fs.existsSync(path.join(out,'ikebukuro-kickboard-parking.html')));
+    assert.match(fs.readFileSync(path.join(out,'_redirects'),'utf8'),/\/ikebukuro-kickboard-parking \/toshima-parking 301/);
     assert.ok(!fs.readFileSync(path.join(out,'app.js'),'utf8').includes('scooter-reference-guide'));
     for(const id of ['16037','16041','toshima-sunshine-west','fk-ikebukuro2','seibu-minami-ikebukuro'])assert.ok(fs.readFileSync(path.join(out,'parking',id+'.html'),'utf8').includes('class="reference-evidence"'));
     assert.ok(!fs.existsSync(path.join(out,'admin.js')));

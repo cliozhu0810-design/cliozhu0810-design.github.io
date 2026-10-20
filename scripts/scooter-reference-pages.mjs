@@ -18,6 +18,7 @@ export function addScooterReferencePage({root,output,siteUrl}){
  fs.writeFileSync(directory,fs.readFileSync(directory,'utf8').replace('</main>','<section><h2>受入確認中の施設</h2><ul>'+links.join('')+'</ul></section></main>'));
  const oldGuide=path.join(output,'ikebukuro-kickboard-parking.html');
  if(fs.existsSync(oldGuide))fs.unlinkSync(oldGuide);
+ fs.copyFileSync(path.join(root,'source/public/_redirects'),path.join(output,'_redirects'));
  const sitemap=path.join(output,'sitemap.xml');
  fs.writeFileSync(sitemap,fs.readFileSync(sitemap,'utf8').replace('</urlset>',candidates.map(([,id])=>'<url><loc>'+canonical('/parking/'+id)+'</loc></url>').join('')+'</urlset>'));
 }
