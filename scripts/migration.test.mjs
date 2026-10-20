@@ -6,6 +6,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {DatabaseSync} from 'node:sqlite';
 import {buildBackend,buildFrontend,root} from './build.mjs';
+import {referenceHTML} from './scooter-reference-pages.mjs';
 buildBackend();
 const {default:worker}=await import('../backend/generated/worker.mjs');
 const {verifyAdmin}=await import('../backend/gateway.mjs');
@@ -26,6 +27,19 @@ async function token(overrides={}) {
   return unsigned+'.'+Buffer.from(await crypto.subtle.sign('RSASSA-PKCS1-v1_5',keys.privateKey,new TextEncoder().encode(unsigned))).toString('base64url');
 }
 const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places[0].id;
+test('scooter references retain uncertainty, separate shared ports and monthly listings, and escape third-party text',()=>{
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/ikebukuro-scooter-references.json')));
+ const profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ assert.equal(report.entries.length,6);assert.equal(report.googleReviewChecks.length,3);
+ for(const e of report.entries){assert.equal(e.admissionConfirmed,false);assert.ok(e.sources.length);assert.equal(e.checked,'2026-10-21');for(const id of e.facilityIds||[])assert.equal(profiles[id].privateElectricScooter.admissionStatus,'unknown');}
+ const listing=report.entries.find(e=>e.kind==='listing');assert.match(listing.summary,/月極契約.*時間貸しではありません/);assert.match(listing.details.join(' '),/満車・空き待ち/);
+ const port=report.entries.find(e=>e.kind==='shared_port');assert.match(port.summary,/私有.*確認する資料ではありません/);
+ const html=referenceHTML({referenceEvidence:[{label:'参考',summary:'<img src=x onerror=alert(1)>',checked:'2026-10-21',sources:[{url:'javascript:alert(1)',label:'bad'},{url:'https://example.com/',label:'source'}]}]});
+ assert.ok(!html.includes('<img'));assert.ok(!html.includes('href="javascript:'));assert.ok(html.includes('&lt;img'));assert.ok(html.includes('href="https://example.com/"'));
+ const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8'),context=vm.createContext({URL,localStorage:{getItem:()=>null},document:{getElementById:()=>null}});
+ vm.runInContext(app.slice(0,app.indexOf("$('search').addEventListener")),context);context.profile=profiles['16037'].privateElectricScooter;
+ assert.match(vm.runInContext('referenceEvidenceHtml(profile)',context),/参考・料金情報に相違/);
+});
 test('Toshima review separates classes, current operator fees, registration, duplicates and disputed positions',()=>{
  const parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places;
  const profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
@@ -128,7 +142,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.equal(new Set(urls).size,urls.length,'sitemap must not contain duplicate canonical URLs');
     const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
     const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
-    for(const p of ['/about','/kawaguchi-parking','/toshima-parking',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/ikebukuro-kickboard-parking',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
     assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
