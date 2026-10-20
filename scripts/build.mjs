@@ -6,6 +6,17 @@ export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 const read = p => fs.readFileSync(path.join(root,p), 'utf8');
 const write = (p, value) => {fs.mkdirSync(path.dirname(p), {recursive:true});fs.writeFileSync(p,value);};
 const oldOrigin = 'https://tomespot-test.nuttymink33.chatgpt.site';
+const googleVerification='O9g-AXp8S9suP7xtGnB-7wRalOTTqR1gvUMuQ_fwiqo';
+function aboutHTML(){
+  const content={
+    ja:{title:'トメスポについて',intro:'トメスポ（Tomespot）は、電動キックボード・自転車・バイクの駐輪場を探すための地図サービスです。muko が運営しています。',how:'駐輪場の探し方',steps:'車種を選び、駅・住所・施設名で検索できます。一時利用・定期利用で絞り込み、施設の料金・車両条件・公式案内を確認してください。年度・年期登録の施設は定期利用に含まれ、登録方法を個別に表示します。',coverage:'掲載地域と情報について',coverageText:'現在は東京都の施設と、横浜市神奈川区の自転車・バイク駐輪場を一部掲載しています。地図の地域表示は地図中心の都道府県を示し、掲載範囲や現在地の取得状況を示すものではありません。リアルタイムの空き状況は提供していません。最新の料金・利用条件は各施設の公式案内をご確認ください。',browse:'車種・地域から探す',sources:'地図の地域表示',sourcesText:'都道府県はブラウザ内で境界データと照合します。境界・海岸付近では簡略化による判定誤差や未判定が生じる場合があります。',back:'地図に戻る'},
+    'zh-Hans':{title:'关于 Tomespot',intro:'Tomespot 是查找电动滑板车、自行车和摩托车停车场的地图服务，由 muko 运营。',how:'如何查找停车场',steps:'选择车型，搜索车站、地址或设施名称，按临时或定期停车筛选，再查看费用、车辆条件和官方说明。年度、年期登记归入定期停车，并保留各自的登记标识。',coverage:'收录地区与信息',coverageText:'目前收录东京的设施及部分横滨市神奈川区自行车和摩托车停车场。地图地区标签表示地图中心所在都道府县，不代表收录范围或已获取当前位置。网站不提供实时空位，请以设施最新官方费用和条件为准。',browse:'按车型和地区查找',sources:'地图地区显示',sourcesText:'网站在浏览器内匹配都道府县边界。边界及海岸附近可能因数据简化而存在误差或无法判断。',back:'返回地图'},
+    'zh-Hant':{title:'關於 Tomespot',intro:'Tomespot 是尋找電動滑板車、自行車和機車停車場的地圖服務，由 muko 營運。',how:'如何尋找停車場',steps:'選擇車種，搜尋車站、地址或設施名稱，依臨時或定期停車篩選，再查看費用、車輛條件和官方說明。年度、年期登記歸入定期停車，並保留各自的登記標示。',coverage:'收錄地區與資訊',coverageText:'目前收錄東京的設施及部分橫濱市神奈川區自行車和機車停車場。地圖地區標籤表示地圖中心所在都道府縣，不代表收錄範圍或已取得目前位置。網站不提供即時空位，請以設施最新官方費用和條件為準。',browse:'依車種和地區尋找',sources:'地圖地區顯示',sourcesText:'網站在瀏覽器內比對都道府縣邊界。邊界及海岸附近可能因資料簡化而存在誤差或無法判斷。',back:'返回地圖'},
+    en:{title:'About Tomespot',intro:'Tomespot is a parking map for privately owned electric scooters, bicycles and motorcycles, operated by muko.',how:'Find a place to park',steps:'Select a vehicle and search by station, address or facility name. Filter by short-stay or permit parking, then check fees, vehicle conditions and official guidance. Annual registration facilities are included under permit parking and keep their own labels.',coverage:'Coverage and information',coverageText:'The directory currently covers facilities in Tokyo and selected bicycle and motorcycle parking in Yokohama’s Kanagawa Ward. The map label identifies the prefecture at the map centre; it does not indicate directory coverage or whether your location has been obtained. Live availability is not provided. Check the operator’s latest fees and conditions.',browse:'Browse by vehicle and area',sources:'Map region labels',sourcesText:'Prefecture boundaries are checked in your browser. Simplified boundaries can cause uncertain results near borders and coastlines.',back:'Back to map'}
+  };
+  const field=(key,tag)=>`<${tag} data-about="${key}">${content.ja[key]}</${tag}>`;
+  return `<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>トメスポについて | Tomespot</title><meta name="description" content="トメスポの使い方、掲載地域、駐輪場情報の確認方法をご案内します。"><link rel="stylesheet" href="/search-pages.css"><link rel="icon" href="/icon.svg"></head><body><header><a href="/">トメスポ <small>Tomespot</small></a><nav><a href="/" data-about="back">地図に戻る</a> <select id="about-language" aria-label="Language"><option value="ja">日本語</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="en">English</option></select></nav></header><main>${field('title','h1')}${field('intro','p')}${field('how','h2')}${field('steps','p')}${field('browse','h2')}<nav class="ward-nav" aria-label="駐輪場一覧"><a href="/parking-directory.html">地域別の駐輪場一覧</a><a href="/kickboard-parking.html">電動キックボードの駐輪場</a><a href="/bicycle-parking.html">自転車駐輪場</a><a href="/motorcycle-parking.html">バイク・原付の駐輪場</a></nav>${field('coverage','h2')}${field('coverageText','p')}${field('sources','h2')}${field('sourcesText','p')}<p>境界データ：<a href="https://github.com/piuccio/open-data-jp-prefectures-geojson">open-data-jp-prefectures-geojson</a>（国土交通省・国土数値情報を加工） / <a href="/prefectures-license.txt">MIT License</a></p></main><script>const aboutContent=${JSON.stringify(content)};const language=document.getElementById('about-language');function showAbout(){const text=aboutContent[language.value];document.documentElement.lang=language.value;document.querySelectorAll('[data-about]').forEach(el=>el.textContent=text[el.dataset.about]);document.title=text.title+' | Tomespot';try{localStorage.setItem('tomespot:language',language.value)}catch{}}try{const saved=localStorage.getItem('tomespot:language');if(aboutContent[saved])language.value=saved}catch{}language.onchange=showAbout;showAbout();</script></body></html>`;
+}
 const searchPages = {
   'index.html': {
     title:'東京の駐輪場マップ｜電動キックボード・自転車・バイク｜トメスポ',
@@ -139,7 +150,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
     .replace(/<meta name="google-site-verification"[^>]*\/?\s*>/g,'')
     .replace(/(href=")([^"\s]+)(")/g,(_,a,p,b)=>a+htmlPath(p)+b)
     .replace(new RegExp(siteUrl.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(/[^"<\\s]*)','g'),(_,p)=>siteUrl+htmlPath(p));
-  const allowed = /^(parking\/[^/]+\.html|vendor\/.+|(?:app\.js|comments\.js|comments\.css|data-locales\.json|icon\.svg|locales\.json|parking\.json|vehicle-data\.json|style\.css|search-pages\.css|parking-directory\.html|kickboard-parking\.html|bicycle-parking\.html|motorcycle-parking\.html|robots\.txt|sitemap\.xml))$/;
+  const allowed = /^(parking\/[^/]+\.html|vendor\/.+|(?:app\.js|comments\.js|comments\.css|data-locales\.json|icon\.svg|locales\.json|parking\.json|vehicle-data\.json|prefectures\.json|prefectures-license\.txt|style\.css|search-pages\.css|parking-directory\.html|kickboard-parking\.html|bicycle-parking\.html|motorcycle-parking\.html|robots\.txt|sitemap\.xml))$/;
   function copy(dir,relative='') {
     for(const item of fs.readdirSync(dir,{withFileTypes:true})) {
       const rel=relative+item.name, full=path.join(dir,item.name);
@@ -164,6 +175,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
         body=JSON.stringify(messages);
       }
       if(rel==='sitemap.xml'&&siteUrl.endsWith('.pages.dev'))body=body.replace(/\.html(?=<\/loc>)/g,'');
+      if(rel==='sitemap.xml')body=body.replace('</urlset>',`<url><loc>${siteUrl}/about${siteUrl.endsWith('.pages.dev')?'':'.html'}</loc></url></urlset>`);
       write(path.join(output,rel),body);
     }
   }
@@ -171,7 +183,9 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   let html=rewrite(standardizeTerms(serializedHTML(read('source/app/map-html.ts'),'export const html = ')));
   html=html.replace('href="/admin.html" id="admin-link" hidden',`href="${isSupabase?'/admin.html':apiBase+'/admin'}" id="admin-link"`)
     .replace('<script defer src="app.js"></script>','<script src="config.js"></script><script defer src="app.js"></script>');
-  write(path.join(output,'index.html'),searchHTML(html,'index.html',siteUrl));
+  html=searchHTML(html,'index.html',siteUrl).replace('</head>',`<meta name="google-site-verification" content="${googleVerification}"></head>`);
+  write(path.join(output,'index.html'),html);
+  write(path.join(output,'about.html'),searchHTML(aboutHTML(),'about.html',siteUrl));
   write(path.join(output,'config.js'),`window.TOMESPOT_CONFIG=${JSON.stringify({apiBase,siteUrl,...(isSupabase?{supabaseUrl:apiBase.split('/functions/')[0],supabaseKey}:{})})};\nfunction tomespotApi(p){return /^(https?:|blob:)/.test(p)?p:window.TOMESPOT_CONFIG.apiBase+p;}\n`);
   if(isSupabase){
     let admin=serializedHTML(read('source/app/admin/route.ts'),'const html=');

@@ -68,6 +68,11 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
   try {
     buildFrontend({apiBase:backend,output:out});
     const index=fs.readFileSync(path.join(out,'index.html'),'utf8');
+    assert.ok(!index.includes('class="side-footer"'));
+    assert.ok(!index.includes('class="edition"'));
+    assert.ok(!index.includes('class="search-about"'));
+    assert.match(index,/href="\/about.html"/);
+    assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
     assert.equal(fs.readdirSync(path.join(out,'parking')).length,1433);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
@@ -89,7 +94,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     const sitemap=fs.readFileSync(path.join(out,'sitemap.xml'),'utf8');
     assert.ok(!sitemap.includes('.html</loc>'));
     const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-    assert.equal(new Set(urls).size,1438);
+    assert.equal(new Set(urls).size,1439);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
       const p=new URL(url).pathname;
@@ -103,4 +108,16 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
       for(const [,data]of page.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g))JSON.parse(data);
     }
   } finally {fs.rmSync(out,{recursive:true,force:true});}
+});
+test('map regions identify prefectures locally and do not infer another region for the sea',()=>{
+  const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8');
+  const context=vm.createContext({localStorage:{getItem:()=>null},document:{getElementById:()=>null}});
+  vm.runInContext(app.slice(0,app.indexOf("$('search').addEventListener")),context);
+  const regions=JSON.parse(fs.readFileSync(path.join(root,'source/public/prefectures.json'),'utf8')).prefectures;
+  assert.equal(regions.length,47);context.regions=regions;
+  vm.runInContext('prefectureRegions=regions',context);
+  for(const [lat,lng,name]of [[35.6895,139.6917,'東京都'],[35.4437,139.638,'神奈川県'],[35.8617,139.6455,'埼玉県'],[43.0618,141.3545,'北海道'],[26.2124,127.6809,'沖縄県'],[34.6937,135.5023,'大阪府'],[0,0,'']]){
+    assert.equal(vm.runInContext(`prefectureAt({lat:${lat},lng:${lng}})`,context),name);
+  }
+  assert.match(app,/on\('moveend',updateMapRegion\)/);
 });
