@@ -71,6 +71,8 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
     .replaceAll('電動キックボードの駐車場・停める場所','電動キックボードの駐輪場')
     .replaceAll('電動キックボード駐車場・停める場所','電動キックボード駐輪場')
     .replaceAll('自転車駐車場・駐輪場','自転車駐輪場')
+    .replaceAll('駐車場・駐輪場','駐輪場')
+    .replaceAll('目的地近くの駐車場','目的地近くの駐輪場')
     .replaceAll('バイク駐車場・原付の駐輪場','バイク・原付の駐輪場')
     .replace(/<meta name="google-site-verification"[^>]*\/?\s*>/g,'')
     .replace(/(href=")([^"\s]+)(")/g,(_,a,p,b)=>a+htmlPath(p)+b)
