@@ -120,4 +120,13 @@ test('map regions identify prefectures locally and do not infer another region f
     assert.equal(vm.runInContext(`prefectureAt({lat:${lat},lng:${lng}})`,context),name);
   }
   assert.match(app,/on\('moveend',updateMapRegion\)/);
+  const heading={hidden:false,toggleAttribute(name,enabled){this.ready=enabled;}};
+  const label={textContent:'',closest:()=>heading};
+  context.document.getElementById=()=>label;
+  context.mapCenter={lat:35.6895,lng:139.6917};
+  vm.runInContext('state.map={getCenter:()=>mapCenter};updateMapRegion()',context);
+  assert.equal(label.textContent,'東京都');assert.equal(heading.hidden,false);assert.equal(heading.ready,true);
+  context.mapCenter={lat:0,lng:0};
+  vm.runInContext('updateMapRegion()',context);
+  assert.equal(label.textContent,'');assert.equal(heading.hidden,true);assert.equal(heading.ready,false);
 });
