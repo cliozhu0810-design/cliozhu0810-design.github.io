@@ -67,13 +67,14 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   if(supabaseKey.startsWith('sb_secret_'))throw Error('A secret key must never be published. Use the publishable key.');
   if(supabaseKey.split('.').length===3){try{if(JSON.parse(Buffer.from(supabaseKey.split('.')[1],'base64url')).role!=='anon')throw Error('Only an anon JWT key is allowed in public config.');}catch(e){throw Error('Invalid public Supabase key: '+e.message);}}
   const htmlPath=p => !p.startsWith('/')||p.split(/[?#]/)[0]==='/'||/\.[a-z0-9]+(?:[?#]|$)/i.test(p)||p.startsWith('//') ? p : p.replace(/^([^?#]*)(.*)$/, '$1.html$2');
-  const rewrite = text => text.replaceAll(oldOrigin,siteUrl)
+  const standardizeTerms = text => text
     .replaceAll('電動キックボードの駐車場・停める場所','電動キックボードの駐輪場')
     .replaceAll('電動キックボード駐車場・停める場所','電動キックボード駐輪場')
     .replaceAll('自転車駐車場・駐輪場','自転車駐輪場')
     .replaceAll('駐車場・駐輪場','駐輪場')
     .replaceAll('目的地近くの駐車場','目的地近くの駐輪場')
-    .replaceAll('バイク駐車場・原付の駐輪場','バイク・原付の駐輪場')
+    .replaceAll('バイク駐車場・原付の駐輪場','バイク・原付の駐輪場');
+  const rewrite = text => text.replaceAll(oldOrigin,siteUrl)
     .replace(/<meta name="google-site-verification"[^>]*\/?\s*>/g,'')
     .replace(/(href=")([^"\s]+)(")/g,(_,a,p,b)=>a+htmlPath(p)+b)
     .replace(new RegExp(siteUrl.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(/[^"<\\s]*)','g'),(_,p)=>siteUrl+htmlPath(p));
@@ -84,7 +85,11 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
       if(item.isDirectory()) {copy(full,rel+'/');continue;}
       if(!allowed.test(rel)) continue;
       let body=fs.readFileSync(full);
-      if(/\.(html|xml|txt|json|js|css)$/.test(rel)) body=rewrite(body.toString());
+      if(/\.(html|xml|txt|json|js|css)$/.test(rel)) {
+        body=body.toString();
+        if(rel.endsWith('.html')||rel==='locales.json') body=standardizeTerms(body);
+        body=rewrite(body);
+      }
       if(rel==='app.js') body=body.replace(/fetch\('\/api\/admin\/session'\)[\s\S]*$/,'');
       if(rel==='comments.js') body=body.replaceAll("fetch('/api/comments", "fetch(tomespotApi('/api/comments")
         .replace("+offset);", "+offset));")
@@ -94,7 +99,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
     }
   }
   copy(path.join(root,'source/public'));
-  let html=rewrite(serializedHTML(read('source/app/map-html.ts'),'export const html = '));
+  let html=rewrite(standardizeTerms(serializedHTML(read('source/app/map-html.ts'),'export const html = ')));
   html=html.replace('href="/admin.html" id="admin-link" hidden',`href="${isSupabase?'/admin.html':apiBase+'/admin'}" id="admin-link"`)
     .replace('<script defer src="app.js"></script>','<script src="config.js"></script><script defer src="app.js"></script>');
   write(path.join(output,'index.html'),html);
