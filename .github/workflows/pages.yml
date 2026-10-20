@@ -1,0 +1,46 @@
+name: Publish Tomespot
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Import the prepared website source
+        if: hashFiles('tomespot-ready-source.zip') != ''
+        run: |
+          unzip -q tomespot-ready-source.zip -d "$RUNNER_TEMP/tomespot-import"
+          rsync -a --exclude='.github/' "$RUNNER_TEMP/tomespot-import/tomespot-free/" ./
+          git rm -- tomespot-ready-source.zip
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m 'Import editable Tomespot website source'
+          git push
+      - run: npm test
+      - run: npm run build
+        env:
+          TOMESPOT_API_URL: ${{ vars.TOMESPOT_API_URL }}
+          TOMESPOT_SUPABASE_KEY: ${{ vars.TOMESPOT_SUPABASE_KEY }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
