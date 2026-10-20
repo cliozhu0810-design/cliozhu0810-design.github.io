@@ -30,11 +30,11 @@ const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.
 test('scooter references retain uncertainty, separate shared ports and monthly listings, and escape third-party text',()=>{
  const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/ikebukuro-scooter-references.json')));
  const profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
- assert.equal(report.entries.length,8);assert.equal(report.googleReviewChecks.length,3);
- for(const e of report.entries){assert.equal(e.admissionConfirmed,false);assert.ok(e.sources.length);assert.equal(e.checked,'2026-10-21');for(const id of e.facilityIds||[])assert.equal(profiles[id].privateElectricScooter.admissionStatus,'unknown');}
+ assert.equal(report.entries.length,8);assert.equal(report.googleReviewChecks.length,6);
+ for(const e of report.entries){assert.equal(e.admissionConfirmed,e.id==='municipal-council-reference');assert.ok(e.sources.length);assert.equal(e.checked,'2026-10-21');for(const id of e.facilityIds||[])assert.equal(profiles[id].privateElectricScooter.admissionStatus,e.admissionConfirmed?'confirmed':'unknown');}
  const listing=report.entries.find(e=>e.kind==='listing');assert.match(listing.summary,/月極契約.*時間貸しではありません/);assert.match(listing.details.join(' '),/満車・空き待ち/);
  assert.match(report.entries.find(e=>e.id==='seibu-minami-ikebukuro').summary,/私有車.*確認できません/);assert.match(report.entries.find(e=>e.id==='outside-area-lock-experience').summary,/池袋.*ではありません/);assert.match(profiles['16055'].bicycle.publishedFeesRaw,/5時間ごと110円/);
- const port=report.entries.find(e=>e.kind==='shared_port');assert.match(port.summary,/私有.*確認する資料ではありません/);
+ const port=report.entries.find(e=>e.kind==='shared_port');assert.equal(port.excludedAsPrivateParkingEvidence,true);assert.ok(!port.sources.some(s=>s.url.includes('luup.sc')));
  const html=referenceHTML({referenceEvidence:[{label:'参考',summary:'<img src=x onerror=alert(1)>',checked:'2026-10-21',sources:[{url:'javascript:alert(1)',label:'bad'},{url:'https://example.com/',label:'source'}]}]});
  assert.ok(!html.includes('<img'));assert.ok(!html.includes('href="javascript:'));assert.ok(html.includes('&lt;img'));assert.ok(html.includes('href="https://example.com/"'));
  const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8'),context=vm.createContext({URL,localStorage:{getItem:()=>null},document:{getElementById:()=>null}});
@@ -62,7 +62,8 @@ test('Toshima review separates classes, current operator fees, registration, dup
  assert.equal(parking.find(p=>p.id==='toshima-civic-center').accessScope,'facility_users_only');
  for(const id of ['16004','16005']){assert.equal(parking.find(p=>p.id===id).displayEligible,false);assert.equal(parking.find(p=>p.id===id).coordinateStatus,'official_google_location_conflict');}
  for(const [alias,canonical]of [['repark-8240','16041'],['repark-11931','16048']]){const p=parking.find(p=>p.id===alias);assert.equal(p.displayEligible,false);assert.equal(p.canonicalFacilityId,canonical);}
- for(const r of report.records)assert.equal(profiles[r.id].privateElectricScooter.admissionStatus,'unknown');
+ for(const r of report.records)assert.equal(profiles[r.id].privateElectricScooter.admissionStatus,['16004','16018','16031'].includes(r.id)?'confirmed':'unknown');
+ for(const id of ['16004','16018','16031']){assert.equal(profiles[id].privateElectricScooter.temporaryStatus,'unverified');assert.equal(profiles[id].privateElectricScooter.publishedFeesRaw,'');}
  const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8'),context=vm.createContext({localStorage:{getItem:()=>null},document:{getElementById:()=>null}});
  vm.runInContext(app.slice(0,app.indexOf("$('search').addEventListener")),context);
  context.places=parking;vm.runInContext('state.places=places',context);
