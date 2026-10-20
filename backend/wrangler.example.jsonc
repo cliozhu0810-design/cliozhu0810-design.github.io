@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "tomespot-api",
+  "main": "generated/worker.mjs",
+  "compatibility_date": "2026-10-20",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {"directory": "generated/assets", "binding": "ASSETS", "run_worker_first": true},
+  "vars": {
+    "FRONTEND_ORIGIN": "https://cliozhu0810-design.github.io",
+    "ADMIN_EMAIL": "REPLACE_WITH_YOUR_EMAIL",
+    "ACCESS_TEAM_DOMAIN": "https://REPLACE_WITH_YOUR_TEAM.cloudflareaccess.com",
+    "ACCESS_AUD": "REPLACE_WITH_ACCESS_APPLICATION_AUD"
+  },
+  "d1_databases": [{"binding": "DB", "database_name": "tomespot-comments", "database_id": "REPLACE_WITH_D1_DATABASE_ID"}],
+  "r2_buckets": [{"binding": "BUCKET", "bucket_name": "tomespot-photos"}]
+}

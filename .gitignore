@@ -1,0 +1,8 @@
+dist/
+backend/generated/
+backend/wrangler.jsonc
+.wrangler/
+node_modules/
+.env*
+.dev.vars*
+*.log

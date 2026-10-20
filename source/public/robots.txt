@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /signin-with-chatgpt
+Disallow: /signout-with-chatgpt
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /signin-with-chatgpt
+Disallow: /signout-with-chatgpt
+
+Sitemap: https://tomespot-test.nuttymink33.chatgpt.site/sitemap.xml
