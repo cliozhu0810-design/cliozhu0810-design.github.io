@@ -27,6 +27,20 @@ async function token(overrides={}) {
   return unsigned+'.'+Buffer.from(await crypto.subtle.sign('RSASSA-PKCS1-v1_5',keys.privateKey,new TextEncoder().encode(unsigned))).toString('base64url');
 }
 const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places[0].id;
+
+test('Kanto import preserves scooter mode restrictions, current dedicated fees and official map provenance',()=>{
+ const r=JSON.parse(fs.readFileSync(path.join(root,'source/public/kanto-review.json'))),v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ assert.equal(r.records.length,189);assert.equal(r.records.filter(x=>x.mapReady).length,27);
+ const find=name=>r.records.find(x=>x.name===name);
+ const east1=find('所沢駅東口第1自転車駐車場'),east2=find('所沢駅東口第2自転車駐車場');
+ assert.equal(east1.profiles.privateElectricScooter.temporaryStatus,'not_offered');assert.equal(east1.profiles.privateElectricScooter.regularStatus,'confirmed_application_required');
+ assert.equal(east2.profiles.privateElectricScooter.temporaryStatus,'confirmed');assert.match(east2.profiles.privateElectricScooter.publishedFeesRaw,/24時間160円/);
+ assert.equal(find('新所沢駅東口第1自転車駐車場').profiles.privateElectricScooter.temporaryStatus,'not_offered');
+ for(const x of r.records.filter(x=>x.mapReady)){assert.ok(x.mapSource.includes('rs=3857'));assert.ok(x.lat>35.7&&x.lat<35.9&&x.lng>139.3&&x.lng<139.6);assert.deepEqual(v[x.id],x.profiles);}
+ assert.match(find('千葉駅東口第5自転車駐車場').profiles.privateElectricScooter.publishedFeesRaw,/1か月750円/);
+ assert.match(find('船橋駅第14自転車等駐車場').profiles.privateElectricScooter.publishedFeesRaw,/660円／月/);
+ assert.ok(r.anomalies.some(x=>x.station==='川崎大師駅'));assert.ok(!r.records.some(x=>x.station==='川崎大師駅'&&x.name.includes('川崎新町')));
+});
 test('scooter references retain uncertainty, separate shared ports and monthly listings, and escape third-party text',()=>{
  const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/ikebukuro-scooter-references.json')));
  const profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
@@ -119,7 +133,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/href="\/about.html"/);
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
-    const cityReports=['kawaguchi','toshima'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
+    const cityReports=['kawaguchi','toshima','kanto'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
     const expectedFacilities=new Set(['fk-ikebukuro2','seibu-minami-ikebukuro',...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
     assert.deepEqual(new Set(fs.readdirSync(path.join(out,'parking')).map(f=>f.replace(/\.html$/,''))),expectedFacilities);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
@@ -149,7 +163,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.equal(new Set(urls).size,urls.length,'sitemap must not contain duplicate canonical URLs');
     const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
     const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
-    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/kanto-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
     assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
