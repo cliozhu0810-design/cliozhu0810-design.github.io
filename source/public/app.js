@@ -7,7 +7,7 @@ let vehicleData=null;
 let prefectureRegions=null;
 function pointInRegionRing(lng,lat,ring){let inside=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const a=ring[i],b=ring[j];if((a[1]>lat)!==(b[1]>lat)&&lng<(b[0]-a[0])*(lat-a[1])/(b[1]-a[1])+a[0])inside=!inside;}return inside;}
 function prefectureAt(point){for(const region of prefectureRegions||[])for(const polygon of region.polygons){const [west,south,east,north]=polygon.bounds;if(point.lng<west||point.lng>east||point.lat<south||point.lat>north)continue;if(pointInRegionRing(point.lng,point.lat,polygon.rings[0])&&!polygon.rings.slice(1).some(r=>pointInRegionRing(point.lng,point.lat,r)))return region.name;}return '';}
-function updateMapRegion(){const label=$('map-region');if(!label)return;const fallback={ja:'地域未判定','zh-Hans':'地区未确定','zh-Hant':'地區未確定',en:'Region unavailable'}[locale];label.textContent=(state.map&&prefectureAt(state.map.getCenter()))||fallback;}
+function updateMapRegion(){const label=$('map-region');if(!label)return;const name=(state.map&&prefectureAt(state.map.getCenter()))||'';label.textContent=name;const heading=label.closest('.map-heading');if(heading){heading.hidden=!name;heading.toggleAttribute('data-region-ready',!!name);}}
 async function loadMapRegions(){try{const response=await fetch('prefectures.json');if(!response.ok)throw Error(response.status);prefectureRegions=(await response.json()).prefectures;}catch{prefectureRegions=null;}updateMapRegion();}
 state.vehicle='privateElectricScooter';
 const vehicleLabel=()=>t({privateElectricScooter:'scooterLabel',bicycle:'bicycleLabel',motorcycle:'motorcycleLabel'}[state.vehicle]);
