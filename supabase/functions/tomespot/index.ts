@@ -82,7 +82,7 @@ export async function dispatch(request, env, routes) {
     headers.set('oai-authenticated-user-email', identity.email);
   }
   request = new Request(request, {headers});
-  if (requiresAdmin && !identity) return new Response('Administrator sign-in required.', {status: 403, headers: {'Cache-Control':'no-store'}});
+  if (requiresAdmin && !identity) return cors(new Response('Administrator sign-in required.', {status: 403, headers: {'Cache-Control':'no-store'}}),request,env);
   let result;
   try {
     const context = id => ({params: Promise.resolve({id})});
