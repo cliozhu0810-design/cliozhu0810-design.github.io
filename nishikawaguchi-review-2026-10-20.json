@@ -1,0 +1,69 @@
+{
+  "checked": "2026-10-20",
+  "batch": "nishikawaguchi-2026-10-20",
+  "added": 4,
+  "scope": "西川口駅東口・西口、原付・バイクを優先",
+  "excluded": [
+    {
+      "name": "西川口自転車駐車場",
+      "closed": "2026-09-30",
+      "source": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/jitensyachusyajo/50995.html"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "nishi-east-coin",
+      "name": "西川口駅東口コイン駐輪場",
+      "side": "東口",
+      "source": "https://mstage.i-e.jp/nisikawaguchiekihigasiguchi-coin-cyuurinjyou.html",
+      "extra": "https://www.jmpsa.or.jp/society/parking/area11/p-120451.html",
+      "fees": "原付：10時間400円（日本二輪車普及安全協会掲載、2025年2月26日更新）。現在の料金は現地・管理会社に確認。",
+      "classes": [
+        "原付限定（排気量上限・新基準原付の可否は管理者に確認）"
+      ],
+      "position": "google_maps_named_facility_reference_point_not_entrance_surveyed"
+    },
+    {
+      "id": "nishi-shiinoki-monthly",
+      "name": "しいの木月極バイク駐車場",
+      "side": "東口",
+      "source": "https://mstage.i-e.jp/siinoki-tukigime-bike-cyuusyajyou.html",
+      "extra": "https://www.at-parking.jp/search/saitama/kawaguchi-shi/namiki/330555.html",
+      "fees": "月額：原付5,000円／中型バイクまで屋根なし7,000円、屋根あり7,500円。税の扱い・初期費用・保証料は契約窓口に確認。",
+      "classes": [
+        "原付（三輪不可）",
+        "中型バイクまで・区画別制限"
+      ],
+      "position": "operator_published_facility_reference_point_not_entrance_surveyed"
+    },
+    {
+      "id": "nishi-bikepark-30250",
+      "name": "バイクパーク川口市西川口1丁目第三",
+      "side": "西口",
+      "source": "https://81989.jp/parking/detail/30250",
+      "extra": "https://www.jmpsa.or.jp/society/parking/area11/p-47149.html",
+      "fees": "月額5,000円（税別）／5,500円（税込）。敷金・契約手数料などの初期費用は契約時に確認。",
+      "classes": [
+        "バイク・大型区画あり（車室寸法を確認）"
+      ],
+      "position": "official_address_google_geocoded_building_reference_not_parking_entrance"
+    },
+    {
+      "id": "nishi-npc-341470",
+      "name": "【バイク専用】NPC24H西川口3丁目パーキング",
+      "side": "西口",
+      "source": "https://www.at-parking.jp/npc-npc/index.php?action=spec&area1=saitama&area2=kawaguchi-shi&area3=nishikawaguchi&pno=341470",
+      "fees": "月額4,400円（税込）。保証委託料220円、契約時手数料4,400円・初回保証委託料4,400円、更新料4,400円の掲載あり。費用の請求周期・最新条件は契約窓口に確認。",
+      "classes": [
+        "バイク専用・区画649679の寸法制限あり"
+      ],
+      "position": "operator_published_facility_reference_point_not_entrance_surveyed"
+    }
+  ],
+  "notes": [
+    "排気量上限を推測していません。原付限定と一般バイク区画を区別。",
+    "電動キックボードは全4施設で未確認。",
+    "施設参考位置であり、入口測量位置ではありません。",
+    "空き状況はリアルタイムではありません。"
+  ]
+}
