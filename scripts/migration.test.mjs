@@ -86,6 +86,21 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.ok(!fs.existsSync(path.join(out,'admin.js')));
     assert.ok(!fs.existsSync(path.join(out,'batch-09-review.html')));
     assert.ok(!fs.readFileSync(path.join(out,'sitemap.xml'),'utf8').includes('<loc>'+frontend+'/parking/kanagawa-no-such-place'));
-    assert.match(fs.readFileSync(path.join(out,'sitemap.xml'),'utf8'),/\.html<\/loc>/);
+    const sitemap=fs.readFileSync(path.join(out,'sitemap.xml'),'utf8');
+    assert.ok(!sitemap.includes('.html</loc>'));
+    const urls=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+    assert.equal(new Set(urls).size,1438);
+    for(const url of urls){
+      assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
+      const p=new URL(url).pathname;
+      const file=p==='/'?'index.html':p.slice(1)+'.html';
+      assert.ok(fs.existsSync(path.join(out,file)),url+' has no output');
+      assert.ok(fs.readFileSync(path.join(out,file),'utf8').includes('rel="canonical" href="'+url+'"'),url+' canonical differs');
+    }
+    for(const [file,term] of [['kickboard-parking.html','キックボード駐車場'],['bicycle-parking.html','自転車駐輪場'],['motorcycle-parking.html','バイク駐輪場']]){
+      const page=fs.readFileSync(path.join(out,file),'utf8');
+      assert.ok(page.includes(term));
+      for(const [,data]of page.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g))JSON.parse(data);
+    }
   } finally {fs.rmSync(out,{recursive:true,force:true});}
 });
