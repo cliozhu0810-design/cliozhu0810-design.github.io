@@ -68,6 +68,10 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   if(supabaseKey.split('.').length===3){try{if(JSON.parse(Buffer.from(supabaseKey.split('.')[1],'base64url')).role!=='anon')throw Error('Only an anon JWT key is allowed in public config.');}catch(e){throw Error('Invalid public Supabase key: '+e.message);}}
   const htmlPath=p => !p.startsWith('/')||p.split(/[?#]/)[0]==='/'||/\.[a-z0-9]+(?:[?#]|$)/i.test(p)||p.startsWith('//') ? p : p.replace(/^([^?#]*)(.*)$/, '$1.html$2');
   const rewrite = text => text.replaceAll(oldOrigin,siteUrl)
+    .replaceAll('電動キックボードの駐車場・停める場所','電動キックボードの駐輪場')
+    .replaceAll('電動キックボード駐車場・停める場所','電動キックボード駐輪場')
+    .replaceAll('自転車駐車場・駐輪場','自転車駐輪場')
+    .replaceAll('バイク駐車場・原付の駐輪場','バイク・原付の駐輪場')
     .replace(/<meta name="google-site-verification"[^>]*\/?\s*>/g,'')
     .replace(/(href=")([^"\s]+)(")/g,(_,a,p,b)=>a+htmlPath(p)+b)
     .replace(new RegExp(siteUrl.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(/[^"<\\s]*)','g'),(_,p)=>siteUrl+htmlPath(p));
