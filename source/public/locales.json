@@ -60,10 +60,10 @@
     "zh-Hant": "篩選停車場"
   },
   "search": {
-    "ja": "駐輪場・駅・住所を検索",
-    "zh-Hans": "搜索停车场、车站或地址",
-    "en": "Search parking, station or address",
-    "zh-Hant": "搜索停車場、車站或地址"
+    "ja": "駐輪場・駅・住所（かなでも検索）",
+    "zh-Hans": "停车场、车站或地址（支持假名、简繁体）",
+    "zh-Hant": "停車場、車站或地址（支援假名、簡繁體）",
+    "en": "Parking, station or address (kana accepted)"
   },
   "area": {
     "ja": "エリアを選択",
@@ -1192,5 +1192,17 @@
     "zh-Hans": "无需登录，同一设备、同一浏览器可再次使用。清除网站数据或退出无痕模式后可能丢失，不跨设备同步。地图心形标记显示符合当前筛选条件的收藏。",
     "zh-Hant": "無需登入，同一裝置、同一瀏覽器可再次使用。清除網站資料或退出無痕模式後可能遺失，不跨裝置同步。地圖心形標記顯示符合目前篩選條件的收藏。",
     "en": "No sign-in needed. Saved on this device and browser; not synced across devices. Clearing site data or ending private browsing may remove favorites. Map hearts follow the current filters."
+  },
+  "stationSuggestions": {
+    "ja": "駅の候補",
+    "zh-Hans": "车站候选",
+    "zh-Hant": "車站候選",
+    "en": "Station suggestions"
+  },
+  "stationSuffix": {
+    "ja": "駅",
+    "zh-Hans": "站",
+    "zh-Hant": "站",
+    "en": " Station"
   }
 }
