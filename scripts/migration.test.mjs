@@ -430,3 +430,12 @@ test('Musashisakai follow-up separates current monthly and reserved parking from
  assert.equal(q('musashisakai-tomy').hours,'24時間');assert.equal(q('musashisakai-tobu-1078').temporaryStatus,'not_offered');
  for(const r of rows)assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');
 });
+
+test('Ukimafunado scooter reference is visible without claiming official acceptance or bicycle fees',()=>{
+ const parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles,locales=JSON.parse(fs.readFileSync(path.join(root,'source/public/locales.json'))),dataLocales=JSON.parse(fs.readFileSync(path.join(root,'source/public/data-locales.json'))),place=parking.find(p=>p.id==='jks-00800'),q=profiles[place.id].privateElectricScooter;
+ assert.equal(q.admissionStatus,'unknown');assert.equal(q.temporaryStatus,'unverified');assert.equal(q.includeInVehicleResults,true);assert.equal(q.referenceTemporaryUse,true);assert.equal(q.tariffs.length,0);assert.match(profiles[place.id].motorcycle.publishedFeesRaw,/200円.*3,000円.*9,000円/);
+ const el={search:{value:''},ward:{value:''},unknown:{checked:false}},c=vm.createContext({URL,localStorage:{getItem:()=>null},document:{getElementById:id=>el[id]}});vm.runInContext(fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0],c);c.fixture=place;c.profiles=profiles;c.l=locales;c.d=dataLocales;
+ vm.runInContext('state.places=[fixture];state.vehicle="privateElectricScooter";vehicleData={profiles};messages=l;dataMessages=d;',c);
+ assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',c),'jks-00800');assert.equal(vm.runInContext('filtered()[0].status',c),'unknown');vm.runInContext('state.mode="temporary"',c);assert.equal(vm.runInContext('filtered().length',c),1);
+ for(const lang of ['ja','zh-Hans','zh-Hant','en']){c.lang=lang;vm.runInContext('locale=lang',c);const html=vm.runInContext('referenceEvidenceHtml(profiles[fixture.id].privateElectricScooter)',c);assert.ok(html.includes(dataLocales[q.referenceEvidence[0].summary][lang]));assert.ok(html.includes('lang="'+lang+'"'));assert.ok(!html.includes('undefined'));assert.equal(vm.runInContext('statusText(filtered()[0])',c),locales.reportedUse[lang]);}
+});
