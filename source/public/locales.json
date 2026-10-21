@@ -60,10 +60,10 @@
     "zh-Hant": "篩選停車場"
   },
   "search": {
-    "ja": "駐輪場・駅・住所（かなでも検索）",
-    "zh-Hans": "停车场、车站或地址（支持假名、简繁体）",
-    "zh-Hant": "停車場、車站或地址（支援假名、簡繁體）",
-    "en": "Parking, station or address (kana accepted)"
+    "ja": "駐輪場・駅・住所（かな・英字でも検索）",
+    "zh-Hans": "搜索停车场、车站或地址（支持罗马字）",
+    "zh-Hant": "搜尋停車場、車站或地址（支援羅馬字）",
+    "en": "Parking, station or address (romaji supported)"
   },
   "area": {
     "ja": "エリアを選択",
@@ -1204,5 +1204,23 @@
     "zh-Hans": "站",
     "zh-Hant": "站",
     "en": " Station"
+  },
+  "history": {
+    "ja": "履歴",
+    "zh-Hans": "历史",
+    "zh-Hant": "歷史",
+    "en": "History"
+  },
+  "historyTitle": {
+    "ja": "最近見た駐輪場",
+    "zh-Hans": "最近查看的停车场",
+    "zh-Hant": "最近查看的停車場",
+    "en": "Recently viewed"
+  },
+  "historyEmpty": {
+    "ja": "閲覧した駐輪場がここに表示されます。",
+    "zh-Hans": "查看过的停车场会显示在这里。",
+    "zh-Hant": "查看過的停車場會顯示在這裡。",
+    "en": "Places you view will appear here."
   }
 }
