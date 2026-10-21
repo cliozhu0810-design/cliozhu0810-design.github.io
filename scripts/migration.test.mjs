@@ -8,6 +8,22 @@ import {DatabaseSync} from 'node:sqlite';
 import {buildBackend,buildFrontend,root} from './build.mjs';
 import {referenceHTML} from './scooter-reference-pages.mjs';
 buildBackend();
+test('three-prefecture motorcycle import separates displacement, current fees, modes and pending vehicles',()=>{
+ const r=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ assert.equal(r.records.length,143);assert.equal(r.stats.accepted,142);assert.equal(r.records.filter(p=>p.mapReady).length,132);assert.deepEqual(r.stats.prefectures,{'埼玉県':15,'千葉県':101,'神奈川県':27});
+ const find=name=>r.records.find(x=>x.name===name);
+ const shintoshin=find('市営さいたま新都心駅東口自転車等駐車場').profiles.motorcycle;
+ assert.match(shintoshin.publishedFeesRaw,/125cc超[\s\S]*190円/);assert.match(shintoshin.currentConditionsRaw.join(' '),/125cc超.*一時利用のみ/);
+ assert.match(find('橋本駅南口バイク駐車場（公社運営）').profiles.motorcycle.publishedFeesRaw,/3,900円/);
+ assert.equal(find('橋本駅南口第2自転車駐車場').profiles.motorcycle.regularStatus,'not_offered');
+ assert.equal(find('藤沢駅北口市役所前第1自転車等駐車場').profiles.motorcycle.temporaryStatus,'not_offered');
+ assert.equal(find('妙典駅前月極バイク駐車場').profiles.motorcycle.admissionStatus,'unknown');
+ const tobu=find('大宮公園駅駐輪場').profiles.motorcycle;assert.equal(tobu.announcedTariffChange.effectiveDate,'2026-11-01');assert.match(tobu.announcedTariffChange.currentTemporaryFeeRaw,/300円/);assert.match(tobu.announcedTariffChange.temporaryFeeRaw,/220円/);
+ const chiba50=find('幕張本郷駅第2自転車駐車場'),chiba125=find('幕張本郷駅第1自転車駐車場');assert.equal(chiba50.motorcycleScope,'upTo50');assert.equal(chiba125.motorcycleScope,'upTo125');
+ assert.match(chiba125.profiles.motorcycle.publishedFeesRaw,/220円/);
+ for(const x of r.records){assert.deepEqual(v[x.id],x.profiles);if(x.mapReady){assert.equal(parking.filter(p=>p.id===x.id).length,1);assert.ok(x.mapSource.startsWith('https://'));assert.ok(x.lat>34.8&&x.lat<36.6&&x.lng>138.4&&x.lng<141);assert.equal(x.profiles.motorcycle.admissionStatus,'confirmed');}if(!x.id.startsWith('kanto-')){assert.equal(x.profiles.bicycle.admissionStatus,'unknown');assert.equal(x.profiles.privateElectricScooter.admissionStatus,'unknown');}}
+ assert.ok(!JSON.stringify(r).includes('AIza'));assert.ok(r.researchQueue.length>200);assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);
+});
 test('station suggestions rank kana, Chinese variants and typos without changing vehicle evidence',()=>{
  const context=vm.createContext({});vm.runInContext(fs.readFileSync(path.join(root,'source/public/station-search.js'),'utf8'),context);
  const engine=context.TomespotStationSearch;
@@ -72,13 +88,13 @@ const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.
 
 test('Kanto import preserves scooter mode restrictions, current dedicated fees and official map provenance',()=>{
  const r=JSON.parse(fs.readFileSync(path.join(root,'source/public/kanto-review.json'))),v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
- assert.equal(r.records.length,189);assert.equal(r.records.filter(x=>x.mapReady).length,27);
+ assert.equal(r.records.length,189);assert.equal(r.records.filter(x=>x.mapReady).length,r.stats.mapReady);
  const find=name=>r.records.find(x=>x.name===name);
  const east1=find('所沢駅東口第1自転車駐車場'),east2=find('所沢駅東口第2自転車駐車場');
  assert.equal(east1.profiles.privateElectricScooter.temporaryStatus,'not_offered');assert.equal(east1.profiles.privateElectricScooter.regularStatus,'confirmed_application_required');
  assert.equal(east2.profiles.privateElectricScooter.temporaryStatus,'confirmed');assert.match(east2.profiles.privateElectricScooter.publishedFeesRaw,/24時間160円/);
  assert.equal(find('新所沢駅東口第1自転車駐車場').profiles.privateElectricScooter.temporaryStatus,'not_offered');
- for(const x of r.records.filter(x=>x.mapReady)){assert.ok(x.mapSource.includes('rs=3857'));assert.ok(x.lat>35.7&&x.lat<35.9&&x.lng>139.3&&x.lng<139.6);assert.deepEqual(v[x.id],x.profiles);}
+ for(const x of r.records.filter(x=>x.id.startsWith('tokorozawa-'))){assert.ok(x.mapSource.includes('rs=3857'));assert.ok(x.lat>35.7&&x.lat<35.9&&x.lng>139.3&&x.lng<139.6);assert.deepEqual(v[x.id],x.profiles);}
  assert.match(find('千葉駅東口第5自転車駐車場').profiles.privateElectricScooter.publishedFeesRaw,/1か月750円/);
  assert.match(find('船橋駅第14自転車等駐車場').profiles.privateElectricScooter.publishedFeesRaw,/660円／月/);
  assert.ok(r.anomalies.some(x=>x.station==='川崎大師駅'));assert.ok(!r.records.some(x=>x.station==='川崎大師駅'&&x.name.includes('川崎新町')));
@@ -175,7 +191,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/href="\/about.html"/);
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
-    const cityReports=['kawaguchi','toshima','kanto'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
+    const cityReports=['kawaguchi','toshima','kanto','motorcycle'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
     const expectedFacilities=new Set(['fk-ikebukuro2','seibu-minami-ikebukuro',...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
     assert.deepEqual(new Set(fs.readdirSync(path.join(out,'parking')).map(f=>f.replace(/\.html$/,''))),expectedFacilities);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
@@ -205,7 +221,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.equal(new Set(urls).size,urls.length,'sitemap must not contain duplicate canonical URLs');
     const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
     const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
-    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/kanto-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/kanto-parking','/regional-motorcycle-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
     assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
