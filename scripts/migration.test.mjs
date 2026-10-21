@@ -10,7 +10,7 @@ import {referenceHTML} from './scooter-reference-pages.mjs';
 buildBackend();
 test('three-prefecture motorcycle import separates displacement, current fees, modes and pending vehicles',()=>{
  const r=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
- assert.equal(r.records.length,143);assert.equal(r.stats.accepted,142);assert.equal(r.records.filter(p=>p.mapReady).length,132);assert.deepEqual(r.stats.prefectures,{'埼玉県':15,'千葉県':101,'神奈川県':27});
+ const original=r.records.filter(p=>!p.expansionBatch);assert.equal(original.length,143);assert.equal(original.filter(p=>p.profiles.motorcycle.admissionStatus==='confirmed').length,142);assert.equal(original.filter(p=>p.mapReady).length,132);assert.deepEqual(Object.fromEntries(['埼玉県','千葉県','神奈川県'].map(pref=>[pref,original.filter(p=>p.prefecture===pref).length])),{'埼玉県':15,'千葉県':101,'神奈川県':27});
  const find=name=>r.records.find(x=>x.name===name);
  const shintoshin=find('市営さいたま新都心駅東口自転車等駐車場').profiles.motorcycle;
  assert.match(shintoshin.publishedFeesRaw,/125cc超[\s\S]*190円/);assert.match(shintoshin.currentConditionsRaw.join(' '),/125cc超.*一時利用のみ/);
@@ -24,6 +24,7 @@ test('three-prefecture motorcycle import separates displacement, current fees, m
  for(const x of r.records){assert.deepEqual(v[x.id],x.profiles);if(x.mapReady){assert.equal(parking.filter(p=>p.id===x.id).length,1);assert.ok(x.mapSource.startsWith('https://'));assert.ok(x.lat>34.8&&x.lat<36.6&&x.lng>138.4&&x.lng<141);assert.equal(x.profiles.motorcycle.admissionStatus,'confirmed');}if(!x.id.startsWith('kanto-')){assert.equal(x.profiles.bicycle.admissionStatus,'unknown');assert.equal(x.profiles.privateElectricScooter.admissionStatus,'unknown');}}
  assert.ok(!JSON.stringify(r).includes('AIza'));assert.ok(r.researchQueue.length>200);assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);
 });
+
 test('station suggestions rank kana, Chinese variants and typos without changing vehicle evidence',()=>{
  const context=vm.createContext({});vm.runInContext(fs.readFileSync(path.join(root,'source/public/station-search.js'),'utf8'),context);
  const engine=context.TomespotStationSearch;
@@ -364,4 +365,20 @@ test('Kawaguchi audit separates current fees, annual permits, vehicle classes an
  const repark=parking.places.find(p=>p.id==='kawaguchi-repark-15139');
  assert.ok(Math.abs(repark.lat-35.831816667)<0.00001);
  assert.equal(repark.coordinateStatus,'operator_published_reference_point_not_entrance_surveyed');
+});
+
+test('eastern Chiba and Saitama expansion keeps annual fees, motorcycle classes and airport rates separate',async()=>{
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),records=report.records.filter(r=>r.expansionBatch==='east-2026-10-21'),parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ assert.equal(records.length,41);assert.equal(records.filter(r=>r.mapReady).length,37);assert.equal(report.stats.records,184);assert.equal(report.stats.accepted,183);assert.equal(report.stats.mapped,169);
+ for(const [city,count] of [['千葉県印西市',6],['千葉県成田市',15],['千葉県木更津市',4],['埼玉県越谷市',9]])assert.equal(records.filter(r=>r.city===city).length,count);
+ const find=name=>records.find(r=>r.name===name),q=id=>records.find(r=>r.id===id).profiles.motorcycle;
+ for(const r of records){assert.deepEqual(v[r.id],r.profiles);assert.equal(r.profiles.bicycle.admissionStatus,'unknown');assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');if(r.mapReady){assert.equal(parking.filter(p=>p.id===r.id).length,1);assert.ok(Number.isFinite(r.lat)&&Number.isFinite(r.lng));assert.equal((await call('/api/comments?facility='+r.id)).status,200);}else assert.ok(!parking.some(p=>p.id===r.id));}
+ for(const r of records.filter(r=>r.city==='千葉県印西市')){const p=r.profiles.motorcycle;assert.equal(r.motorcycleScope,'upTo125');assert.equal(p.regularStatus,'confirmed_annual_registration_required');assert.match(p.publishedFeesRaw,/200円／24時間/);assert.match(p.publishedFeesRaw,/7,700円/);assert.equal(p.registrationPeriod.end,'2027-03-31');}
+ const narita=find('JR成田駅西口駐輪場').profiles.motorcycle;assert.equal(narita.temporaryStatus,'not_offered');assert.deepEqual(narita.annualApplicationFees['10'],['2,610円','1,300円','5,230円','2,610円']);assert.match(narita.publishedFeesRaw,/郵送料110円/);
+ const free=find('成田駅西口 無料第1駐輪場');assert.equal(free.motorcycleScope,'upTo50');assert.equal(free.profiles.motorcycle.temporaryStatus,'confirmed');assert.match(free.profiles.motorcycle.publishedFeesRaw,/無料/);
+ const west2=find('木更津駅西口第2自転車駐車場').profiles.motorcycle;assert.equal(west2.temporaryStatus,'not_offered');assert.equal(west2.regularStatus,'confirmed_annual_registration_required');assert.match(west2.publishedFeesRaw,/市内1,750円、市外2,000円/);
+ assert.equal(q('koshigaya-cycle-11222016').temporaryStatus,'not_offered');assert.match(q('koshigaya-cycle-11222016').publishedFeesRaw,/3,930円/);assert.match(q('koshigaya-cycle-11222032').publishedFeesRaw,/200円\/16時間/);
+ for(const id of ['narita-airport-p1','narita-airport-p2']){const p=q(id);assert.match(p.publishedFeesRaw,/80円／30分/);assert.match(p.publishedFeesRaw,/630円/);assert.ok(!p.publishedFeesRaw.includes('2,100'));assert.ok(!p.publishedFeesRaw.includes('無料'));assert.match(p.currentConditionsRaw.join(' '),/有人料金所/);}
+ assert.match(q('kasukabe-tobu-754').publishedFeesRaw,/1日・当日/);assert.match(q('kasukabe-tobu-900').publishedFeesRaw,/5,500円/);
+ assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);
 });

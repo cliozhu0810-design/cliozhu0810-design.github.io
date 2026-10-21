@@ -2,9 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const scopeLabels={over125:'125cc超の記載あり',upTo125:'125cc以下の記載あり',upTo50:'50cc以下',unspecified:'排気量区分は要確認'};
-const modeLabels={confirmed:'一時利用可',confirmed_application_required:'定期・事前申込が必要',not_offered:'対象外',unverified:'未確認'};
+const modeLabels={confirmed:'一時利用可',confirmed_application_required:'定期・事前申込が必要',confirmed_annual_registration_required:'年度登録・事前申請が必要',not_offered:'対象外',unverified:'未確認'};
 const vehicleLabels={motorcycle:'原付・バイク',privateElectricScooter:'電動キックボード（特定小型原付）',bicycle:'自転車'};
-function regularSummary(q){const scope=(q.currentConditionsRaw||[]).some(n=>n.includes('125cc超の自動二輪は一時利用のみ'))?'125cc以下のみ・':'';return q.newRegularApplications==='suspended'?scope+'新規受付停止の案内':q.regularStatus==='confirmed_application_required'?scope+'要申込':q.regularStatus==='not_offered'?'対象外':'未確認';}
+function regularSummary(q){const scope=(q.currentConditionsRaw||[]).some(n=>n.includes('125cc超の自動二輪は一時利用のみ'))?'125cc以下のみ・':'';return q.newRegularApplications==='suspended'?scope+'新規受付停止の案内':q.regularStatus==='confirmed_annual_registration_required'?'年度登録':q.regularStatus==='confirmed_application_required'?scope+'要申込':q.regularStatus==='not_offered'?'対象外':'未確認';}
 export function addRegionalMotorcyclePages({root,output,siteUrl}){
  const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'),'utf8'));
  const canonical=p=>siteUrl+p+(siteUrl.endsWith('.pages.dev')?'':'.html');
