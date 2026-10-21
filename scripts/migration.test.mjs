@@ -8,6 +8,22 @@ import {DatabaseSync} from 'node:sqlite';
 import {buildBackend,buildFrontend,root} from './build.mjs';
 import {referenceHTML} from './scooter-reference-pages.mjs';
 buildBackend();
+test('station suggestions rank kana, Chinese variants and typos without changing vehicle evidence',()=>{
+ const context=vm.createContext({});vm.runInContext(fs.readFileSync(path.join(root,'source/public/station-search.js'),'utf8'),context);
+ const engine=context.TomespotStationSearch;
+ for(const query of ['いけぶくろ','イケブクロ','ｲｹﾌﾞｸﾛ','池袋站','池袋车站','池袋車站','いけぶく','いけぶくろう'])assert.equal(engine.suggest(query)[0].name,'池袋',query);
+ for(const [query,name] of [['にしかわぐち','西川口'],['练马','練馬'],['練馬','練馬'],['涩谷','渋谷'],['澀谷','渋谷'],['横滨','横浜'],['橫濱','横浜'],['所泽','所沢'],['东川口','東川口'],['東京','東京']])assert.equal(engine.suggest(query)[0].name,name,query);
+ assert.equal(engine.normalize('霞ヶ関'),engine.normalize('霞ケ関'));
+ assert.equal(engine.suggest('').length,0);assert.equal(engine.suggest('完全に存在しない駅名XYZ').length,0);assert.ok(engine.suggest('いけ').length<=6);
+ const ike=engine.suggest('池袋')[0],nishi=engine.suggest('西川口')[0];assert.equal(engine.nearby({lat:ike.lat,lng:ike.lng},ike),true);assert.equal(engine.nearby({lat:nishi.lat,lng:nishi.lng},ike),false);
+ assert.ok(engine.stations.length>600);assert.ok(engine.stations.every(s=>s.kana&&s.lat&&s.lng));
+ const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8'),elements={search:{value:'いけぶくろ'},ward:{value:''},unknown:{checked:false}};
+ context.document={getElementById:id=>elements[id]};context.localStorage={getItem:()=>null};
+ vm.runInContext(app.split("$('search').addEventListener")[0],context);
+ context.fixture=[{id:'near',name:'施設A',lat:ike.lat,lng:ike.lng,status:'confirmed',temporary:true},{id:'far',name:'施設B',lat:nishi.lat,lng:nishi.lng,status:'confirmed',temporary:true},{id:'rejected',name:'施設C',lat:ike.lat,lng:ike.lng,status:'rejected'}];
+ vm.runInContext('state.places=fixture',context);assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'near');
+ elements.search.value='にしかわぐち';assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'far');
+});
 test('device favorites survive reload and render separate heart markers with comparison bounds',()=>{
  const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0];
  const values=new Map([['park-tokyo:favorites','["a","b"]']]);
