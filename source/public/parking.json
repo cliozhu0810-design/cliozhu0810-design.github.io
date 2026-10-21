@@ -119872,6 +119872,23 @@
       "lng": 139.5468418,
       "mapSource": "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%89%E3%83%83%E3%83%88%E3%82%B3%E3%83%A0%E6%AD%A6%E8%94%B5%E9%87%8EST%E3%83%93%E3%83%AB%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6018ef985c19db15:0xcb8c6f58126be8db!8m2!3d35.7006108!4d139.5468418!16s%2Fg%2F11hcdvt843!19sChIJFdsZXJjvGGAR2-hrElhvjMs",
       "coordinateStatus": "google_named_facility_point"
+    },
+    {
+      "id": "jks-00800",
+      "name": "Parking in 浮間舟渡駅前第2駐輪場",
+      "ward": "板橋区",
+      "address": "東京都板橋区舟渡1-11-1",
+      "station": "浮間舟渡駅",
+      "lat": 35.791361,
+      "lng": 139.690429,
+      "phone": "03-6890-9522",
+      "source": "https://www.jks-jrg.jp/search/detail_00800/",
+      "sourceLabel": "運営者の施設別料金案内",
+      "checked": "2026-10-21",
+      "displayEligible": true,
+      "positionPrecision": "facility-point",
+      "coordinateStatus": "operator_published_facility_point",
+      "mapSource": "https://www.jks-jrg.jp/search/detail_00800/"
     }
   ],
   "latestReview": {
@@ -119906,24 +119923,24 @@
     "checked": "2026-10-21",
     "report": "/motorcycle-review.json",
     "stats": {
-      "records": 233,
-      "accepted": 229,
-      "mapped": 210,
+      "records": 234,
+      "accepted": 230,
+      "mapped": 211,
       "pendingCoordinates": 23,
       "prefectures": {
         "埼玉県": 37,
         "千葉県": 154,
         "神奈川県": 27,
-        "東京都": 15
+        "東京都": 16
       },
       "motorcycleScopes": {
         "over125": 14,
         "upTo50": 81,
-        "upTo125": 107,
+        "upTo125": 108,
         "unspecified": 31
       },
       "researchQueue": 427,
-      "newMapRecords": 206
+      "newMapRecords": 207
     }
   }
 }

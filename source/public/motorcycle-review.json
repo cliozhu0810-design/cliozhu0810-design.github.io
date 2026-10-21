@@ -21564,6 +21564,124 @@
       "motorcycleScope": "unspecified",
       "expansionBatch": "musashisakai-followup-2026-10-21",
       "mapReady": false
+    },
+    {
+      "id": "jks-00800",
+      "name": "Parking in 浮間舟渡駅前第2駐輪場",
+      "address": "東京都板橋区舟渡1-11-1",
+      "station": "浮間舟渡駅",
+      "lat": 35.791361,
+      "lng": 139.690429,
+      "phone": "03-6890-9522",
+      "source": "https://www.jks-jrg.jp/search/detail_00800/",
+      "coordinateStatus": "operator_published_facility_point",
+      "mapSource": "https://www.jks-jrg.jp/search/detail_00800/",
+      "city": "東京都板橋区",
+      "prefecture": "東京都",
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "ukimafunado-2026-10-21",
+      "mapReady": true,
+      "profiles": {
+        "bicycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "classesRaw": [
+            "自転車。電動キックボードの受入許可を含む表記ではありません。"
+          ],
+          "publishedFeesRaw": "自転車：24時間ごと120円。入出場とも交通系ICタッチの場合100円。定期：1か月1,400円、3か月4,000円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "sources": [
+            {
+              "url": "https://www.jks-jrg.jp/search/detail_00800/",
+              "label": "運営者の施設別料金案内"
+            },
+            {
+              "url": "https://www.jks-jrg.jp/search/detail_00800/page2.html",
+              "label": "印刷ページ（自転車料金の相違あり）"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の一時料金は主ページ120円（IC100円）、印刷ページ100円（IC80円）と相違。主ページの料金を掲載し、差異を記録しています。"
+          ]
+        },
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "classesRaw": [
+            "125cc以下のミニバイク。125cc超は対象外。"
+          ],
+          "publishedFeesRaw": "125cc以下のミニバイク：24時間ごと200円。定期：1か月3,000円、3か月9,000円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "sources": [
+            {
+              "url": "https://www.jks-jrg.jp/search/detail_00800/",
+              "label": "運営者の施設別料金案内"
+            }
+          ],
+          "currentConditionsRaw": []
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "includeInVehicleResults": true,
+          "referenceTemporaryUse": true,
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "classesRaw": [
+            "電動キックボード：利用報告あり（参考）。運営者の正式な受入許可は未確認。"
+          ],
+          "publishedFeesRaw": "電動キックボードの料金は未確認。自転車料金・ミニバイク料金を適用できるとは断定していません。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "sources": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Parking+in+浮間舟渡駅前第2駐輪場",
+              "label": "Google Mapsの施設情報（投稿内容は利用者提供・掲載日は不明）"
+            },
+            {
+              "url": "https://www.jks-jrg.jp/search/detail_00800/",
+              "label": "運営者の施設別料金案内"
+            }
+          ],
+          "currentConditionsRaw": [
+            "出入口で電動キックボードが自転車として認識され、精算できたという利用報告があります。",
+            "この記録はユーザー提供のコメントに基づく参考情報です。ゲートでの認識・精算成功は、施設の正式な駐輪許可や現在の受入を確認するものではありません。",
+            "電動キックボードの料金は未確認。自転車料金・ミニバイク料金を適用できるとは断定していません。"
+          ],
+          "referenceEvidence": [
+            {
+              "label": "参考コメント・利用報告",
+              "summary": "出入口で電動キックボードが自転車として認識され、精算できたという利用報告があります。",
+              "details": [
+                "この記録はユーザー提供のコメントに基づく参考情報です。ゲートでの認識・精算成功は、施設の正式な駐輪許可や現在の受入を確認するものではありません。",
+                "電動キックボードの料金は未確認。自転車料金・ミニバイク料金を適用できるとは断定していません。"
+              ],
+              "checked": "2026-10-21",
+              "sources": [
+                {
+                  "url": "https://www.google.com/maps/search/?api=1&query=Parking+in+浮間舟渡駅前第2駐輪場",
+                  "label": "Google Mapsの施設情報（投稿内容は利用者提供・掲載日は不明）"
+                }
+              ],
+              "originalQuote": "出入口では、電動キックボードが自転車として認識され、問題なく精算できました。",
+              "provenance": "user_supplied_review_text",
+              "published": null
+            }
+          ]
+        }
+      }
     }
   ],
   "researchQueue": [
@@ -24514,24 +24632,24 @@
     }
   ],
   "stats": {
-    "records": 233,
-    "accepted": 229,
-    "mapped": 210,
+    "records": 234,
+    "accepted": 230,
+    "mapped": 211,
     "pendingCoordinates": 23,
     "prefectures": {
       "埼玉県": 37,
       "千葉県": 154,
       "神奈川県": 27,
-      "東京都": 15
+      "東京都": 16
     },
     "motorcycleScopes": {
       "over125": 14,
       "upTo50": 81,
-      "upTo125": 107,
+      "upTo125": 108,
       "unspecified": 31
     },
     "researchQueue": 427,
-    "newMapRecords": 206
+    "newMapRecords": 207
   },
   "expansions": [
     {
@@ -24614,6 +24732,17 @@
         "pendingCoordinates": 2,
         "newMapRecords": 7,
         "reference": 3
+      }
+    },
+    {
+      "batch": "ukimafunado-2026-10-21",
+      "checked": "2026-10-21",
+      "stats": {
+        "records": 1,
+        "accepted": 1,
+        "mapped": 1,
+        "newMapRecords": 1,
+        "pendingCoordinates": 0
       }
     }
   ]

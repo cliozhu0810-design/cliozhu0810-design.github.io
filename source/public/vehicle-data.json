@@ -212394,6 +212394,107 @@
           }
         ]
       }
+    },
+    "jks-00800": {
+      "bicycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "classesRaw": [
+          "自転車。電動キックボードの受入許可を含む表記ではありません。"
+        ],
+        "publishedFeesRaw": "自転車：24時間ごと120円。入出場とも交通系ICタッチの場合100円。定期：1か月1,400円、3か月4,000円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "https://www.jks-jrg.jp/search/detail_00800/",
+            "label": "運営者の施設別料金案内"
+          },
+          {
+            "url": "https://www.jks-jrg.jp/search/detail_00800/page2.html",
+            "label": "印刷ページ（自転車料金の相違あり）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の一時料金は主ページ120円（IC100円）、印刷ページ100円（IC80円）と相違。主ページの料金を掲載し、差異を記録しています。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "classesRaw": [
+          "125cc以下のミニバイク。125cc超は対象外。"
+        ],
+        "publishedFeesRaw": "125cc以下のミニバイク：24時間ごと200円。定期：1か月3,000円、3か月9,000円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "https://www.jks-jrg.jp/search/detail_00800/",
+            "label": "運営者の施設別料金案内"
+          }
+        ],
+        "currentConditionsRaw": []
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "includeInVehicleResults": true,
+        "referenceTemporaryUse": true,
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "classesRaw": [
+          "電動キックボード：利用報告あり（参考）。運営者の正式な受入許可は未確認。"
+        ],
+        "publishedFeesRaw": "電動キックボードの料金は未確認。自転車料金・ミニバイク料金を適用できるとは断定していません。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "https://www.google.com/maps/search/?api=1&query=Parking+in+浮間舟渡駅前第2駐輪場",
+            "label": "Google Mapsの施設情報（投稿内容は利用者提供・掲載日は不明）"
+          },
+          {
+            "url": "https://www.jks-jrg.jp/search/detail_00800/",
+            "label": "運営者の施設別料金案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "出入口で電動キックボードが自転車として認識され、精算できたという利用報告があります。",
+          "この記録はユーザー提供のコメントに基づく参考情報です。ゲートでの認識・精算成功は、施設の正式な駐輪許可や現在の受入を確認するものではありません。",
+          "電動キックボードの料金は未確認。自転車料金・ミニバイク料金を適用できるとは断定していません。"
+        ],
+        "referenceEvidence": [
+          {
+            "label": "参考コメント・利用報告",
+            "summary": "出入口で電動キックボードが自転車として認識され、精算できたという利用報告があります。",
+            "details": [
+              "この記録はユーザー提供のコメントに基づく参考情報です。ゲートでの認識・精算成功は、施設の正式な駐輪許可や現在の受入を確認するものではありません。",
+              "電動キックボードの料金は未確認。自転車料金・ミニバイク料金を適用できるとは断定していません。"
+            ],
+            "checked": "2026-10-21",
+            "sources": [
+              {
+                "url": "https://www.google.com/maps/search/?api=1&query=Parking+in+浮間舟渡駅前第2駐輪場",
+                "label": "Google Mapsの施設情報（投稿内容は利用者提供・掲載日は不明）"
+              }
+            ],
+            "originalQuote": "出入口では、電動キックボードが自転車として認識され、問題なく精算できました。",
+            "provenance": "user_supplied_review_text",
+            "published": null
+          }
+        ]
+      }
     }
   }
 }
