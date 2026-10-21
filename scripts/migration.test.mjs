@@ -21,7 +21,7 @@ test('three-prefecture motorcycle import separates displacement, current fees, m
  const tobu=find('大宮公園駅駐輪場').profiles.motorcycle;assert.equal(tobu.announcedTariffChange.effectiveDate,'2026-11-01');assert.match(tobu.announcedTariffChange.currentTemporaryFeeRaw,/300円/);assert.match(tobu.announcedTariffChange.temporaryFeeRaw,/220円/);
  const chiba50=find('幕張本郷駅第2自転車駐車場'),chiba125=find('幕張本郷駅第1自転車駐車場');assert.equal(chiba50.motorcycleScope,'upTo50');assert.equal(chiba125.motorcycleScope,'upTo125');
  assert.match(chiba125.profiles.motorcycle.publishedFeesRaw,/220円/);
- for(const x of r.records){assert.deepEqual(v[x.id],x.profiles);if(x.mapReady){assert.equal(parking.filter(p=>p.id===x.id).length,1);assert.ok(x.mapSource.startsWith('https://'));assert.ok(x.lat>34.8&&x.lat<36.6&&x.lng>138.4&&x.lng<141);assert.equal(x.profiles.motorcycle.admissionStatus,'confirmed');}if(!x.id.startsWith('kanto-')){assert.equal(x.profiles.bicycle.admissionStatus,'unknown');assert.equal(x.profiles.privateElectricScooter.admissionStatus,'unknown');}}
+ for(const x of original){assert.deepEqual(v[x.id],x.profiles);if(x.mapReady){assert.equal(parking.filter(p=>p.id===x.id).length,1);assert.ok(x.mapSource.startsWith('https://'));assert.ok(x.lat>34.8&&x.lat<36.6&&x.lng>138.4&&x.lng<141);assert.equal(x.profiles.motorcycle.admissionStatus,'confirmed');}if(!x.id.startsWith('kanto-')){assert.equal(x.profiles.bicycle.admissionStatus,'unknown');assert.equal(x.profiles.privateElectricScooter.admissionStatus,'unknown');}}
  assert.ok(!JSON.stringify(r).includes('AIza'));assert.ok(r.researchQueue.length>200);assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);
 });
 
@@ -369,7 +369,7 @@ test('Kawaguchi audit separates current fees, annual permits, vehicle classes an
 
 test('eastern Chiba and Saitama expansion keeps annual fees, motorcycle classes and airport rates separate',async()=>{
  const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),records=report.records.filter(r=>r.expansionBatch==='east-2026-10-21'),parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
- assert.equal(records.length,41);assert.equal(records.filter(r=>r.mapReady).length,37);assert.equal(report.stats.records,184);assert.equal(report.stats.accepted,183);assert.equal(report.stats.mapped,169);
+ assert.equal(records.length,41);assert.equal(records.filter(r=>r.mapReady).length,37);const prior=report.records.filter(r=>!r.expansionBatch||r.expansionBatch==='east-2026-10-21');assert.equal(prior.length,184);assert.equal(prior.filter(r=>r.profiles.motorcycle.admissionStatus==='confirmed').length,183);assert.equal(prior.filter(r=>r.mapReady).length,169);
  for(const [city,count] of [['千葉県印西市',6],['千葉県成田市',15],['千葉県木更津市',4],['埼玉県越谷市',9]])assert.equal(records.filter(r=>r.city===city).length,count);
  const find=name=>records.find(r=>r.name===name),q=id=>records.find(r=>r.id===id).profiles.motorcycle;
  for(const r of records){assert.deepEqual(v[r.id],r.profiles);assert.equal(r.profiles.bicycle.admissionStatus,'unknown');assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');if(r.mapReady){assert.equal(parking.filter(p=>p.id===r.id).length,1);assert.ok(Number.isFinite(r.lat)&&Number.isFinite(r.lng));assert.equal((await call('/api/comments?facility='+r.id)).status,200);}else assert.ok(!parking.some(p=>p.id===r.id));}
@@ -381,4 +381,21 @@ test('eastern Chiba and Saitama expansion keeps annual fees, motorcycle classes 
  for(const id of ['narita-airport-p1','narita-airport-p2']){const p=q(id);assert.match(p.publishedFeesRaw,/80円／30分/);assert.match(p.publishedFeesRaw,/630円/);assert.ok(!p.publishedFeesRaw.includes('2,100'));assert.ok(!p.publishedFeesRaw.includes('無料'));assert.match(p.currentConditionsRaw.join(' '),/有人料金所/);}
  assert.match(q('kasukabe-tobu-754').publishedFeesRaw,/1日・当日/);assert.match(q('kasukabe-tobu-900').publishedFeesRaw,/5,500円/);
  assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);
+});
+
+test('north Chiba and Saitama audit keeps current Matsudo tariffs, Kashiwa annual permits and explicit Kuki scooter admission',async()=>{
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),records=report.records.filter(r=>r.expansionBatch==='north-2026-10-21'),parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ assert.equal(records.length,34);assert.equal(records.filter(r=>r.mapReady).length,28);
+ for(const [city,count] of [['千葉県松戸市',24],['千葉県柏市',3],['埼玉県上尾市',3],['埼玉県久喜市',4]])assert.equal(records.filter(r=>r.city===city).length,count);
+ for(const r of records){assert.deepEqual(v[r.id],r.profiles);assert.equal(r.profiles.motorcycle.admissionStatus,'confirmed');assert.equal(r.profiles.bicycle.admissionStatus,'unknown');if(r.mapReady){assert.equal(parking.filter(p=>p.id===r.id).length,1);assert.equal((await call('/api/comments?facility='+r.id)).status,200);}else assert.ok(!parking.some(p=>p.id===r.id));}
+ const city=c=>records.filter(r=>r.city===c),find=name=>records.find(r=>r.name===name).profiles.motorcycle;
+ const matsudo=city('千葉県松戸市');assert.equal(matsudo.filter(r=>/無料。/.test(r.profiles.motorcycle.publishedFeesRaw)).length,4);assert.equal(matsudo.filter(r=>r.profiles.motorcycle.publishedFeesRaw.includes('24時間ごと150円')).length,3);
+ for(const r of matsudo){assert.equal(r.motorcycleScope,'upTo125');assert.equal(r.profiles.motorcycle.regularStatus,'unverified');assert.ok(!r.profiles.motorcycle.publishedFeesRaw.includes('200円'));assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');}
+ assert.match(find('北小金駅南口第2自転車駐車場').currentConditionsRaw.join(' '),/回数券のみ/);
+ const south=find('豊四季駅南口第一駐輪場');assert.equal(south.temporaryStatus,'not_offered');assert.equal(south.regularStatus,'confirmed_annual_registration_required');assert.match(south.publishedFeesRaw,/14,640円、.*17,040円/);
+ const north=find('豊四季駅北口第一駐輪場');assert.match(north.publishedFeesRaw,/18,360円、.*21,960円/);assert.equal(north.registrationPeriod.end,'2027-03-31');
+ assert.match(find('上尾西駐輪場').publishedFeesRaw,/125cc超460円/);assert.match(find('上尾西駐輪場').publishedFeesRaw,/4,700円/);assert.equal(find('あげおサイクルポート東').temporaryStatus,'unverified');assert.match(find('あげおサイクルポート西').currentConditionsRaw.join(' '),/新規受付中止/);
+ for(const r of city('埼玉県久喜市')){const q=r.profiles.privateElectricScooter;assert.equal(q.admissionStatus,'confirmed');assert.equal(q.regularStatus,'confirmed_application_required');assert.ok(!q.publishedFeesRaw.includes('370円'));assert.ok(!q.publishedFeesRaw.includes('バイク大'));assert.equal(r.coordinateStatus,'operator_published_facility_point');}
+ assert.equal(v['kuki-cycle-11232002'].privateElectricScooter.temporaryStatus,'not_offered');assert.match(v['kuki-cycle-11462001'].privateElectricScooter.publishedFeesRaw,/310円/);assert.match(v['kuki-cycle-11462001'].motorcycle.publishedFeesRaw,/370円/);
+ assert.equal(report.stats.records,report.records.length);assert.equal(report.stats.mapped,report.records.filter(r=>r.mapReady).length);assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);assert.ok(!JSON.stringify(records).includes('AIza'));
 });
