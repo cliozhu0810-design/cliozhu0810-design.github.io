@@ -206124,6 +206124,3216 @@
         "hours": "",
         "hoursStatus": "unverified"
       }
+    },
+    "inzai-cyca-907": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "バイク125cc以下（2026年度市公式案内）"
+        ],
+        "publishedFeesRaw": "一時利用：200円／24時間。\n年度登録（2026年4月1日～2027年3月31日）：市内一般7,700円、高校生以下3,850円。市外一般15,400円、高校生以下7,700円。\n年度途中は年度末までの月数で算定。自転車用の北口3階割引料金はバイクに適用しません。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21378/2026jitennsyatyuusyajyouteikisinnsei.pdf",
+            "label": "2026年度申請案内"
+          },
+          {
+            "url": "https://www.charinavi72.jp/system/Parkings/detail/907",
+            "label": "管理運営会社の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "年間使用料です。1か月の料金ではありません。",
+          "一時利用は事前に利用券を購入。市公式の2026年度案内を優先し、運営サイトの旧「窓口のみ」案内は現行の申請方法として採用していません。",
+          "北口2施設の年度申請は定期WEBシステム、木下・小林・NT中央南口・牧の原南口は施設窓口。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "inzai-cyca-908": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "バイク125cc以下（2026年度市公式案内）"
+        ],
+        "publishedFeesRaw": "一時利用：200円／24時間。\n年度登録（2026年4月1日～2027年3月31日）：市内一般7,700円、高校生以下3,850円。市外一般15,400円、高校生以下7,700円。\n年度途中は年度末までの月数で算定。自転車用の北口3階割引料金はバイクに適用しません。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21378/2026jitennsyatyuusyajyouteikisinnsei.pdf",
+            "label": "2026年度申請案内"
+          },
+          {
+            "url": "https://www.charinavi72.jp/system/Parkings/detail/908",
+            "label": "管理運営会社の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "年間使用料です。1か月の料金ではありません。",
+          "一時利用は事前に利用券を購入。市公式の2026年度案内を優先し、運営サイトの旧「窓口のみ」案内は現行の申請方法として採用していません。",
+          "北口2施設の年度申請は定期WEBシステム、木下・小林・NT中央南口・牧の原南口は施設窓口。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "inzai-cyca-905": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "バイク125cc以下（2026年度市公式案内）"
+        ],
+        "publishedFeesRaw": "一時利用：200円／24時間。\n年度登録（2026年4月1日～2027年3月31日）：市内一般7,700円、高校生以下3,850円。市外一般15,400円、高校生以下7,700円。\n年度途中は年度末までの月数で算定。自転車用の北口3階割引料金はバイクに適用しません。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21378/2026jitennsyatyuusyajyouteikisinnsei.pdf",
+            "label": "2026年度申請案内"
+          },
+          {
+            "url": "https://www.charinavi72.jp/system/Parkings/detail/905",
+            "label": "管理運営会社の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "年間使用料です。1か月の料金ではありません。",
+          "一時利用は事前に利用券を購入。市公式の2026年度案内を優先し、運営サイトの旧「窓口のみ」案内は現行の申請方法として採用していません。",
+          "北口2施設の年度申請は定期WEBシステム、木下・小林・NT中央南口・牧の原南口は施設窓口。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "inzai-cyca-906": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "バイク125cc以下（2026年度市公式案内）"
+        ],
+        "publishedFeesRaw": "一時利用：200円／24時間。\n年度登録（2026年4月1日～2027年3月31日）：市内一般7,700円、高校生以下3,850円。市外一般15,400円、高校生以下7,700円。\n年度途中は年度末までの月数で算定。自転車用の北口3階割引料金はバイクに適用しません。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21378/2026jitennsyatyuusyajyouteikisinnsei.pdf",
+            "label": "2026年度申請案内"
+          },
+          {
+            "url": "https://www.charinavi72.jp/system/Parkings/detail/906",
+            "label": "管理運営会社の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "年間使用料です。1か月の料金ではありません。",
+          "一時利用は事前に利用券を購入。市公式の2026年度案内を優先し、運営サイトの旧「窓口のみ」案内は現行の申請方法として採用していません。",
+          "北口2施設の年度申請は定期WEBシステム、木下・小林・NT中央南口・牧の原南口は施設窓口。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "inzai-cyca-909": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "バイク125cc以下（2026年度市公式案内）"
+        ],
+        "publishedFeesRaw": "一時利用：200円／24時間。\n年度登録（2026年4月1日～2027年3月31日）：市内一般7,700円、高校生以下3,850円。市外一般15,400円、高校生以下7,700円。\n年度途中は年度末までの月数で算定。自転車用の北口3階割引料金はバイクに適用しません。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21378/2026jitennsyatyuusyajyouteikisinnsei.pdf",
+            "label": "2026年度申請案内"
+          },
+          {
+            "url": "https://www.charinavi72.jp/system/Parkings/detail/909",
+            "label": "管理運営会社の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "年間使用料です。1か月の料金ではありません。",
+          "一時利用は事前に利用券を購入。市公式の2026年度案内を優先し、運営サイトの旧「窓口のみ」案内は現行の申請方法として採用していません。",
+          "北口2施設の年度申請は定期WEBシステム、木下・小林・NT中央南口・牧の原南口は施設窓口。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "inzai-cyca-910": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "バイク125cc以下（2026年度市公式案内）"
+        ],
+        "publishedFeesRaw": "一時利用：200円／24時間。\n年度登録（2026年4月1日～2027年3月31日）：市内一般7,700円、高校生以下3,850円。市外一般15,400円、高校生以下7,700円。\n年度途中は年度末までの月数で算定。自転車用の北口3階割引料金はバイクに適用しません。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.inzai.lg.jp/cmsfiles/contents/0000021/21378/2026jitennsyatyuusyajyouteikisinnsei.pdf",
+            "label": "2026年度申請案内"
+          },
+          {
+            "url": "https://www.charinavi72.jp/system/Parkings/detail/910",
+            "label": "管理運営会社の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "年間使用料です。1か月の料金ではありません。",
+          "一時利用は事前に利用券を購入。市公式の2026年度案内を優先し、運営サイトの旧「窓口のみ」案内は現行の申請方法として採用していません。",
+          "北口2施設の年度申請は定期WEBシステム、木下・小林・NT中央南口・牧の原南口は施設窓口。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.inzai.lg.jp/0000021378.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-3bf5220911": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原動機付自転車（市の表記）。原付二種・排気量別区画は今回未確認。"
+        ],
+        "publishedFeesRaw": "年度登録：4月申請は市内一般5,230円・高校生以下2,610円、市外一般10,470円・高校生以下5,230円。\n10月申請は年度末まで、市内一般2,610円・高校生以下1,300円、市外一般5,230円・高校生以下2,610円。\n申請月別の原付使用料を適用。オンライン申請は郵送料110円が別途必要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.narita.chiba.jp/anshin/page0123_00016.html",
+            "label": "2026年度の申請・郵送料"
+          }
+        ],
+        "currentConditionsRaw": [
+          "許可制の年度登録です。月極や1日券ではありません。毎年度の申請が必要。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        },
+        "annualApplicationFees": {
+          "4": [
+            "5,230円",
+            "2,610円",
+            "10,470円",
+            "5,230円"
+          ],
+          "5": [
+            "4,790円",
+            "2,390円",
+            "9,590円",
+            "4,790円"
+          ],
+          "6": [
+            "4,360円",
+            "2,180円",
+            "8,720円",
+            "4,360円"
+          ],
+          "7": [
+            "3,920円",
+            "1,960円",
+            "7,850円",
+            "3,920円"
+          ],
+          "8": [
+            "3,490円",
+            "1,740円",
+            "6,980円",
+            "3,490円"
+          ],
+          "9": [
+            "3,050円",
+            "1,520円",
+            "6,100円",
+            "3,050円"
+          ],
+          "10": [
+            "2,610円",
+            "1,300円",
+            "5,230円",
+            "2,610円"
+          ],
+          "11": [
+            "2,180円",
+            "1,090円",
+            "4,360円",
+            "2,180円"
+          ],
+          "12": [
+            "1,740円",
+            "870円",
+            "3,490円",
+            "1,740円"
+          ],
+          "1": [
+            "1,300円",
+            "650円",
+            "2,610円",
+            "1,300円"
+          ],
+          "2": [
+            "870円",
+            "430円",
+            "1,740円",
+            "870円"
+          ],
+          "3": [
+            "430円",
+            "210円",
+            "870円",
+            "430円"
+          ]
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-3bd3cff265": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "年度登録：4月申請は市内一般5,230円・高校生以下2,610円、市外一般10,470円・高校生以下5,230円。\n10月申請は年度末まで、市内一般2,610円・高校生以下1,300円、市外一般5,230円・高校生以下2,610円。\n申請月別の原付使用料を適用。オンライン申請は郵送料110円が別途必要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.narita.chiba.jp/anshin/page0123_00016.html",
+            "label": "2026年度の申請・郵送料"
+          }
+        ],
+        "currentConditionsRaw": [
+          "許可制の年度登録です。月極や1日券ではありません。毎年度の申請が必要。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        },
+        "annualApplicationFees": {
+          "4": [
+            "5,230円",
+            "2,610円",
+            "10,470円",
+            "5,230円"
+          ],
+          "5": [
+            "4,790円",
+            "2,390円",
+            "9,590円",
+            "4,790円"
+          ],
+          "6": [
+            "4,360円",
+            "2,180円",
+            "8,720円",
+            "4,360円"
+          ],
+          "7": [
+            "3,920円",
+            "1,960円",
+            "7,850円",
+            "3,920円"
+          ],
+          "8": [
+            "3,490円",
+            "1,740円",
+            "6,980円",
+            "3,490円"
+          ],
+          "9": [
+            "3,050円",
+            "1,520円",
+            "6,100円",
+            "3,050円"
+          ],
+          "10": [
+            "2,610円",
+            "1,300円",
+            "5,230円",
+            "2,610円"
+          ],
+          "11": [
+            "2,180円",
+            "1,090円",
+            "4,360円",
+            "2,180円"
+          ],
+          "12": [
+            "1,740円",
+            "870円",
+            "3,490円",
+            "1,740円"
+          ],
+          "1": [
+            "1,300円",
+            "650円",
+            "2,610円",
+            "1,300円"
+          ],
+          "2": [
+            "870円",
+            "430円",
+            "1,740円",
+            "870円"
+          ],
+          "3": [
+            "430円",
+            "210円",
+            "870円",
+            "430円"
+          ]
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-e4dbaa377e": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原動機付自転車（市の表記）。原付二種・排気量別区画は今回未確認。"
+        ],
+        "publishedFeesRaw": "年度登録：4月申請は市内一般5,230円・高校生以下2,610円、市外一般10,470円・高校生以下5,230円。\n10月申請は年度末まで、市内一般2,610円・高校生以下1,300円、市外一般5,230円・高校生以下2,610円。\n申請月別の原付使用料を適用。オンライン申請は郵送料110円が別途必要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.narita.chiba.jp/anshin/page0123_00016.html",
+            "label": "2026年度の申請・郵送料"
+          }
+        ],
+        "currentConditionsRaw": [
+          "許可制の年度登録です。月極や1日券ではありません。毎年度の申請が必要。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        },
+        "annualApplicationFees": {
+          "4": [
+            "5,230円",
+            "2,610円",
+            "10,470円",
+            "5,230円"
+          ],
+          "5": [
+            "4,790円",
+            "2,390円",
+            "9,590円",
+            "4,790円"
+          ],
+          "6": [
+            "4,360円",
+            "2,180円",
+            "8,720円",
+            "4,360円"
+          ],
+          "7": [
+            "3,920円",
+            "1,960円",
+            "7,850円",
+            "3,920円"
+          ],
+          "8": [
+            "3,490円",
+            "1,740円",
+            "6,980円",
+            "3,490円"
+          ],
+          "9": [
+            "3,050円",
+            "1,520円",
+            "6,100円",
+            "3,050円"
+          ],
+          "10": [
+            "2,610円",
+            "1,300円",
+            "5,230円",
+            "2,610円"
+          ],
+          "11": [
+            "2,180円",
+            "1,090円",
+            "4,360円",
+            "2,180円"
+          ],
+          "12": [
+            "1,740円",
+            "870円",
+            "3,490円",
+            "1,740円"
+          ],
+          "1": [
+            "1,300円",
+            "650円",
+            "2,610円",
+            "1,300円"
+          ],
+          "2": [
+            "870円",
+            "430円",
+            "1,740円",
+            "870円"
+          ],
+          "3": [
+            "430円",
+            "210円",
+            "870円",
+            "430円"
+          ]
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-6969ea5111": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-b88d05b3d9": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-ebc954fa46": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-551c4ef905": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-ab628667d3": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-6e27ab74b6": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-67cecbecd5": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-953d3a49d5": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-cbc82963bb": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-city-228be23f6f": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "原動機付自転車第一種のみ。普通の原付二種・自動二輪には対応していません。"
+        ],
+        "publishedFeesRaw": "無料。事前申請不要。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "30日以上の放置は撤去対象。通勤等で通常利用する無料駐輪場です。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.narita.chiba.jp/kurashi/page105500.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-177f9a73f279be": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付（新基準原付一種以内の制限あり）。通常の原付二種125cc・大型二輪は今回受入確定としていません。"
+        ],
+        "publishedFeesRaw": "一回利用：200円／24時間。\n年度登録：市内3,500円、市外4,000円（学生バイクの割引なし）。10月1日以降の申請は半額の市内1,750円、市外2,000円。登録日から2027年3月31日まで。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/4222.html",
+            "label": "市の年度登録・10月以降半額"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/2806.html",
+            "label": "市の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営者ページに「125cc以下」と「新基準原付一種以内」の両表記があるため、原付二種全車へ拡張していません。",
+          "市の施設ページにある汎用料金表から、他車種・他施設の一時利用を推定していません。",
+          "原付の一回利用券は東口第3の券売機で購入し、駐車は東口第1の原付区画を利用。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-28bb51b0a79401": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付（新基準原付一種以内の制限あり）。通常の原付二種125cc・大型二輪は今回受入確定としていません。"
+        ],
+        "publishedFeesRaw": "一回利用：200円／24時間。\n年度登録：市内3,500円、市外4,000円（学生バイクの割引なし）。10月1日以降の申請は半額の市内1,750円、市外2,000円。登録日から2027年3月31日まで。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/4222.html",
+            "label": "市の年度登録・10月以降半額"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/2624.html",
+            "label": "市の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営者ページに「125cc以下」と「新基準原付一種以内」の両表記があるため、原付二種全車へ拡張していません。",
+          "市の施設ページにある汎用料金表から、他車種・他施設の一時利用を推定していません。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-b7830154c2e260": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付（新基準原付一種以内の制限あり）。通常の原付二種125cc・大型二輪は今回受入確定としていません。"
+        ],
+        "publishedFeesRaw": "一回利用：運営者の施設別一覧では対象外。\n年度登録：市内3,500円、市外4,000円（学生バイクの割引なし）。10月1日以降の申請は半額の市内1,750円、市外2,000円。登録日から2027年3月31日まで。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/4222.html",
+            "label": "市の年度登録・10月以降半額"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/3499.html",
+            "label": "市の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営者ページに「125cc以下」と「新基準原付一種以内」の両表記があるため、原付二種全車へ拡張していません。",
+          "市の施設ページにある汎用料金表から、他車種・他施設の一時利用を推定していません。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-1d8ccd18c824d1": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付（新基準原付一種以内の制限あり）。通常の原付二種125cc・大型二輪は今回受入確定としていません。"
+        ],
+        "publishedFeesRaw": "一回利用：200円／24時間。\n年度登録：市内3,500円、市外4,000円（学生バイクの割引なし）。10月1日以降の申請は半額の市内1,750円、市外2,000円。登録日から2027年3月31日まで。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/4222.html",
+            "label": "市の年度登録・10月以降半額"
+          },
+          {
+            "url": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/2620.html",
+            "label": "市の施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営者ページに「125cc以下」と「新基準原付一種以内」の両表記があるため、原付二種全車へ拡張していません。",
+          "市の施設ページにある汎用料金表から、他車種・他施設の一時利用を推定していません。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-85e625eba74352": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "新基準原付一種以内。通常の原付二種125ccは対象確認済みとしていません。"
+        ],
+        "publishedFeesRaw": "バイク（新基準原付一種以内）：定期1か月3,300円、3か月9,900円、6か月19,800円。一時利用250円。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/shiraoka.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "一時利用額は公式の施設別表。利用券の有効時間は明記を確認できていないため、24時間開放の営業時間を課金周期に転用していません。",
+          "自転車の学生料金・レンタサイクル料金をバイクに適用していません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/shiraoka.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/shiraoka.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-f3ec796845d676": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "新原付一種と50cc超125cc以下（区画・料金別）"
+        ],
+        "publishedFeesRaw": "バイク（新原付一種） 1階：定期1か月3,500円、3か月10,500円、6か月21,000円。一時利用250円。\nバイク（新原付一種） 屋外：定期1か月3,000円、3か月9,000円、6か月18,000円。一時利用250円。\nバイク（50cc超125cc以下）1階：定期1か月3,800円、3か月11,400円、6か月22,800円。一時利用300円。\nバイク（50cc超125cc以下）屋外：定期1か月3,300円、3か月9,900円、6か月19,800円。一時利用300円。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "一時利用額は公式の施設別表。利用券の有効時間は明記を確認できていないため、24時間開放の営業時間を課金周期に転用していません。",
+          "自転車の学生料金・レンタサイクル料金をバイクに適用していません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-3a61a11d96f82a": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "新原付一種と50cc超125cc以下（区画・料金別）"
+        ],
+        "publishedFeesRaw": "バイク（新原付一種） 屋外：定期1か月3,000円、3か月9,000円、6か月18,000円。一時利用250円。\nバイク（50cc超125cc以下）屋外：定期1か月3,300円、3か月9,900円、6か月19,800円。一時利用300円。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "一時利用額は公式の施設別表。利用券の有効時間は明記を確認できていないため、24時間開放の営業時間を課金周期に転用していません。",
+          "自転車の学生料金・レンタサイクル料金をバイクに適用していません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-6f66f7790c2da6": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "新原付一種と50cc超125cc以下（区画・料金別）"
+        ],
+        "publishedFeesRaw": "バイク（新原付一種） 地下：定期1か月3,800円、3か月11,400円、6か月22,800円。一時利用250円。\nバイク（50cc超125cc以下）地下：定期1か月4,200円、3か月12,600円、6か月25,200円。一時利用300円。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "一時利用額は公式の施設別表。利用券の有効時間は明記を確認できていないため、24時間開放の営業時間を課金周期に転用していません。",
+          "自転車の学生料金・レンタサイクル料金をバイクに適用していません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/hasuda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-7642c5ec77b4a5": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "新基準原付一種以内。通常の原付二種125ccは対象確認済みとしていません。"
+        ],
+        "publishedFeesRaw": "バイク50cc以下 屋外（新基準原付一種以内）：定期1か月2,610円、3か月7,830円、6か月15,660円。一時利用150円。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/noda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "一時利用額は公式の施設別表。利用券の有効時間は明記を確認できていないため、24時間開放の営業時間を課金周期に転用していません。",
+          "自転車の学生料金・レンタサイクル料金をバイクに適用していません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/noda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.yurin-net.co.jp/management-facility/noda.php",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222016": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]",
+          "バイク大[125cc超〜]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根有Ｂ：定期：1か月2,620円、3か月7,860円、6か月15,720円\nバイク大[125cc超〜]\n１階平置屋根有Ｂ：定期：1か月3,930円、3か月11,790円、6か月23,580円",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222016",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222016",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222016",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222021": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根無：定期：1か月2,800円、3か月8,230円、6か月15,960円。一時利用210円（表の掲載額。課金単位は未確認）",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222021",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222021",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222021",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222031": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階屋外屋根無：定期：1か月3,140円、3か月8,940円、6か月16,950円\n１階屋外屋根無：一時利用260円（表の掲載額。課金単位は未確認）",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222031",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222031",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222031",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222032": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n地階屋内：定期：1か月3,200円、3か月9,300円、6か月18,200円\n200円/16時間：地階屋内：バイク小[〜50cc以下]・中[50cc超〜125cc以下]",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222032",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222032",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222032",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222033": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]",
+          "バイク大[125cc超〜]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根無：定期：1か月2,800円、3か月7,980円、6か月15,120円\nバイク大[125cc超〜]\n１階平置屋根無：定期：1か月4,000円、3か月11,400円、6か月21,600円",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222033",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222033",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222033",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222034": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根有：定期：1か月3,670円、3か月11,010円、6か月22,020円。一時利用260円（表の掲載額。課金単位は未確認）",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222034",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222034",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222034",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222035": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根無：定期：1か月3,450円、3か月10,350円、6か月20,700円。一時利用210円（表の掲載額。課金単位は未確認）",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222035",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222035",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222035",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222037": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根無：定期：1か月3,300円、3か月9,900円、6か月19,800円",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222037",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222037",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222037",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "koshigaya-cycle-11222002": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]\n１階平置屋根無：定期：1か月2,620円、3か月7,860円、6か月15,720円。一時利用210円（表の掲載額。課金単位は未確認）",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "新基準原付はバイク中の料金を適用する運営者案内。50cc料金を自動適用していません。",
+          "管理室のリンク先は別施設の場合があるため、この施設名と同一IDの料金表のみ採用。",
+          "WEB受付・満空表示は掲載時点の状態で、現在の空き台数として扱いません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11222002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "kasukabe-tobu-754": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "125cc以下：原付区画。排気量制限なし：中型バイク指定区画（付属品を含め区画内に収まる車両）"
+        ],
+        "publishedFeesRaw": "一時利用（1日・当日）：125cc以下300円、排気量制限なし指定バイク区画400円。\n定期1か月：125cc以下3,600円、排気量制限なし指定バイク区画4,600円。新規申込手数料等500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/754.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "「中型」の呼称から排気量上限を推定せず、運営者の「排気量制限なし」と区画サイズ条件を併記。",
+          "当日料金です。入庫から24時間料金とはしていません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/754.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/754.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "kasukabe-tobu-900": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク（運営者表記。排気量上限・車室サイズは未掲載）"
+        ],
+        "publishedFeesRaw": "月極5,500円（税込）。一時利用料金ではありません。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/900.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.jmpsa.or.jp/society/parking/area11/p-11752.html",
+            "label": "施設名・位置照合（旧料金は不採用）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "閲覧時の運営者表示は満室。掲載の2台は収容台数で、空き台数ではありません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/900.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/900.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-airport-p1": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "自動二輪車（空港公式の表記）。原付・自転車・特定小型の受入とは分けています。"
+        ],
+        "publishedFeesRaw": "二輪専用料金（税込）：3.5時間まで80円／30分。3.5時間超～24時間630円。\n24時間超～120時間：80円／30分、24時間ごと上限630円。\n120時間超：120時間まで3,150円＋300円／24時間。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/fee-simulation/",
+            "label": "駐車料金"
+          },
+          {
+            "url": "https://www.narita-airport.jp/files/d961e4ed342913b28d43aa8b62952a1595b0e492d654229dba742d9e3a6e97a3",
+            "label": "自動二輪専用料金表"
+          },
+          {
+            "url": "https://parking.narita-airport.jp/ja",
+            "label": "二輪車は予約対象外"
+          }
+        ],
+        "currentConditionsRaw": [
+          "二輪料金の適用には出口の有人料金所で精算。事前精算機では自動二輪車料金が適用されません。",
+          "自動二輪はP-1・P-2のみ。P-3・P-5や車用の30分無料・最大2,100円等を適用していません。",
+          "空港公式の予約サービスは自動二輪の予約対象外。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "narita-airport-p2": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "classesRaw": [
+          "自動二輪車（空港公式の表記）。原付・自転車・特定小型の受入とは分けています。"
+        ],
+        "publishedFeesRaw": "二輪専用料金（税込）：3.5時間まで80円／30分。3.5時間超～24時間630円。\n24時間超～120時間：80円／30分、24時間ごと上限630円。\n120時間超：120時間まで3,150円＋300円／24時間。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/fee-simulation/",
+            "label": "駐車料金"
+          },
+          {
+            "url": "https://www.narita-airport.jp/files/d961e4ed342913b28d43aa8b62952a1595b0e492d654229dba742d9e3a6e97a3",
+            "label": "自動二輪専用料金表"
+          },
+          {
+            "url": "https://parking.narita-airport.jp/ja",
+            "label": "二輪車は予約対象外"
+          }
+        ],
+        "currentConditionsRaw": [
+          "二輪料金の適用には出口の有人料金所で精算。事前精算機では自動二輪車料金が適用されません。",
+          "自動二輪はP-1・P-2のみ。P-3・P-5や車用の30分無料・最大2,100円等を適用していません。",
+          "空港公式の予約サービスは自動二輪の予約対象外。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.narita-airport.jp/ja/access/parking/",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
     }
   }
 }
