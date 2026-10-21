@@ -27,6 +27,7 @@ test('three-prefecture motorcycle import separates displacement, current fees, m
 test('station suggestions rank kana, Chinese variants and typos without changing vehicle evidence',()=>{
  const context=vm.createContext({});vm.runInContext(fs.readFileSync(path.join(root,'source/public/station-search.js'),'utf8'),context);
  const engine=context.TomespotStationSearch;
+ for(const [query,name] of [['ikebukuro','池袋'],['Ikebukuro Station','池袋'],['nakameguro','中目黒'],['nakameg','中目黒'],['tokyo','東京'],['Tōkyō','東京'],['toukyou','東京'],['shinjuku','新宿'],['sinjuku','新宿'],['nishi kawaguchi','西川口'],['yokohama','横浜'],['chiba','千葉'],['omiya','大宮'],['ikebukro','池袋']])assert.equal(engine.suggest(query)[0].name,name,query);
  for(const query of ['いけぶくろ','イケブクロ','ｲｹﾌﾞｸﾛ','池袋站','池袋车站','池袋車站','いけぶく','いけぶくろう'])assert.equal(engine.suggest(query)[0].name,'池袋',query);
  for(const [query,name] of [['にしかわぐち','西川口'],['练马','練馬'],['練馬','練馬'],['涩谷','渋谷'],['澀谷','渋谷'],['横滨','横浜'],['橫濱','横浜'],['所泽','所沢'],['东川口','東川口'],['東京','東京']])assert.equal(engine.suggest(query)[0].name,name,query);
  assert.equal(engine.normalize('霞ヶ関'),engine.normalize('霞ケ関'));
@@ -39,6 +40,42 @@ test('station suggestions rank kana, Chinese variants and typos without changing
  context.fixture=[{id:'near',name:'施設A',lat:ike.lat,lng:ike.lng,status:'confirmed',temporary:true},{id:'far',name:'施設B',lat:nishi.lat,lng:nishi.lng,status:'confirmed',temporary:true},{id:'rejected',name:'施設C',lat:ike.lat,lng:ike.lng,status:'rejected'}];
  vm.runInContext('state.places=fixture',context);assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'near');
  elements.search.value='にしかわぐち';assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'far');
+});
+
+test('vehicle and recent facility history survive reload, deduplicate and limit local records',()=>{
+ const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0];
+ const values=new Map([['tomespot:vehicle','motorcycle']]);const storage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};
+ const run=()=>{const c=vm.createContext({localStorage:storage,document:{getElementById:()=>null},URL});vm.runInContext(app,c);return c;};
+ const c=run();assert.equal(vm.runInContext('state.vehicle',c),'motorcycle');
+ vm.runInContext('for(let i=0;i<25;i++)rememberVisit("place-"+i);rememberVisit("place-10")',c);
+ const visits=JSON.parse(values.get('tomespot:history'));assert.equal(visits.length,20);assert.equal(visits[0].id,'place-10');assert.equal(visits.filter(e=>e.id==='place-10').length,1);assert.equal(visits[0].vehicle,'motorcycle');
+ vm.runInContext('state.vehicle="bicycle";rememberVehicle()',c);const reopened=run();assert.equal(vm.runInContext('state.vehicle',reopened),'bicycle');assert.equal(vm.runInContext('state.history[0].id',reopened),'place-10');
+ values.set('tomespot:vehicle','not-a-vehicle');values.set('tomespot:history','invalid JSON');assert.equal(vm.runInContext('state.vehicle',run()),'privateElectricScooter');
+});
+
+test('persisted motorcycle choice renders real profiles and keeps admission and closure rules',()=>{
+ const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0],elements={search:{value:''},ward:{value:''},unknown:{checked:false}};
+ const c=vm.createContext({localStorage:{getItem:k=>k==='tomespot:vehicle'?'motorcycle':null},document:{getElementById:id=>elements[id]},URL});vm.runInContext(app,c);
+ c.parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json')));c.profiles=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json')));
+ vm.runInContext('dataset=parking;vehicleData=profiles;state.places=parking.places',c);
+ assert.ok(vm.runInContext('filtered().length',c)>100);assert.equal(vm.runInContext('closureActive({})',c),false);
+ assert.equal(vm.runInContext('closureActive({temporaryClosureNotice:{startDate:"2026-10-01",endDateInclusive:"2026-10-31"}},new Date("2026-10-21T12:00:00Z"))',c),true);
+ const detail=vm.runInContext('profileDetailHtml(filtered().find(p=>p.vehicleProfile))',c);assert.match(detail,/google.com\/maps/);assert.ok(!detail.includes('source-stamp'));assert.ok(!detail.includes('正確な入口'));
+});
+
+test('touch station tap survives input blur while scrolling does not select a candidate',()=>{
+ const handlers=new Map();const make=id=>({value:'',hidden:false,innerHTML:'',checked:false,classList:{add(){},remove(){},toggle(){}},setAttribute(){},removeAttribute(){},contains:()=>false,addEventListener:(type,handler)=>handlers.set(id+':'+type,handler)});
+ const elements=new Map();const element=id=>{if(!elements.has(id))elements.set(id,make(id));return elements.get(id);};
+ const document={getElementById:element,querySelectorAll:()=>[],addEventListener:(type,h)=>handlers.set('document:'+type,h),activeElement:element('search')};
+ const context=vm.createContext({document,localStorage:{getItem:()=>null},URL});const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').replace(/^boot\(\);$/m,'').replace(/fetch\('\/api\/admin\/session'\)[\s\S]*$/,'');vm.runInContext(app,context);
+ vm.runInContext('let selections=[];chooseStation=(...args)=>selections.push(args)',context);
+ const option={dataset:{stationOption:'0'}};const event=(more={})=>({pointerId:1,pointerType:'touch',isPrimary:true,button:0,clientX:50,clientY:60,target:{closest:()=>option},preventDefault(){this.prevented=true;},...more});
+ const down=event();handlers.get('station-suggestions:pointerdown')(down);assert.ok(!down.prevented);
+ handlers.get('search:blur')({relatedTarget:null});assert.equal(element('station-suggestions').hidden,false);
+ handlers.get('station-suggestions:pointerup')(event());assert.equal(vm.runInContext('selections.length',context),1);assert.equal(vm.runInContext('selections[0][1]',context),false);
+ handlers.get('station-suggestions:pointerdown')(event());handlers.get('station-suggestions:pointermove')(event({clientY:100}));handlers.get('station-suggestions:pointerup')(event({clientY:100}));handlers.get('station-suggestions:click')(event({detail:1}));assert.equal(vm.runInContext('selections.length',context),1);
+ handlers.get('station-suggestions:pointerdown')(event());handlers.get('search:blur')({relatedTarget:null});handlers.get('station-suggestions:pointercancel')(event());assert.equal(element('station-suggestions').hidden,false);
+ const mouse=event({pointerType:'mouse'});handlers.get('station-suggestions:pointerdown')(mouse);assert.equal(mouse.prevented,true);handlers.get('station-suggestions:pointerup')(event({pointerType:'mouse'}));assert.equal(vm.runInContext('selections[1][1]',context),true);
 });
 test('device favorites survive reload and render separate heart markers with comparison bounds',()=>{
  const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0];
