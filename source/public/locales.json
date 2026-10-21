@@ -1240,5 +1240,17 @@
     "zh-Hans": "有使用报告（参考）",
     "zh-Hant": "有使用報告（參考）",
     "en": "Use reported (reference)"
+  },
+  "detailDisclaimerTitle": {
+    "ja": "免責事項",
+    "zh-Hans": "免责声明",
+    "zh-Hant": "免責聲明",
+    "en": "Disclaimer"
+  },
+  "detailDisclaimerText": {
+    "ja": "掲載情報・投稿は、現在の料金・受入条件・空き状況を保証するものではありません。",
+    "zh-Hans": "所载信息和投稿不保证当前费用、准入条件或空位情况。",
+    "zh-Hant": "所載資訊和投稿不保證目前費用、准入條件或空位情況。",
+    "en": "Listed information and user posts do not guarantee current fees, admission rules or availability."
   }
 }
