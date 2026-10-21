@@ -190,7 +190,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   }
   copy(path.join(root,'source/public'));
   let html=rewrite(standardizeTerms(serializedHTML(read('source/app/map-html.ts'),'export const html = ')));
-  html=html.replace('href="/admin.html" id="admin-link" hidden',`href="${isSupabase?'/admin.html':apiBase+'/admin'}" id="admin-link"`)
+  html=html.replace('href="/admin.html" id="admin-link" hidden',`href="${isSupabase?'/admin.html':apiBase+'/admin'}" id="admin-link" hidden`)
     .replace('<script defer src="app.js"></script>','<script src="config.js"></script><script defer src="app.js"></script>');
   html=searchHTML(html,'index.html',siteUrl).replace('</head>',`<meta name="google-site-verification" content="${googleVerification}"></head>`);
   write(path.join(output,'index.html'),html);

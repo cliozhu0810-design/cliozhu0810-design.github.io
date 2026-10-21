@@ -22,7 +22,7 @@ export function addKawaguchiPages({root,output,siteUrl}){
  fs.writeFileSync(path.join(output,'kawaguchi-parking.html'),shell('川口市の駐輪場・バイク駐輪場',`川口市の駐輪場${s.totalCityEntries}施設の公式案内、車両条件、料金、年期登録とGoogleマップ照合結果。`,'/kawaguchi-parking',body.replace('<details>',comparisons+'<details>')));
  fs.copyFileSync(path.join(root,'source/public/kawaguchi-review.json'),path.join(output,'kawaguchi-review.json'));
  const entrance='<section><h2>埼玉県川口市の駐輪場</h2><p><a href="/kawaguchi-parking.html">川口市の自転車・原付・バイク駐輪場一覧と最新の確認情報</a></p></section>';
- for(const file of ['parking-directory.html','bicycle-parking.html','motorcycle-parking.html','kickboard-parking.html','about.html']){const target=path.join(output,file);fs.writeFileSync(target,fs.readFileSync(target,'utf8').replace('</main>',entrance+'</main>'));}
+ for(const file of ['parking-directory.html','bicycle-parking.html','motorcycle-parking.html','kickboard-parking.html']){const target=path.join(output,file);fs.writeFileSync(target,fs.readFileSync(target,'utf8').replace('</main>',entrance+'</main>'));}
  const urls=['/kawaguchi-parking',...report.records.filter(r=>r.category!=='previously-reviewed').map(r=>'/parking/'+r.id)];
  const target=path.join(output,'sitemap.xml');fs.writeFileSync(target,fs.readFileSync(target,'utf8').replace('</urlset>',urls.map(p=>`<url><loc>${canonical(p)}</loc></url>`).join('')+'</urlset>'));
 }

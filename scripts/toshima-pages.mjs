@@ -20,6 +20,6 @@ export function addToshimaPages({root,output,siteUrl}){
  fs.writeFileSync(path.join(output,'toshima-parking.html'),shell('豊島区・池袋の駐輪場・バイク駐輪場',`池袋駅周辺を中心とした豊島区${s.totalCityEntries}施設の料金、車両条件、年期登録、公式案内とGoogleマップ照合結果。`,'/toshima-parking',body));
  fs.copyFileSync(path.join(root,'source/public/toshima-review.json'),path.join(output,'toshima-review.json'));
  const entrance='<section><h2>豊島区・池袋駅周辺</h2><p><a href="/toshima-parking.html">豊島区・池袋の自転車・原付・バイク駐輪場一覧と確認情報</a></p></section>';
- for(const file of ['parking-directory.html','bicycle-parking.html','motorcycle-parking.html','kickboard-parking.html','about.html']){const target=path.join(output,file);fs.writeFileSync(target,fs.readFileSync(target,'utf8').replace('</main>',entrance+'</main>'));}
+ for(const file of ['parking-directory.html','bicycle-parking.html','motorcycle-parking.html','kickboard-parking.html']){const target=path.join(output,file);fs.writeFileSync(target,fs.readFileSync(target,'utf8').replace('</main>',entrance+'</main>'));}
  const target=path.join(output,'sitemap.xml');let xml=fs.readFileSync(target,'utf8');const existing=new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]));const urls=['/toshima-parking',...report.records.map(r=>'/parking/'+r.id)].map(canonical).filter(u=>!existing.has(u));fs.writeFileSync(target,xml.replace('</urlset>',urls.map(u=>`<url><loc>${u}</loc></url>`).join('')+'</urlset>'));
 }
