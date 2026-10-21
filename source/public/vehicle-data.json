@@ -116693,46 +116693,24 @@
         "admissionStatus": "confirmed",
         "temporaryStatus": "confirmed",
         "regularStatus": "not_offered",
-        "checked": "2026-10-18",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "第一種原動機付自転車のみ。原付二種・自動二輪は対象外。"
+        ],
+        "publishedFeesRaw": "無料の一時利用。定期契約ではありません。7日以上連続した駐輪は撤去対象。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
         "sources": [
           {
-            "url": "https://www.city.mitaka.lg.jp/c_service/030/030064.html",
-            "label": "官方或运营方当前页面"
-          },
-          {
-            "url": "https://www.city.mitaka.lg.jp/c_service/103/103704.html",
-            "label": "官方或运营方当前页面"
-          },
-          {
             "url": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
-            "label": "官方或运营方当前页面"
-          },
-          {
-            "url": "https://www.mitaka.ne.jp/bicycle_parking/list-category/chiiki/mitaka-south-exit/",
-            "label": "官方或运营方当前页面"
+            "label": "現行の施設案内・車種別料金"
           }
         ],
-        "facilityMatched": true,
-        "tariffs": [
-          {
-            "mode": "temporary",
-            "amountJPY": 0,
-            "periodHours": null,
-            "periodStatus": "free_temporary_use_not_monthly",
-            "freeMinutes": null,
-            "source": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
-            "usageRestriction": "7日以上连续停放撤去。",
-            "sourceVehicleClass": "第一種原動機付自転車（市案内50cc以下）"
-          }
-        ],
-        "hours": "24時間",
-        "hoursStatus": "official_published",
-        "feeStatus": "official_vehicle_and_zone_specific",
-        "evidence": [
-          "本场仅第一种原付车位已证实；第二种原付与自二轮不可停，不代表全部摩托可用。"
-        ],
-        "operatingRestrictions": [],
-        "currentConditionsRaw": []
+        "currentConditionsRaw": [
+          "武蔵境駅東側の電車庫通り駐輪場。第一種原付の50台は収容台数で、空き台数ではありません。"
+        ]
       }
     },
     "27025": {
@@ -169022,21 +169000,32 @@
       },
       "motorcycle": {
         "admissionStatus": "confirmed",
-        "checked": "2026-10-19",
-        "facilityMatched": false,
-        "temporaryStatus": "unverified",
-        "regularStatus": "unverified",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
         "classesRaw": [
-          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+          "総排気量125cc以下の原付・バイク。125cc超は対象外。"
         ],
+        "publishedFeesRaw": "一時利用：入庫から2時間まで無料、以降12時間ごとに200円。バイクの定期利用はありません。",
         "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
         "sources": [
           {
-            "url": "https://search.jitensha.jp/search/detail/13203043?pref_cd=0013&area_cd=00013203"
+            "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000870.html",
+            "label": "現行の施設案内・車種別料金"
+          },
+          {
+            "url": "https://search.jitensha.jp/search/detail/13203043",
+            "label": "運営者の2026年10月掲載情報"
           }
         ],
-        "operatingRestrictions": [],
-        "currentConditionsRaw": []
+        "currentConditionsRaw": [
+          "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。"
+        ],
+        "feeStatus": "current_named_facility_published",
+        "sourcePriceDate": "2026-04-27"
       }
     },
     "cpc-13203042": {
@@ -169125,21 +169114,32 @@
       },
       "motorcycle": {
         "admissionStatus": "confirmed",
-        "checked": "2026-10-19",
-        "facilityMatched": false,
-        "temporaryStatus": "unverified",
-        "regularStatus": "unverified",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
         "classesRaw": [
-          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+          "総排気量125cc以下の原付・バイク。125cc超は対象外。"
         ],
+        "publishedFeesRaw": "一時利用：入庫から2時間まで無料、以降12時間ごとに200円。バイクの定期利用はありません。",
         "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
         "sources": [
           {
-            "url": "https://search.jitensha.jp/search/detail/13203046?pref_cd=0013&area_cd=00013203"
+            "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000875.html",
+            "label": "現行の施設案内・車種別料金"
+          },
+          {
+            "url": "https://search.jitensha.jp/search/detail/13203046",
+            "label": "運営者の2026年10月掲載情報"
           }
         ],
-        "operatingRestrictions": [],
-        "currentConditionsRaw": []
+        "currentConditionsRaw": [
+          "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。"
+        ],
+        "feeStatus": "current_named_facility_published",
+        "sourcePriceDate": "2026-06-24"
       }
     },
     "cpc-13203041": {
@@ -169178,23 +169178,45 @@
       },
       "motorcycle": {
         "admissionStatus": "confirmed",
-        "checked": "2026-10-19",
-        "facilityMatched": false,
-        "temporaryStatus": "unverified",
-        "regularStatus": "unverified",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
         "classesRaw": [
-          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+          "総排気量125cc以下の原付・バイク。125cc超は対象外。"
         ],
+        "publishedFeesRaw": "料金は参考・課金周期に相違あり。市の施設案内：入庫から2時間無料、以降12時間ごと200円。運営者の2026年10月15日掲載：無料時間後6時間ごと200円。現行の課金周期は未確定です。バイクの定期利用はありません。",
         "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
         "sources": [
           {
-            "url": "https://search.jitensha.jp/search/detail/13203041?pref_cd=0013&area_cd=00013203"
+            "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+            "label": "現行の施設案内・車種別料金"
+          },
+          {
+            "url": "https://search.jitensha.jp/search/detail/13203041",
+            "label": "運営者の2026年10月掲載情報"
           }
         ],
-        "operatingRestrictions": [],
         "currentConditionsRaw": [
-          "新基準原付はバイク中にて受け入れます。"
-        ]
+          "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。",
+          "受入サイズ：全長2,300mm以下、全幅700mm以下。路面標示内に収まる車両。",
+          "市の2026年6月24日更新ページと運営者の10月15日料金欄で課金周期が一致しません。150円の旧料金は採用していません。"
+        ],
+        "feeStatus": "source_difference_requires_reconciliation",
+        "sourcePriceDate": "2026-06-24",
+        "feeDiscrepancy": {
+          "cityJPY": 200,
+          "cityPeriodHours": 12,
+          "operatorJPY": 200,
+          "operatorPeriodHours": 6,
+          "status": "unresolved",
+          "sources": [
+            "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+            "https://search.jitensha.jp/search/detail/13203041"
+          ]
+        }
       }
     },
     "cpc-13203023": {
@@ -211722,6 +211744,137 @@
           "自転車・125cc超の別区画料金は適用していません。"
         ],
         "sourcePriceDate": "2026-10-15"
+      }
+    },
+    "musashisakai-smile-h645": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "原付・バイク125cc以下。125cc超は対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：12時間ごと、現金220円、交通系電子マネー200円。無料時間の掲載なし。定期利用は対象外。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "sources": [
+          {
+            "url": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+            "label": "現行の施設案内・車種別料金"
+          },
+          {
+            "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000873.html",
+            "label": "市の車種・料金案内との照合"
+          }
+        ],
+        "currentConditionsRaw": [
+          "バイク用電磁ロック区画。自転車の110円・120円料金はバイクに適用しません。"
+        ]
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の受入はバイク区画から推定していません。"
+        ]
+      }
+    },
+    "musashisakai-bike-p-570": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "バイク月極。排気量上限・車室サイズは現行詳細ページに未掲載。"
+        ],
+        "publishedFeesRaw": "月額参考：運営者トップページでは4,000円。施設詳細の賃料欄は「-」のため、契約時の現行額・税込区分・初期費用は未確認。一時利用はありません。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+            "label": "現行の施設案内・車種別料金"
+          },
+          {
+            "url": "http://www.bike-p.co.jp/",
+            "label": "運営者トップページの施設別掲載賃料"
+          },
+          {
+            "url": "https://www.jmpsa.or.jp/society/parking/area13/p-137003.html",
+            "label": "施設名・月極方式照合（旧台数・料金を現行確定として採用せず）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "閲覧時の施設詳細は「残台数なし・満車」。現在の空きや新規受付を保証するものではありません。"
+        ],
+        "feeStatus": "source_difference_requires_reconciliation"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の受入はバイク区画から推定していません。"
+        ]
       }
     }
   }

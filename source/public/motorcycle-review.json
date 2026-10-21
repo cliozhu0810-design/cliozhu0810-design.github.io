@@ -1,6 +1,6 @@
 {
   "checked": "2026-10-21",
-  "scope": "埼玉・千葉・神奈川のバイク優先。自転車・特定小型原付は新規推定せず別途確認待ち。",
+  "scope": "東京・埼玉・千葉・神奈川の施設別バイク受入・料金確認",
   "records": [
     {
       "id": "moto-fb37dfdbcc332d",
@@ -20222,6 +20222,549 @@
       "lng": 139.67745,
       "mapSource": "https://search.jitensha.jp/search/detail/11232002",
       "coordinateStatus": "operator_published_facility_point"
+    },
+    {
+      "id": "cpc-13203041",
+      "name": "武蔵境駅みずき通り自転車駐車場",
+      "city": "東京都武蔵野市",
+      "prefecture": "東京都",
+      "address": "東京都武蔵野市境1丁目10番",
+      "station": "武蔵境駅",
+      "phone": "0422-36-5518",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+      "profiles": {
+        "bicycle": {
+          "admissionStatus": "confirmed",
+          "checked": "2026-10-19",
+          "facilityMatched": false,
+          "temporaryStatus": "unverified",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "自転車"
+          ],
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203041?pref_cd=0013&area_cd=00013203"
+            }
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "checked": "2026-10-19",
+          "facilityMatched": false,
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203041?pref_cd=0013&area_cd=00013203"
+            }
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "classesRaw": [
+            "総排気量125cc以下の原付・バイク。125cc超は対象外。"
+          ],
+          "publishedFeesRaw": "料金は参考・課金周期に相違あり。市の施設案内：入庫から2時間無料、以降12時間ごと200円。運営者の2026年10月15日掲載：無料時間後6時間ごと200円。現行の課金周期は未確定です。バイクの定期利用はありません。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "sources": [
+            {
+              "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+              "label": "現行の施設案内・車種別料金"
+            },
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203041",
+              "label": "運営者の2026年10月掲載情報"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。",
+            "受入サイズ：全長2,300mm以下、全幅700mm以下。路面標示内に収まる車両。",
+            "市の2026年6月24日更新ページと運営者の10月15日料金欄で課金周期が一致しません。150円の旧料金は採用していません。"
+          ],
+          "feeStatus": "source_difference_requires_reconciliation",
+          "sourcePriceDate": "2026-06-24",
+          "feeDiscrepancy": {
+            "cityJPY": 200,
+            "cityPeriodHours": 12,
+            "operatorJPY": 200,
+            "operatorPeriodHours": 6,
+            "status": "unresolved",
+            "sources": [
+              "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+              "https://search.jitensha.jp/search/detail/13203041"
+            ]
+          }
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "musashisakai-2026-10-21",
+      "mapReady": true,
+      "lat": 35.70438886684925,
+      "lng": 139.54526536166668,
+      "mapSource": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+      "coordinateStatus": "municipal_published_facility_point"
+    },
+    {
+      "id": "cpc-13203046",
+      "name": "武蔵境駅東高架下自転車駐車場",
+      "city": "東京都武蔵野市",
+      "prefecture": "東京都",
+      "address": "東京都武蔵野市境南町1丁目1番地内",
+      "station": "武蔵境駅",
+      "phone": "0422-36-5518",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000875.html",
+      "profiles": {
+        "bicycle": {
+          "admissionStatus": "confirmed",
+          "checked": "2026-10-19",
+          "facilityMatched": false,
+          "temporaryStatus": "unverified",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "自転車"
+          ],
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203046?pref_cd=0013&area_cd=00013203"
+            }
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "checked": "2026-10-19",
+          "facilityMatched": false,
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203046?pref_cd=0013&area_cd=00013203"
+            }
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "classesRaw": [
+            "総排気量125cc以下の原付・バイク。125cc超は対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：入庫から2時間まで無料、以降12時間ごとに200円。バイクの定期利用はありません。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "sources": [
+            {
+              "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000875.html",
+              "label": "現行の施設案内・車種別料金"
+            },
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203046",
+              "label": "運営者の2026年10月掲載情報"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。"
+          ],
+          "feeStatus": "current_named_facility_published",
+          "sourcePriceDate": "2026-06-24"
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "musashisakai-2026-10-21",
+      "mapReady": true,
+      "lat": 35.70225651969096,
+      "lng": 139.54708993434906,
+      "mapSource": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000875.html",
+      "coordinateStatus": "municipal_published_facility_point"
+    },
+    {
+      "id": "cpc-13203043",
+      "name": "武蔵境駅西高架下自転車駐車場",
+      "city": "東京都武蔵野市",
+      "prefecture": "東京都",
+      "address": "東京都武蔵野市境南町3丁目2番",
+      "station": "武蔵境駅",
+      "phone": "0422-55-0633",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000870.html",
+      "profiles": {
+        "bicycle": {
+          "admissionStatus": "confirmed",
+          "checked": "2026-10-19",
+          "facilityMatched": false,
+          "temporaryStatus": "unverified",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "自転車"
+          ],
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203043?pref_cd=0013&area_cd=00013203"
+            }
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "checked": "2026-10-19",
+          "facilityMatched": false,
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203043?pref_cd=0013&area_cd=00013203"
+            }
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "classesRaw": [
+            "総排気量125cc以下の原付・バイク。125cc超は対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：入庫から2時間まで無料、以降12時間ごとに200円。バイクの定期利用はありません。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "sources": [
+            {
+              "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000870.html",
+              "label": "現行の施設案内・車種別料金"
+            },
+            {
+              "url": "https://search.jitensha.jp/search/detail/13203043",
+              "label": "運営者の2026年10月掲載情報"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。"
+          ],
+          "feeStatus": "current_named_facility_published",
+          "sourcePriceDate": "2026-04-27"
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "musashisakai-2026-10-21",
+      "mapReady": true,
+      "lat": 35.701993,
+      "lng": 139.539931,
+      "mapSource": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000870.html",
+      "coordinateStatus": "municipal_published_facility_point"
+    },
+    {
+      "id": "musashisakai-smile-h645",
+      "name": "西武スマイルパーク武蔵境駅第3駐輪場",
+      "city": "東京都武蔵野市",
+      "prefecture": "東京都",
+      "address": "東京都武蔵野市境南町3-882-5",
+      "station": "武蔵境駅",
+      "phone": "03-3490-3224",
+      "source": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "classesRaw": [
+            "原付・バイク125cc以下。125cc超は対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：12時間ごと、現金220円、交通系電子マネー200円。無料時間の掲載なし。定期利用は対象外。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "sources": [
+            {
+              "url": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+              "label": "現行の施設案内・車種別料金"
+            },
+            {
+              "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000873.html",
+              "label": "市の車種・料金案内との照合"
+            }
+          ],
+          "currentConditionsRaw": [
+            "バイク用電磁ロック区画。自転車の110円・120円料金はバイクに適用しません。"
+          ]
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+              "label": "施設案内"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の受入はバイク区画から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+              "label": "施設案内"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の受入はバイク区画から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "musashisakai-2026-10-21",
+      "mapReady": true,
+      "lat": 35.70205,
+      "lng": 139.541903,
+      "mapSource": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000873.html",
+      "coordinateStatus": "municipal_published_facility_point"
+    },
+    {
+      "id": "27024",
+      "name": "電車庫通り駐輪場",
+      "city": "東京都三鷹市",
+      "prefecture": "東京都",
+      "address": "東京都三鷹市上連雀3-1-6",
+      "station": "武蔵境駅",
+      "phone": "",
+      "source": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
+      "profiles": {
+        "bicycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "checked": "2026-10-18",
+          "sources": [
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/030/030064.html",
+              "label": "官方或运营方当前页面"
+            },
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/103/103704.html",
+              "label": "官方或运营方当前页面"
+            },
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
+              "label": "官方或运营方当前页面"
+            },
+            {
+              "url": "https://www.mitaka.ne.jp/bicycle_parking/list-category/chiiki/mitaka-south-exit/",
+              "label": "官方或运营方当前页面"
+            }
+          ],
+          "facilityMatched": true,
+          "tariffs": [
+            {
+              "mode": "temporary",
+              "amountJPY": 0,
+              "periodHours": null,
+              "periodStatus": "free_temporary_use_not_monthly",
+              "freeMinutes": null,
+              "source": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
+              "usageRestriction": "7日以上连续停放撤去。"
+            }
+          ],
+          "hours": "24時間",
+          "hoursStatus": "official_published",
+          "feeStatus": "official_vehicle_and_zone_specific",
+          "evidence": [
+            "市官网具名、地址及自行车收费/免费用途对应。"
+          ],
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "checked": "2026-10-18",
+          "sources": [
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/030/030064.html",
+              "label": "官方或运营方当前页面"
+            },
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/103/103704.html",
+              "label": "官方或运营方当前页面"
+            },
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
+              "label": "官方或运营方当前页面"
+            },
+            {
+              "url": "https://www.mitaka.ne.jp/bicycle_parking/list-category/chiiki/mitaka-south-exit/",
+              "label": "官方或运营方当前页面"
+            }
+          ],
+          "facilityMatched": true,
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_published",
+          "usageRestriction": "限符合特定小型分类的私人车及原付区；一般原付类电动滑板车/新基准原付另查。",
+          "feeStatus": "scooter_specific_tariff_unverified",
+          "evidence": [
+            "依据市官网特定原付可使用原付停车场的明确指引，结合本场具名第一种原付车区；限该车区，非普通自行车架。"
+          ],
+          "priceNotice": "市停车政策支持特定原付使用本场原付车区，但未明确特定原付具体收费，不自动套燃油原付收费。",
+          "operatingRestrictions": [],
+          "currentConditionsRaw": []
+        },
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "not_offered",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "classesRaw": [
+            "第一種原動機付自転車のみ。原付二種・自動二輪は対象外。"
+          ],
+          "publishedFeesRaw": "無料の一時利用。定期契約ではありません。7日以上連続した駐輪は撤去対象。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "sources": [
+            {
+              "url": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
+              "label": "現行の施設案内・車種別料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "武蔵境駅東側の電車庫通り駐輪場。第一種原付の50台は収容台数で、空き台数ではありません。"
+          ]
+        }
+      },
+      "motorcycleScope": "unspecified",
+      "expansionBatch": "musashisakai-2026-10-21",
+      "mapReady": true,
+      "lat": 35.701607,
+      "lng": 139.554273,
+      "mapSource": "https://www.city.mitaka.lg.jp/c_service/030/030082.html",
+      "coordinateStatus": "original_directory_point_not_entrance_verified"
+    },
+    {
+      "id": "musashisakai-bike-p-570",
+      "name": "武蔵境バイク駐車場1",
+      "city": "東京都武蔵野市",
+      "prefecture": "東京都",
+      "address": "東京都武蔵野市境2-4",
+      "station": "武蔵境駅",
+      "phone": "",
+      "source": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "not_offered",
+          "regularStatus": "confirmed_application_required",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "classesRaw": [
+            "バイク月極。排気量上限・車室サイズは現行詳細ページに未掲載。"
+          ],
+          "publishedFeesRaw": "月額参考：運営者トップページでは4,000円。施設詳細の賃料欄は「-」のため、契約時の現行額・税込区分・初期費用は未確認。一時利用はありません。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "sources": [
+            {
+              "url": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+              "label": "現行の施設案内・車種別料金"
+            },
+            {
+              "url": "http://www.bike-p.co.jp/",
+              "label": "運営者トップページの施設別掲載賃料"
+            },
+            {
+              "url": "https://www.jmpsa.or.jp/society/parking/area13/p-137003.html",
+              "label": "施設名・月極方式照合（旧台数・料金を現行確定として採用せず）"
+            }
+          ],
+          "currentConditionsRaw": [
+            "閲覧時の施設詳細は「残台数なし・満車」。現在の空きや新規受付を保証するものではありません。"
+          ],
+          "feeStatus": "source_difference_requires_reconciliation"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+              "label": "施設案内"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の受入はバイク区画から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "facilityMatched": true,
+          "checked": "2026-10-21",
+          "tariffs": [],
+          "sources": [
+            {
+              "url": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+              "label": "施設案内"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の受入はバイク区画から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "unspecified",
+      "expansionBatch": "musashisakai-2026-10-21",
+      "mapReady": true,
+      "lat": 35.7067727614679,
+      "lng": 139.543573637876,
+      "mapSource": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+      "coordinateStatus": "operator_published_facility_point"
     }
   ],
   "researchQueue": [
@@ -23063,6 +23606,62 @@
       "vehicle": "motorcycle",
       "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
       "status": "admission_confirmed_location_pending"
+    },
+    {
+      "facilityId": "cpc-13203041",
+      "name": "武蔵境駅みずき通り自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "cpc-13203046",
+      "name": "武蔵境駅東高架下自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000875.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "cpc-13203043",
+      "name": "武蔵境駅西高架下自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000870.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "musashisakai-smile-h645",
+      "name": "西武スマイルパーク武蔵境駅第3駐輪場",
+      "vehicle": "bicycle",
+      "source": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "musashisakai-smile-h645",
+      "name": "西武スマイルパーク武蔵境駅第3駐輪場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://smilepark.seiburealestate-pm.co.jp/parking/detail/h645.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "musashisakai-bike-p-570",
+      "name": "武蔵境バイク駐車場1",
+      "vehicle": "bicycle",
+      "source": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "musashisakai-bike-p-570",
+      "name": "武蔵境バイク駐車場1",
+      "vehicle": "privateElectricScooter",
+      "source": "http://www.bike-p.co.jp/parking_detail.html?id=570",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "name": "Tacyサイクルパーク イトーヨーカドー武蔵境",
+      "vehicle": "motorcycle",
+      "source": "https://bikepark.in/detail_i.cgi?ID=1230",
+      "status": "needs_current_operator_verification",
+      "note": "外部案内の125cc以下・料金情報は未確認。現行の運営者資料を取得後に追加。"
     }
   ],
   "anomalies": [
@@ -23080,26 +23679,32 @@
       "name": "松戸市2027年料金改定",
       "issue": "2027年4月1日施行の料金を現行料金と分離。現行の原付・普二150円と無料施設を掲載。",
       "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/ryokinkaitei_1.html"
+    },
+    {
+      "name": "武蔵境駅みずき通り自転車駐車場",
+      "issue": "市の12時間200円と運営者の6時間200円が相違。受入確認と課金周期未確定を分離。",
+      "source": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html"
     }
   ],
   "stats": {
-    "records": 218,
-    "accepted": 217,
-    "mapped": 197,
+    "records": 224,
+    "accepted": 223,
+    "mapped": 203,
     "pendingCoordinates": 21,
     "prefectures": {
       "埼玉県": 37,
       "千葉県": 154,
-      "神奈川県": 27
+      "神奈川県": 27,
+      "東京都": 6
     },
     "motorcycleScopes": {
       "over125": 14,
       "upTo50": 81,
-      "upTo125": 102,
-      "unspecified": 21
+      "upTo125": 106,
+      "unspecified": 23
     },
-    "researchQueue": 415,
-    "newMapRecords": 197
+    "researchQueue": 423,
+    "newMapRecords": 199
   },
   "expansions": [
     {
@@ -23148,6 +23753,28 @@
         },
         "newMapRecords": 28,
         "researchQueue": 73
+      }
+    },
+    {
+      "batch": "musashisakai-2026-10-21",
+      "checked": "2026-10-21",
+      "stats": {
+        "records": 6,
+        "accepted": 6,
+        "mapped": 6,
+        "pendingCoordinates": 0,
+        "newMapRecords": 2,
+        "restoredMapRecords": 3,
+        "refreshedMapRecords": 1,
+        "cities": {
+          "東京都武蔵野市": 5,
+          "東京都三鷹市": 1
+        },
+        "prefectures": {
+          "東京都": 6
+        },
+        "researchQueue": 8,
+        "feesRequireReconciliation": 2
       }
     }
   ]
