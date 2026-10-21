@@ -413,3 +413,15 @@ test('Musashisakai restores current 125cc temporary spaces and retains disputed 
  const generator=fs.readFileSync(path.join(root,'scripts/regional-motorcycle-pages.mjs'),'utf8');assert.ok(generator.includes('<option>東京都</option>'));
  assert.equal(new Set(places.map(p=>p.id)).size,places.length);
 });
+
+test('Musashisakai follow-up separates current monthly and reserved parking from Google review references',()=>{
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),rows=report.records.filter(r=>r.expansionBatch==='musashisakai-followup-2026-10-21'),places=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places;
+ assert.equal(rows.length,9);assert.equal(rows.filter(r=>r.mapReady).length,7);assert.equal(rows.filter(r=>r.profiles.motorcycle.admissionStatus==='confirmed').length,6);
+ const row=id=>rows.find(r=>r.id===id),q=id=>row(id).profiles.motorcycle;
+ assert.match(q('musashisakai-tokup-310041135').publishedFeesRaw,/400円.*24時間.*予約必須/);assert.equal(q('musashisakai-tokup-310041135').regularStatus,'not_offered');
+ assert.match(q('musashisakai-place-moped').classesRaw.join(' '),/125cc.*500mm/);assert.match(q('musashisakai-place-moped').currentConditionsRaw.join(' '),/施設利用者/);
+ assert.equal(q('musashisakai-tfas').admissionStatus,'unknown');assert.equal(q('musashisakai-tfas').feeDiscrepancy.photoFreeMinutes,30);assert.equal(q('musashisakai-tfas').feeDiscrepancy.secondaryFreeMinutes,60);assert.ok(q('musashisakai-tfas').referenceEvidence[0].sources.length>=2);
+ assert.equal(row('musashisakai-times-buk004534901').mapReady,false);assert.ok(!places.some(p=>p.id==='musashisakai-times-buk004534901'));
+ assert.equal(q('musashisakai-tomy').hours,'24時間');assert.equal(q('musashisakai-tobu-1078').temporaryStatus,'not_offered');
+ for(const r of rows)assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');
+});
