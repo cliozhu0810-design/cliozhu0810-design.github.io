@@ -211876,6 +211876,504 @@
           "特定小型原付の受入はバイク区画から推定していません。"
         ]
       }
+    },
+    "musashisakai-tomy": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://tomybikepark.com/parking/musashisakai",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://tomybikepark.com/parking/musashisakai",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "月極バイク。排気量上限の掲載なし。"
+        ],
+        "publishedFeesRaw": "月額6,050円（税込）。一時利用なし。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "sources": [
+          {
+            "url": "https://tomybikepark.com/parking/musashisakai",
+            "label": "施設別の受入・料金資料"
+          },
+          {
+            "url": "https://www.google.com/maps/place/%E3%83%88%E3%83%9F%E3%83%BC%E3%83%90%E3%82%A4%E3%82%AF%E3%83%91%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E6%AD%A6%E8%94%B5%E5%A2%83/data=!4m7!3m6!1s0x6018ef1ff80ad60b:0x9c0cf218fb9bd714!8m2!3d35.7004379!4d139.5457143!16s%2Fg%2F11y3sd209m!19sChIJC9YK-B_vGGARFNeb-xjyDJw",
+            "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "3区画。No.1は幅1,200×長さ2,400mm、No.2・3は幅1,000×長さ2,400mm。",
+          "閲覧時は全区画満車。初回賃料は契約開始日で異なります。Google Mapsの17時終了は駐輪可能時間として採用していません。"
+        ],
+        "feeStatus": "current_named_facility_published"
+      }
+    },
+    "musashisakai-tobu-1078": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/1078.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/1078.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "月極バイク。中型バイクは相談。排気量上限は未掲載。"
+        ],
+        "publishedFeesRaw": "月額6,600円（税込）。一時利用のバイク料金は未掲載。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "https://www.tobu-re-parking.jp/parking/1078.html",
+            "label": "施設別の受入・料金資料"
+          },
+          {
+            "url": "https://www.google.com/maps/place/TOBU+PARK%E6%AD%A6%E8%94%B5%E5%A2%83%E9%A7%85%E6%9D%B1%E9%AB%98%E6%9E%B6%E4%B8%8B%E9%A7%90%E8%BB%8A%E5%A0%B4/data=!4m7!3m6!1s0x6018efb23ec76f9f:0x5ca47e69d5a19f48!8m2!3d35.7022715!4d139.5467352!16s%2Fg%2F11qn9bnlm8!19sChIJn2_HPrLvGGARSJ-h1Wl-pFw",
+            "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "バイク7台は収容台数。閲覧時は満車。中型バイクは契約前に相談。",
+          "市営の武蔵境駅東高架下自転車駐車場とは別施設・別契約です。"
+        ],
+        "feeStatus": "current_named_facility_published"
+      }
+    },
+    "musashisakai-place-moped": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.musashino.or.jp/place/1001617/1001943.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.musashino.or.jp/place/1001617/1001943.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "125cc以下、かつ車体幅50cm（500mm）以下のバイク。"
+        ],
+        "publishedFeesRaw": "施設利用者向け無料。一時利用、定期契約なし。",
+        "tariffs": [],
+        "hours": "9:30〜22:00（休館日を除く）",
+        "hoursStatus": "official_facility_published",
+        "sources": [
+          {
+            "url": "https://www.musashino.or.jp/place/1001617/1001943.html",
+            "label": "施設別の受入・料金資料"
+          },
+          {
+            "url": "https://www.google.com/maps/place/%E6%AD%A6%E8%94%B5%E9%87%8E%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9%E7%84%A1%E6%96%99%E5%8E%9F%E4%BB%98%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6018ef007b1db965:0xfb445d1166871b1d!8m2!3d35.7011225!4d139.5434867!16s%2Fg%2F11wx_zyt30!19sChIJZbkdewDvGGARHRuHZhFdRPs",
+            "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "施設利用者向け。バイク4台は収容台数。一般の通勤用無料駐輪場として案内していません。",
+          "水曜休館（祝日の場合は開館し翌日休館）、年末年始・図書整理等の休館あり。"
+        ],
+        "feeStatus": "current_named_facility_published"
+      }
+    },
+    "musashisakai-parkdirect-53694": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.park-direct.jp/parkinglot/PK000053694",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.park-direct.jp/parkinglot/PK000053694",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "二輪車全般。寸法上限は未掲載。"
+        ],
+        "publishedFeesRaw": "月額15,875円（税込・管理費含む）。掲載初期費用29,400円。更新料4,475円、車庫証明発行手数料3,300円（必要時）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "sources": [
+          {
+            "url": "https://www.park-direct.jp/parkinglot/PK000053694",
+            "label": "施設別の受入・料金資料"
+          }
+        ],
+        "currentConditionsRaw": [
+          "武蔵境駅東側。屋根・鍵付きコンテナ、1区画にバイク2台の掲載。",
+          "閲覧時は空き待ち可。1年更新。現在の空きを示していません。"
+        ],
+        "feeStatus": "current_named_facility_published"
+      }
+    },
+    "musashisakai-tokup-310041135": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://toku-p.earth-car.com/parking-detail/310041135",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://toku-p.earth-car.com/parking-detail/310041135",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "not_offered",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "バイク専用1台。全長230cm・全幅100cm以下。排気量上限は未掲載。"
+        ],
+        "publishedFeesRaw": "掲載料金400円／24時間（0:00〜24:00）。予約必須。利用日による料金・サービス料は予約画面で確認。",
+        "tariffs": [],
+        "hours": "0:00〜24:00（予約した利用日）",
+        "hoursStatus": "official_facility_published",
+        "sources": [
+          {
+            "url": "https://toku-p.earth-car.com/parking-detail/310041135",
+            "label": "施設別の受入・料金資料"
+          }
+        ],
+        "currentConditionsRaw": [
+          "バイク専用の⑫車室。一般車室からバイク受入を推定していません。",
+          "24時間の掲載料金を超える日またぎ・サービス料等は予約条件によります。"
+        ],
+        "feeStatus": "current_named_facility_published"
+      }
+    },
+    "musashisakai-tfas": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://charinko-tometai.com/musashi-sakai-bicycle-parking/",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://charinko-tometai.com/musashi-sakai-bicycle-parking/",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "125cc超を停めたとのGoogle Maps旧口コミあり。現行の車種受入許可は未確認。"
+        ],
+        "publishedFeesRaw": "参考：2023年11月のGoogle Maps投稿写真の看板はバイク100円／1時間・30分無料。外部記事の無料1時間と相違があり、現行料金・無料時間は未確定。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "https://charinko-tometai.com/musashi-sakai-bicycle-parking/",
+            "label": "参考資料・現行条件未確認"
+          },
+          {
+            "url": "https://www.google.com/maps/place/%E3%83%86%E3%82%A3%E3%83%BC%E3%83%95%E3%82%A1%E3%82%B9%E6%AD%A6%E8%94%B5%E5%A2%83%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6018ef1dfa11633f:0xa36ba82ade24bcb5!8m2!3d35.7017964!4d139.5458518!16s%2Fg%2F11vlb427j6!19sChIJP2MR-h3vGGARtbwk3iqoa6M",
+            "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "参考：Google Mapsの2023年11月の利用報告に125cc超・3台・交通系IC・チェーンロックの記載。現行許可の確定情報ではありません。",
+          "2023年11月投稿写真の看板は無料30分、外部記事は無料1時間。現在の料金と無料時間は未確認。",
+          "Google Mapsの地下住所と屋外駐輪場写真に相違があり、ライザ武蔵境の別区画とは統合していません。"
+        ],
+        "feeStatus": "reference_requires_current_verification",
+        "referenceEvidence": [
+          {
+            "label": "参考・現行条件未確認",
+            "summary": "125cc超を停めたとのGoogle Maps旧口コミあり。現行の車種受入許可は未確認。",
+            "details": [
+              "参考：2023年11月のGoogle Maps投稿写真の看板はバイク100円／1時間・30分無料。外部記事の無料1時間と相違があり、現行料金・無料時間は未確定。",
+              "参考：Google Mapsの2023年11月の利用報告に125cc超・3台・交通系IC・チェーンロックの記載。現行許可の確定情報ではありません。",
+              "2023年11月投稿写真の看板は無料30分、外部記事は無料1時間。現在の料金と無料時間は未確認。",
+              "Google Mapsの地下住所と屋外駐輪場写真に相違があり、ライザ武蔵境の別区画とは統合していません。"
+            ],
+            "sources": [
+              {
+                "url": "https://charinko-tometai.com/musashi-sakai-bicycle-parking/",
+                "label": "参考資料・現行条件未確認"
+              },
+              {
+                "url": "https://www.google.com/maps/place/%E3%83%86%E3%82%A3%E3%83%BC%E3%83%95%E3%82%A1%E3%82%B9%E6%AD%A6%E8%94%B5%E5%A2%83%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6018ef1dfa11633f:0xa36ba82ade24bcb5!8m2!3d35.7017964!4d139.5458518!16s%2Fg%2F11vlb427j6!19sChIJP2MR-h3vGGARtbwk3iqoa6M",
+                "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+              }
+            ],
+            "checked": "2026-10-21"
+          }
+        ],
+        "feeDiscrepancy": {
+          "status": "unresolved",
+          "photoFreeMinutes": 30,
+          "secondaryFreeMinutes": 60
+        }
+      }
+    },
+    "musashisakai-st-building": {
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.jmpsa.or.jp/society/parking/area13/p-1294.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "tariffs": [],
+        "sources": [
+          {
+            "url": "https://www.jmpsa.or.jp/society/parking/area13/p-1294.html",
+            "label": "施設案内"
+          }
+        ],
+        "currentConditionsRaw": [
+          "この車種の受入はバイク区画から推定していません。"
+        ]
+      },
+      "motorcycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "facilityMatched": true,
+        "checked": "2026-10-21",
+        "classesRaw": [
+          "外部案内と2024年のGoogle Maps利用報告では125cc以下。現行の運営者条件は未確認。"
+        ],
+        "publishedFeesRaw": "参考：外部施設案内では3時間無料、以降8時間ごと200円。現行の運営者料金は未確認。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "sources": [
+          {
+            "url": "https://www.jmpsa.or.jp/society/parking/area13/p-1294.html",
+            "label": "参考資料・現行条件未確認"
+          },
+          {
+            "url": "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%89%E3%83%83%E3%83%88%E3%82%B3%E3%83%A0%E6%AD%A6%E8%94%B5%E9%87%8EST%E3%83%93%E3%83%AB%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6018ef985c19db15:0xcb8c6f58126be8db!8m2!3d35.7006108!4d139.5468418!16s%2Fg%2F11hcdvt843!19sChIJFdsZXJjvGGAR2-hrElhvjMs",
+            "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+          }
+        ],
+        "currentConditionsRaw": [
+          "参考：Google Mapsの2024年11月の現地利用報告に125cc以下・14台・チェーン区画の記載。",
+          "古い施設案内の料金を現行確定としていません。大きい車両が停まっていたという別の口コミは125cc超の利用許可の根拠にしていません。"
+        ],
+        "feeStatus": "reference_requires_current_verification",
+        "referenceEvidence": [
+          {
+            "label": "参考・現行条件未確認",
+            "summary": "外部案内と2024年のGoogle Maps利用報告では125cc以下。現行の運営者条件は未確認。",
+            "details": [
+              "参考：外部施設案内では3時間無料、以降8時間ごと200円。現行の運営者料金は未確認。",
+              "参考：Google Mapsの2024年11月の現地利用報告に125cc以下・14台・チェーン区画の記載。",
+              "古い施設案内の料金を現行確定としていません。大きい車両が停まっていたという別の口コミは125cc超の利用許可の根拠にしていません。"
+            ],
+            "sources": [
+              {
+                "url": "https://www.jmpsa.or.jp/society/parking/area13/p-1294.html",
+                "label": "参考資料・現行条件未確認"
+              },
+              {
+                "url": "https://www.google.com/maps/place/%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%89%E3%83%83%E3%83%88%E3%82%B3%E3%83%A0%E6%AD%A6%E8%94%B5%E9%87%8EST%E3%83%93%E3%83%AB%E9%A7%90%E8%BC%AA%E5%A0%B4/data=!4m7!3m6!1s0x6018ef985c19db15:0xcb8c6f58126be8db!8m2!3d35.7006108!4d139.5468418!16s%2Fg%2F11hcdvt843!19sChIJFdsZXJjvGGAR2-hrElhvjMs",
+                "label": "Google Mapsの施設名・位置・口コミ照合（利用許可は運営者資料を優先）"
+              }
+            ],
+            "checked": "2026-10-21"
+          }
+        ]
+      }
     }
   }
 }
