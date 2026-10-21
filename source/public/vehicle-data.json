@@ -209334,6 +209334,2395 @@
           "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
         ]
       }
+    },
+    "matsudo-city-f83c329fe5": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-2516c192b3": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：駐輪後2時間無料、24時間ごと150円。回数券は使用不可。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-40558e39d2": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "無料。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-33d02bd96a": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "無料。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-eae8e7b9a8": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-664d23668b": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-76da9c06a9": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-0d547a40a3": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-c1a14b1e3e": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：駐輪後2時間無料、24時間ごと150円。回数券は使用不可。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-9b5c3bd055": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-1b61aa37ea": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-a4536dd0f3": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。",
+          "この施設は2025年4月から回数券のみ。係員への現金払いはできません。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-35c833f030": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "無料。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-791435d08d": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-39ce209426": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-c1255d8438": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-48e903189e": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-6bb87df9d3": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-c11a431905": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：駐輪後2時間無料、24時間ごと150円。回数券は使用不可。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-19e154ecdc": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-811e08a91e": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-9667cba4f6": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "無料。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-cf8911c43c": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "matsudo-city-eabf9e8d10": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "unverified",
+        "classesRaw": [
+          "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+        ],
+        "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+          "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+        ],
+        "sourcePriceDate": "2026-10-01"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-a1833b67924533": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付：50cc以下、または125cc以下かつ最高出力4kW以下の新基準原付。",
+          "自動二輪：50cc超（新基準原付を除く）。市の表では排気量上限なし。"
+        ],
+        "publishedFeesRaw": "一時利用：原付210円／1回、自動二輪320円／1回。回数券11枚：原付2,100円、自動二輪3,200円。\n年度登録（年額）：原付18,360円、自動二輪21,960円。2026年4月1日～2027年3月31日。年度途中申請額は窓口で確認。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+            "label": "2026年度車種別定期受付"
+          },
+          {
+            "url": "https://www.city.kashiwa.lg.jp/documents/43875/cycle_ryoukin.pdf",
+            "label": "年額使用料"
+          },
+          {
+            "url": "https://cycle.ryde-go.com/ports/23399",
+            "label": "施設名・掲載位置照合"
+          }
+        ],
+        "currentConditionsRaw": [
+          "原付・自動二輪それぞれの受入表に従います。自転車の無料時間はバイクに適用していません。",
+          "回数券は24時間ごとに追加が必要。同日再入場でも別券が必要。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-a93d07d04ad982": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付：50cc以下、または125cc以下かつ最高出力4kW以下の新基準原付。",
+          "自動二輪：50cc超（新基準原付を除く）。市の表では排気量上限なし。"
+        ],
+        "publishedFeesRaw": "バイクの一時利用は対象外。\n年度登録（年額）：原付14,640円、自動二輪17,040円。2026年4月1日～2027年3月31日。年度途中申請額は窓口で確認。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+            "label": "2026年度車種別定期受付"
+          },
+          {
+            "url": "https://www.city.kashiwa.lg.jp/documents/43875/cycle_ryoukin.pdf",
+            "label": "年額使用料"
+          },
+          {
+            "url": "https://cycle.ryde-go.com/ports/23398",
+            "label": "施設名・掲載位置照合"
+          }
+        ],
+        "currentConditionsRaw": [],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "moto-f2827207109c77": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_annual_registration_required",
+        "classesRaw": [
+          "原付：50cc以下、または125cc以下かつ最高出力4kW以下の新基準原付。"
+        ],
+        "publishedFeesRaw": "一時利用：原付210円／1回。回数券11枚：原付2,100円。\n年度登録（年額）：原付18,360円。2026年4月1日～2027年3月31日。年度途中申請額は窓口で確認。",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          },
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+            "label": "2026年度車種別定期受付"
+          },
+          {
+            "url": "https://www.city.kashiwa.lg.jp/documents/43875/cycle_ryoukin.pdf",
+            "label": "年額使用料"
+          },
+          {
+            "url": "https://ekitan.com/transit/access/poi/bmid-eed6c0f3bc864d6921ccff67f630f772",
+            "label": "施設名・掲載位置照合"
+          }
+        ],
+        "currentConditionsRaw": [
+          "原付・自動二輪それぞれの受入表に従います。自転車の無料時間はバイクに適用していません。",
+          "回数券は24時間ごとに追加が必要。同日再入場でも別券が必要。"
+        ],
+        "annualRegistrationStatus": "confirmed_application_required",
+        "registrationPeriod": {
+          "start": "2026-04-01",
+          "end": "2027-03-31"
+        }
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "ageo-cyca-272": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "原付50cc以内、50cc超125cc以下、125cc超（料金区分別）。"
+        ],
+        "publishedFeesRaw": "一時利用：50cc以内310円、50cc超125cc以下360円、125cc超460円（掲載額。課金周期は未掲載）。\n定期：原付50cc以内1か月4,200円・3か月12,100円・6か月23,200円。自動二輪1か月4,700円・3か月13,600円・6か月26,300円。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://charinavi72.jp/system/Parkings/detail/272",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営会社の2026年7月料金表示。"
+        ],
+        "sourcePriceDate": "2026-07"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://charinavi72.jp/system/Parkings/detail/272",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://charinavi72.jp/system/Parkings/detail/272",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "ageo-cyca-603": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "unverified",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "原付（定期区画）。排気量上限の掲載なし。"
+        ],
+        "publishedFeesRaw": "原付・定期：1か月4,190円、3か月12,500円。バイク一時利用の具体的料金は今回未確認。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.charinavi72.jp/system/parkings/detail/603",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営会社の2026年5月料金表示。利用形態のアイコンと収容台数・料金本文に相違があり、一時利用は確認済みにしていません。"
+        ],
+        "sourcePriceDate": "2026-05"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.charinavi72.jp/system/parkings/detail/603",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.charinavi72.jp/system/parkings/detail/603",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "ageo-cyca-605": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "unverified",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "原付、50cc超のバイク（定期区画）。50cc超の上限は未掲載。"
+        ],
+        "publishedFeesRaw": "定期：原付1か月4,190円・3か月12,500円。50cc超1か月4,930円・3か月14,700円。原付は定期新規受付中止・一時利用なし。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.charinavi72.jp/system/parkings/detail/605",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "運営会社の2026年5月料金本文を優先。原付定期は新規受付中止。50cc超区画の新規契約可否は管理室で確認。"
+        ],
+        "sourcePriceDate": "2026-05"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.charinavi72.jp/system/parkings/detail/605",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://www.charinavi72.jp/system/parkings/detail/605",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      }
+    },
+    "kuki-cycle-11462001": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]",
+          "バイク大[125cc超〜]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋内：定期1か月3,930円、3か月11,080円、6か月20,760円。一時利用310円（掲載額。課金周期は未掲載）。\nバイク大[125cc超〜]・１階屋外屋根無：定期1か月4,190円、3か月11,820円、6か月22,140円。一時利用370円（掲載額。課金周期は未掲載）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11462001",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+          "定期のWEB受付は空車保証ではありません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11462001",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+        ],
+        "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋内：定期1か月3,930円、3か月11,080円、6か月20,760円。一時利用310円（掲載額。課金周期は未掲載）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11462001",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車・125cc超の別区画料金は適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      }
+    },
+    "kuki-cycle-11462002": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋外屋根有：定期1か月3,930円、3か月11,790円、6か月23,580円。一時利用310円（掲載額。課金周期は未掲載）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11462002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+          "定期のWEB受付は空車保証ではありません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11462002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+        ],
+        "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋外屋根有：定期1か月3,930円、3か月11,790円、6か月23,580円。一時利用310円（掲載額。課金周期は未掲載）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11462002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車・125cc超の別区画料金は適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      }
+    },
+    "kuki-cycle-11232001": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋外屋根無：定期1か月3,730円、3か月10,630円、6か月20,130円。一時利用300円（掲載額。課金周期は未掲載）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11232001",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+          "定期のWEB受付は空車保証ではありません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11232001",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "confirmed",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+        ],
+        "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋外屋根無：定期1か月3,730円、3か月10,630円、6か月20,130円。一時利用300円（掲載額。課金周期は未掲載）。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11232001",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車・125cc超の別区画料金は適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      }
+    },
+    "kuki-cycle-11232002": {
+      "motorcycle": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+        ],
+        "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋外屋根有：定期1か月4,100円、3か月12,300円、6か月24,600円。一時利用は料金表対象外。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11232002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+          "定期のWEB受付は空車保証ではありません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      },
+      "bicycle": {
+        "admissionStatus": "unknown",
+        "temporaryStatus": "unverified",
+        "regularStatus": "unverified",
+        "classesRaw": [],
+        "publishedFeesRaw": "",
+        "tariffs": [],
+        "hours": "",
+        "hoursStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11232002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+        ]
+      },
+      "privateElectricScooter": {
+        "admissionStatus": "confirmed",
+        "temporaryStatus": "not_offered",
+        "regularStatus": "confirmed_application_required",
+        "classesRaw": [
+          "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+        ],
+        "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋外屋根有：定期1か月4,100円、3か月12,300円、6か月24,600円。一時利用は料金表対象外。",
+        "tariffs": [],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "sources": [
+          {
+            "url": "https://search.jitensha.jp/search/detail/11232002",
+            "label": "公式施設案内・料金"
+          }
+        ],
+        "currentConditionsRaw": [
+          "自転車・125cc超の別区画料金は適用していません。"
+        ],
+        "sourcePriceDate": "2026-10-15"
+      }
     }
   }
 }

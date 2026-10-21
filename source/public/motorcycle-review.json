@@ -17237,6 +17237,2991 @@
       "motorcycleScope": "unspecified",
       "expansionBatch": "east-2026-10-21",
       "mapReady": false
+    },
+    {
+      "id": "matsudo-city-f83c329fe5",
+      "name": "松戸駅東口高架下自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市根本448-7",
+      "station": "松戸駅",
+      "phone": "047-360-0650",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.786236,
+      "lng": 139.903122,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%A0%B9%E6%9C%AC448-7",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市根本448番地"
+    },
+    {
+      "id": "matsudo-city-2516c192b3",
+      "name": "松戸駅西口高架下自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市根本16-10",
+      "station": "松戸駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：駐輪後2時間無料、24時間ごと150円。回数券は使用不可。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.788246,
+      "lng": 139.901627,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%A0%B9%E6%9C%AC16-10",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市根本16番地"
+    },
+    {
+      "id": "matsudo-city-40558e39d2",
+      "name": "松戸駅西口宮前自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市松戸1789",
+      "station": "松戸駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "無料。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.781227,
+      "lng": 139.897278,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%9D%BE%E6%88%B81789",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市松戸1789番地"
+    },
+    {
+      "id": "matsudo-city-33d02bd96a",
+      "name": "松戸駅西口宮田自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市松戸1422-2",
+      "station": "松戸駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "無料。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.781033,
+      "lng": 139.898376,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%9D%BE%E6%88%B81422-2",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市松戸1422番地"
+    },
+    {
+      "id": "matsudo-city-eae8e7b9a8",
+      "name": "北松戸駅東口第1自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市上本郷888-6",
+      "station": "北松戸駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.799946,
+      "lng": 139.91156,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E4%B8%8A%E6%9C%AC%E9%83%B7888-6",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市上本郷888番地"
+    },
+    {
+      "id": "matsudo-city-664d23668b",
+      "name": "北松戸駅西口自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市上本郷530-1",
+      "station": "北松戸駅",
+      "phone": "047-363-3040",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.80431,
+      "lng": 139.910217,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E4%B8%8A%E6%9C%AC%E9%83%B7530-1",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市上本郷530番地"
+    },
+    {
+      "id": "matsudo-city-76da9c06a9",
+      "name": "馬橋駅東口高架下自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市中根39-1",
+      "station": "馬橋駅",
+      "phone": "047-331-5031",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.808258,
+      "lng": 139.91716,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E4%B8%AD%E6%A0%B939-1",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市中根39番地"
+    },
+    {
+      "id": "matsudo-city-0d547a40a3",
+      "name": "馬橋駅西口高架下自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市西馬橋幸町4-12",
+      "station": "馬橋駅",
+      "phone": "047-347-7740",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": false
+    },
+    {
+      "id": "matsudo-city-c1a14b1e3e",
+      "name": "新松戸駅東口第1自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市幸谷630-1",
+      "station": "新松戸駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：駐輪後2時間無料、24時間ごと150円。回数券は使用不可。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": false
+    },
+    {
+      "id": "matsudo-city-9b5c3bd055",
+      "name": "新松戸駅西口第1自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市新松戸1-463",
+      "station": "新松戸駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": false
+    },
+    {
+      "id": "matsudo-city-1b61aa37ea",
+      "name": "新松戸駅西口高架下第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市新松戸2-405",
+      "station": "新松戸駅",
+      "phone": "047-347-3267",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": false
+    },
+    {
+      "id": "matsudo-city-a4536dd0f3",
+      "name": "北小金駅南口第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市小金きよしヶ丘1-2-9",
+      "station": "北小金駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。",
+            "この施設は2025年4月から回数券のみ。係員への現金払いはできません。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.833904,
+      "lng": 139.93338,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E5%B0%8F%E9%87%91%E3%81%8D%E3%82%88%E3%81%97%E3%83%B6%E4%B8%981-2-9",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市小金きよしケ丘一丁目2番地"
+    },
+    {
+      "id": "matsudo-city-35c833f030",
+      "name": "北小金駅南口第4自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市小金きよしヶ丘2-20-11",
+      "station": "北小金駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "無料。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.829323,
+      "lng": 139.935043,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E5%B0%8F%E9%87%91%E3%81%8D%E3%82%88%E3%81%97%E3%83%B6%E4%B8%982-20-11",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市小金きよしケ丘二丁目20番地"
+    },
+    {
+      "id": "matsudo-city-791435d08d",
+      "name": "北小金駅北口第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市殿平賀186-10",
+      "station": "北小金駅",
+      "phone": "047-309-0501",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.834332,
+      "lng": 139.930115,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%AE%BF%E5%B9%B3%E8%B3%80186-10",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市殿平賀186番地"
+    },
+    {
+      "id": "matsudo-city-39ce209426",
+      "name": "松戸新田駅北口第1自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市松戸新田420-1",
+      "station": "松戸新田駅",
+      "phone": "047-369-1058",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.790504,
+      "lng": 139.925812,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%9D%BE%E6%88%B8%E6%96%B0%E7%94%B0420-1",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市松戸新田420番地"
+    },
+    {
+      "id": "matsudo-city-c1255d8438",
+      "name": "稔台駅南口第1自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市稔台7-1-8",
+      "station": "稔台駅",
+      "phone": "047-361-8320",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.788345,
+      "lng": 139.929459,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E7%A8%94%E5%8F%B07-1-8",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市稔台七丁目1番"
+    },
+    {
+      "id": "matsudo-city-48e903189e",
+      "name": "八柱駅北口第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市日暮1-1-14",
+      "station": "八柱駅",
+      "phone": "047-389-0039",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.792057,
+      "lng": 139.938507,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%97%A5%E6%9A%AE1-1-14",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市日暮一丁目1番地"
+    },
+    {
+      "id": "matsudo-city-6bb87df9d3",
+      "name": "八柱駅北口第3自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市日暮2-5-12",
+      "station": "八柱駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.791744,
+      "lng": 139.936768,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%97%A5%E6%9A%AE2-5-12",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市日暮二丁目5番地"
+    },
+    {
+      "id": "matsudo-city-c11a431905",
+      "name": "常盤平駅南口第1自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市常盤平2-34",
+      "station": "常盤平駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：駐輪後2時間無料、24時間ごと150円。回数券は使用不可。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": false
+    },
+    {
+      "id": "matsudo-city-19e154ecdc",
+      "name": "常盤平駅北口第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市常盤平1-31",
+      "station": "常盤平駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": false
+    },
+    {
+      "id": "matsudo-city-811e08a91e",
+      "name": "五香駅東口第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市金ヶ作422",
+      "station": "五香駅",
+      "phone": "047-385-5530",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.797588,
+      "lng": 139.967148,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E9%87%91%E3%83%B6%E4%BD%9C422",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市金ケ作422番地"
+    },
+    {
+      "id": "matsudo-city-9667cba4f6",
+      "name": "元山駅北口第1臨時自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市五香4-58-13",
+      "station": "元山駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "無料。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.791008,
+      "lng": 139.980576,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E4%BA%94%E9%A6%994-58-13",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市五香四丁目58番地"
+    },
+    {
+      "id": "matsudo-city-cf8911c43c",
+      "name": "六実駅第2自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市六実3-8-13",
+      "station": "六実駅",
+      "phone": "047-311-0595",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.794258,
+      "lng": 139.996872,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E5%85%AD%E5%AE%9F3-8-13",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市六実三丁目8番地"
+    },
+    {
+      "id": "matsudo-city-eabf9e8d10",
+      "name": "矢切駅第3自転車駐車場",
+      "city": "千葉県松戸市",
+      "prefecture": "千葉県",
+      "address": "千葉県松戸市栗山18-2",
+      "station": "矢切駅",
+      "phone": "",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "unverified",
+          "classesRaw": [
+            "原付50cc以下・普通自動二輪50cc超125cc以下。125cc超と水色ナンバーのミニカーは対象外。"
+          ],
+          "publishedFeesRaw": "一時利用：1日1回・当日限り150円。回数券は150円券11枚つづり1,500円。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "2026年10月21日時点の現行料金。2027年4月1日からの改定額を現在の料金として適用していません。",
+            "有人管理時間内に受付。時間外は事前購入した回数券をハンドルに貼り付けて利用。"
+          ],
+          "sourcePriceDate": "2026-10-01"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.756004,
+      "lng": 139.900055,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%A0%97%E5%B1%B118-2",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "千葉県松戸市栗山18番地"
+    },
+    {
+      "id": "moto-a1833b67924533",
+      "name": "豊四季駅北口第一駐輪場",
+      "city": "千葉県柏市",
+      "prefecture": "千葉県",
+      "address": "千葉県柏市豊四季154-16",
+      "station": "豊四季駅",
+      "phone": "",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_annual_registration_required",
+          "classesRaw": [
+            "原付：50cc以下、または125cc以下かつ最高出力4kW以下の新基準原付。",
+            "自動二輪：50cc超（新基準原付を除く）。市の表では排気量上限なし。"
+          ],
+          "publishedFeesRaw": "一時利用：原付210円／1回、自動二輪320円／1回。回数券11枚：原付2,100円、自動二輪3,200円。\n年度登録（年額）：原付18,360円、自動二輪21,960円。2026年4月1日～2027年3月31日。年度途中申請額は窓口で確認。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            },
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+              "label": "2026年度車種別定期受付"
+            },
+            {
+              "url": "https://www.city.kashiwa.lg.jp/documents/43875/cycle_ryoukin.pdf",
+              "label": "年額使用料"
+            },
+            {
+              "url": "https://cycle.ryde-go.com/ports/23399",
+              "label": "施設名・掲載位置照合"
+            }
+          ],
+          "currentConditionsRaw": [
+            "原付・自動二輪それぞれの受入表に従います。自転車の無料時間はバイクに適用していません。",
+            "回数券は24時間ごとに追加が必要。同日再入場でも別券が必要。"
+          ],
+          "annualRegistrationStatus": "confirmed_application_required",
+          "registrationPeriod": {
+            "start": "2026-04-01",
+            "end": "2027-03-31"
+          }
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "over125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.867349,
+      "lng": 139.938371,
+      "mapSource": "https://cycle.ryde-go.com/ports/23399",
+      "coordinateStatus": "named_facility_published_point"
+    },
+    {
+      "id": "moto-a93d07d04ad982",
+      "name": "豊四季駅南口第一駐輪場",
+      "city": "千葉県柏市",
+      "prefecture": "千葉県",
+      "address": "千葉県柏市豊四季（豊四季駅南口）",
+      "station": "豊四季駅",
+      "phone": "",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "not_offered",
+          "regularStatus": "confirmed_annual_registration_required",
+          "classesRaw": [
+            "原付：50cc以下、または125cc以下かつ最高出力4kW以下の新基準原付。",
+            "自動二輪：50cc超（新基準原付を除く）。市の表では排気量上限なし。"
+          ],
+          "publishedFeesRaw": "バイクの一時利用は対象外。\n年度登録（年額）：原付14,640円、自動二輪17,040円。2026年4月1日～2027年3月31日。年度途中申請額は窓口で確認。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            },
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+              "label": "2026年度車種別定期受付"
+            },
+            {
+              "url": "https://www.city.kashiwa.lg.jp/documents/43875/cycle_ryoukin.pdf",
+              "label": "年額使用料"
+            },
+            {
+              "url": "https://cycle.ryde-go.com/ports/23398",
+              "label": "施設名・掲載位置照合"
+            }
+          ],
+          "currentConditionsRaw": [],
+          "annualRegistrationStatus": "confirmed_application_required",
+          "registrationPeriod": {
+            "start": "2026-04-01",
+            "end": "2027-03-31"
+          }
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "over125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.865401,
+      "lng": 139.940941,
+      "mapSource": "https://cycle.ryde-go.com/ports/23398",
+      "coordinateStatus": "named_facility_published_point"
+    },
+    {
+      "id": "moto-f2827207109c77",
+      "name": "増尾駅西口第二駐輪場",
+      "city": "千葉県柏市",
+      "prefecture": "千葉県",
+      "address": "千葉県柏市加賀3丁目1859-1",
+      "station": "増尾駅",
+      "phone": "",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_annual_registration_required",
+          "classesRaw": [
+            "原付：50cc以下、または125cc以下かつ最高出力4kW以下の新基準原付。"
+          ],
+          "publishedFeesRaw": "一時利用：原付210円／1回。回数券11枚：原付2,100円。\n年度登録（年額）：原付18,360円。2026年4月1日～2027年3月31日。年度途中申請額は窓口で確認。",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            },
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+              "label": "2026年度車種別定期受付"
+            },
+            {
+              "url": "https://www.city.kashiwa.lg.jp/documents/43875/cycle_ryoukin.pdf",
+              "label": "年額使用料"
+            },
+            {
+              "url": "https://ekitan.com/transit/access/poi/bmid-eed6c0f3bc864d6921ccff67f630f772",
+              "label": "施設名・掲載位置照合"
+            }
+          ],
+          "currentConditionsRaw": [
+            "原付・自動二輪それぞれの受入表に従います。自転車の無料時間はバイクに適用していません。",
+            "回数券は24時間ごとに追加が必要。同日再入場でも別券が必要。"
+          ],
+          "annualRegistrationStatus": "confirmed_application_required",
+          "registrationPeriod": {
+            "start": "2026-04-01",
+            "end": "2027-03-31"
+          }
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "upTo50",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.8297013549,
+      "lng": 139.9761909909,
+      "mapSource": "https://ekitan.com/transit/access/poi/bmid-eed6c0f3bc864d6921ccff67f630f772",
+      "coordinateStatus": "named_facility_published_point"
+    },
+    {
+      "id": "ageo-cyca-272",
+      "name": "上尾西駐輪場",
+      "city": "埼玉県上尾市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県上尾市柏座1-13-14",
+      "station": "上尾駅",
+      "phone": "",
+      "source": "https://charinavi72.jp/system/Parkings/detail/272",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "原付50cc以内、50cc超125cc以下、125cc超（料金区分別）。"
+          ],
+          "publishedFeesRaw": "一時利用：50cc以内310円、50cc超125cc以下360円、125cc超460円（掲載額。課金周期は未掲載）。\n定期：原付50cc以内1か月4,200円・3か月12,100円・6か月23,200円。自動二輪1か月4,700円・3か月13,600円・6か月26,300円。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://charinavi72.jp/system/Parkings/detail/272",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "運営会社の2026年7月料金表示。"
+          ],
+          "sourcePriceDate": "2026-07"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://charinavi72.jp/system/Parkings/detail/272",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://charinavi72.jp/system/Parkings/detail/272",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "over125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.973377,
+      "lng": 139.586807,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E4%B8%8A%E5%B0%BE%E5%B8%82%E6%9F%8F%E5%BA%A71-13-14",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "埼玉県上尾市柏座一丁目13番14号"
+    },
+    {
+      "id": "ageo-cyca-603",
+      "name": "あげおサイクルポート東",
+      "city": "埼玉県上尾市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県上尾市柏座1丁目1-14",
+      "station": "上尾駅",
+      "phone": "",
+      "source": "https://www.charinavi72.jp/system/parkings/detail/603",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "unverified",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "原付（定期区画）。排気量上限の掲載なし。"
+          ],
+          "publishedFeesRaw": "原付・定期：1か月4,190円、3か月12,500円。バイク一時利用の具体的料金は今回未確認。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.charinavi72.jp/system/parkings/detail/603",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "運営会社の2026年5月料金表示。利用形態のアイコンと収容台数・料金本文に相違があり、一時利用は確認済みにしていません。"
+          ],
+          "sourcePriceDate": "2026-05"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.charinavi72.jp/system/parkings/detail/603",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.charinavi72.jp/system/parkings/detail/603",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "unspecified",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.972969,
+      "lng": 139.589279,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E4%B8%8A%E5%B0%BE%E5%B8%82%E6%9F%8F%E5%BA%A71-1-14",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "埼玉県上尾市柏座一丁目1番14号"
+    },
+    {
+      "id": "ageo-cyca-605",
+      "name": "あげおサイクルポート西",
+      "city": "埼玉県上尾市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県上尾市柏座1丁目13-5",
+      "station": "上尾駅",
+      "phone": "",
+      "source": "https://www.charinavi72.jp/system/parkings/detail/605",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "unverified",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "原付、50cc超のバイク（定期区画）。50cc超の上限は未掲載。"
+          ],
+          "publishedFeesRaw": "定期：原付1か月4,190円・3か月12,500円。50cc超1か月4,930円・3か月14,700円。原付は定期新規受付中止・一時利用なし。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.charinavi72.jp/system/parkings/detail/605",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "運営会社の2026年5月料金本文を優先。原付定期は新規受付中止。50cc超区画の新規契約可否は管理室で確認。"
+          ],
+          "sourcePriceDate": "2026-05"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.charinavi72.jp/system/parkings/detail/605",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://www.charinavi72.jp/system/parkings/detail/605",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "特定小型原付の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        }
+      },
+      "motorcycleScope": "unspecified",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 35.974247,
+      "lng": 139.586624,
+      "mapSource": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E4%B8%8A%E5%B0%BE%E5%B8%82%E6%9F%8F%E5%BA%A71-13-5",
+      "coordinateStatus": "gsi_numbered_address_point",
+      "positionPrecision": "address-block",
+      "geocodedAddress": "埼玉県上尾市柏座一丁目13番5号"
+    },
+    {
+      "id": "kuki-cycle-11462001",
+      "name": "東鷲宮駅東口",
+      "city": "埼玉県久喜市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県久喜市桜田1丁目619-4",
+      "station": "東鷲宮駅",
+      "phone": "",
+      "source": "https://search.jitensha.jp/search/detail/11462001",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "バイク小[〜50cc以下]・中[50cc超〜125cc以下]",
+            "バイク大[125cc超〜]"
+          ],
+          "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋内：定期1か月3,930円、3か月11,080円、6か月20,760円。一時利用310円（掲載額。課金周期は未掲載）。\nバイク大[125cc超〜]・１階屋外屋根無：定期1か月4,190円、3か月11,820円、6か月22,140円。一時利用370円（掲載額。課金周期は未掲載）。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11462001",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+            "定期のWEB受付は空車保証ではありません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11462001",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+          ],
+          "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋内：定期1か月3,930円、3か月11,080円、6か月20,760円。一時利用310円（掲載額。課金周期は未掲載）。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11462001",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車・125cc超の別区画料金は適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        }
+      },
+      "motorcycleScope": "over125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 36.08868,
+      "lng": 139.680071,
+      "mapSource": "https://search.jitensha.jp/search/detail/11462001",
+      "coordinateStatus": "operator_published_facility_point"
+    },
+    {
+      "id": "kuki-cycle-11462002",
+      "name": "東鷲宮駅西口",
+      "city": "埼玉県久喜市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県久喜市西大輪3-17-3",
+      "station": "東鷲宮駅",
+      "phone": "",
+      "source": "https://search.jitensha.jp/search/detail/11462002",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+          ],
+          "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋外屋根有：定期1か月3,930円、3か月11,790円、6か月23,580円。一時利用310円（掲載額。課金周期は未掲載）。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11462002",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+            "定期のWEB受付は空車保証ではありません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11462002",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+          ],
+          "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋外屋根有：定期1か月3,930円、3か月11,790円、6か月23,580円。一時利用310円（掲載額。課金周期は未掲載）。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11462002",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車・125cc超の別区画料金は適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 36.088816,
+      "lng": 139.678927,
+      "mapSource": "https://search.jitensha.jp/search/detail/11462002",
+      "coordinateStatus": "operator_published_facility_point"
+    },
+    {
+      "id": "kuki-cycle-11232001",
+      "name": "久喜駅東口",
+      "city": "埼玉県久喜市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県久喜市久喜東2-655-1",
+      "station": "久喜駅",
+      "phone": "",
+      "source": "https://search.jitensha.jp/search/detail/11232001",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+          ],
+          "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋外屋根無：定期1か月3,730円、3か月10,630円、6か月20,130円。一時利用300円（掲載額。課金周期は未掲載）。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11232001",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+            "定期のWEB受付は空車保証ではありません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11232001",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "confirmed",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+          ],
+          "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋外屋根無：定期1か月3,730円、3か月10,630円、6か月20,130円。一時利用300円（掲載額。課金周期は未掲載）。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11232001",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車・125cc超の別区画料金は適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 36.06764,
+      "lng": 139.67884,
+      "mapSource": "https://search.jitensha.jp/search/detail/11232001",
+      "coordinateStatus": "operator_published_facility_point"
+    },
+    {
+      "id": "kuki-cycle-11232002",
+      "name": "久喜駅西口",
+      "city": "埼玉県久喜市",
+      "prefecture": "埼玉県",
+      "address": "埼玉県久喜市久喜中央1-1-16",
+      "station": "久喜駅",
+      "phone": "",
+      "source": "https://search.jitensha.jp/search/detail/11232002",
+      "profiles": {
+        "motorcycle": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "not_offered",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "バイク小[〜50cc以下]・中[50cc超〜125cc以下]"
+          ],
+          "publishedFeesRaw": "バイク小[〜50cc以下]・中[50cc超〜125cc以下]・１階屋外屋根有：定期1か月4,100円、3か月12,300円、6か月24,600円。一時利用は料金表対象外。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11232002",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "125cc以下はバイク中で取扱い（電動キックボードを含む）と運営方が明記。",
+            "定期のWEB受付は空車保証ではありません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        },
+        "bicycle": {
+          "admissionStatus": "unknown",
+          "temporaryStatus": "unverified",
+          "regularStatus": "unverified",
+          "classesRaw": [],
+          "publishedFeesRaw": "",
+          "tariffs": [],
+          "hours": "",
+          "hoursStatus": "unverified",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11232002",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車の利用条件は後日確認。原付・バイクの受入から推定していません。"
+          ]
+        },
+        "privateElectricScooter": {
+          "admissionStatus": "confirmed",
+          "temporaryStatus": "not_offered",
+          "regularStatus": "confirmed_application_required",
+          "classesRaw": [
+            "電動キックボード：運営方の明記に基づきバイク中で取扱い。"
+          ],
+          "publishedFeesRaw": "電動キックボード（バイク中料金）・１階屋外屋根有：定期1か月4,100円、3か月12,300円、6か月24,600円。一時利用は料金表対象外。",
+          "tariffs": [],
+          "hours": "24時間",
+          "hoursStatus": "official_facility_published",
+          "checked": "2026-10-21",
+          "facilityMatched": true,
+          "sources": [
+            {
+              "url": "https://search.jitensha.jp/search/detail/11232002",
+              "label": "公式施設案内・料金"
+            }
+          ],
+          "currentConditionsRaw": [
+            "自転車・125cc超の別区画料金は適用していません。"
+          ],
+          "sourcePriceDate": "2026-10-15"
+        }
+      },
+      "motorcycleScope": "upTo125",
+      "expansionBatch": "north-2026-10-21",
+      "mapReady": true,
+      "lat": 36.06656,
+      "lng": 139.67745,
+      "mapSource": "https://search.jitensha.jp/search/detail/11232002",
+      "coordinateStatus": "operator_published_facility_point"
     }
   ],
   "researchQueue": [
@@ -19576,6 +22561,508 @@
       "vehicle": "bicycle",
       "source": "https://cyps.parking.jitensha.jp/search/detail/11222017/",
       "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-f83c329fe5",
+      "name": "松戸駅東口高架下自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-f83c329fe5",
+      "name": "松戸駅東口高架下自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-2516c192b3",
+      "name": "松戸駅西口高架下自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-2516c192b3",
+      "name": "松戸駅西口高架下自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-40558e39d2",
+      "name": "松戸駅西口宮前自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-40558e39d2",
+      "name": "松戸駅西口宮前自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-33d02bd96a",
+      "name": "松戸駅西口宮田自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-33d02bd96a",
+      "name": "松戸駅西口宮田自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-eae8e7b9a8",
+      "name": "北松戸駅東口第1自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-eae8e7b9a8",
+      "name": "北松戸駅東口第1自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-664d23668b",
+      "name": "北松戸駅西口自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-664d23668b",
+      "name": "北松戸駅西口自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-76da9c06a9",
+      "name": "馬橋駅東口高架下自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-76da9c06a9",
+      "name": "馬橋駅東口高架下自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-0d547a40a3",
+      "name": "馬橋駅西口高架下自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-0d547a40a3",
+      "name": "馬橋駅西口高架下自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-c1a14b1e3e",
+      "name": "新松戸駅東口第1自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-c1a14b1e3e",
+      "name": "新松戸駅東口第1自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-9b5c3bd055",
+      "name": "新松戸駅西口第1自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-9b5c3bd055",
+      "name": "新松戸駅西口第1自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-1b61aa37ea",
+      "name": "新松戸駅西口高架下第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-1b61aa37ea",
+      "name": "新松戸駅西口高架下第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-a4536dd0f3",
+      "name": "北小金駅南口第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-a4536dd0f3",
+      "name": "北小金駅南口第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-35c833f030",
+      "name": "北小金駅南口第4自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-35c833f030",
+      "name": "北小金駅南口第4自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-791435d08d",
+      "name": "北小金駅北口第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-791435d08d",
+      "name": "北小金駅北口第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-39ce209426",
+      "name": "松戸新田駅北口第1自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-39ce209426",
+      "name": "松戸新田駅北口第1自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-c1255d8438",
+      "name": "稔台駅南口第1自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-c1255d8438",
+      "name": "稔台駅南口第1自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-48e903189e",
+      "name": "八柱駅北口第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-48e903189e",
+      "name": "八柱駅北口第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-6bb87df9d3",
+      "name": "八柱駅北口第3自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-6bb87df9d3",
+      "name": "八柱駅北口第3自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-c11a431905",
+      "name": "常盤平駅南口第1自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-c11a431905",
+      "name": "常盤平駅南口第1自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-19e154ecdc",
+      "name": "常盤平駅北口第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-19e154ecdc",
+      "name": "常盤平駅北口第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-811e08a91e",
+      "name": "五香駅東口第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-811e08a91e",
+      "name": "五香駅東口第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-9667cba4f6",
+      "name": "元山駅北口第1臨時自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-9667cba4f6",
+      "name": "元山駅北口第1臨時自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-cf8911c43c",
+      "name": "六実駅第2自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-cf8911c43c",
+      "name": "六実駅第2自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-eabf9e8d10",
+      "name": "矢切駅第3自転車駐車場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "matsudo-city-eabf9e8d10",
+      "name": "矢切駅第3自転車駐車場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/cp_onetime_use.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "moto-a1833b67924533",
+      "name": "豊四季駅北口第一駐輪場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "moto-a1833b67924533",
+      "name": "豊四季駅北口第一駐輪場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "moto-a93d07d04ad982",
+      "name": "豊四季駅南口第一駐輪場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "moto-a93d07d04ad982",
+      "name": "豊四季駅南口第一駐輪場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "moto-f2827207109c77",
+      "name": "増尾駅西口第二駐輪場",
+      "vehicle": "bicycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "moto-f2827207109c77",
+      "name": "増尾駅西口第二駐輪場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/ichijiriyou_01.html",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "ageo-cyca-272",
+      "name": "上尾西駐輪場",
+      "vehicle": "bicycle",
+      "source": "https://charinavi72.jp/system/Parkings/detail/272",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "ageo-cyca-272",
+      "name": "上尾西駐輪場",
+      "vehicle": "privateElectricScooter",
+      "source": "https://charinavi72.jp/system/Parkings/detail/272",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "ageo-cyca-603",
+      "name": "あげおサイクルポート東",
+      "vehicle": "bicycle",
+      "source": "https://www.charinavi72.jp/system/parkings/detail/603",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "ageo-cyca-603",
+      "name": "あげおサイクルポート東",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.charinavi72.jp/system/parkings/detail/603",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "ageo-cyca-605",
+      "name": "あげおサイクルポート西",
+      "vehicle": "bicycle",
+      "source": "https://www.charinavi72.jp/system/parkings/detail/605",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "ageo-cyca-605",
+      "name": "あげおサイクルポート西",
+      "vehicle": "privateElectricScooter",
+      "source": "https://www.charinavi72.jp/system/parkings/detail/605",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "kuki-cycle-11462001",
+      "name": "東鷲宮駅東口",
+      "vehicle": "bicycle",
+      "source": "https://search.jitensha.jp/search/detail/11462001",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "kuki-cycle-11462002",
+      "name": "東鷲宮駅西口",
+      "vehicle": "bicycle",
+      "source": "https://search.jitensha.jp/search/detail/11462002",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "kuki-cycle-11232001",
+      "name": "久喜駅東口",
+      "vehicle": "bicycle",
+      "source": "https://search.jitensha.jp/search/detail/11232001",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "facilityId": "kuki-cycle-11232002",
+      "name": "久喜駅西口",
+      "vehicle": "bicycle",
+      "source": "https://search.jitensha.jp/search/detail/11232002",
+      "status": "retained_for_later_confirmation"
+    },
+    {
+      "name": "北柏駅北口第三駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "新柏駅東口第一駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "新柏駅西口第二駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "増尾駅東口第一駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "逆井駅東口第一駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "逆井駅西口第一駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "高柳駅東口第三駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "大津ケ丘駐輪場駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
+    },
+    {
+      "name": "中ノ橋駐輪場駐輪場",
+      "vehicle": "motorcycle",
+      "source": "https://www.city.kashiwa.lg.jp/jitenshataisaku/tyuurinnjou/r8teikiriyou/r8teikiriyou.html",
+      "status": "admission_confirmed_location_pending"
     }
   ],
   "anomalies": [
@@ -19588,26 +23075,31 @@
       "name": "木更津駅西口第3自転車駐車場",
       "issue": "2025年3月31日営業終了。追加対象外。",
       "source": "https://www.city.kisarazu.lg.jp/soshiki/shimin/chiikikyoseisuishin/1/4222.html"
+    },
+    {
+      "name": "松戸市2027年料金改定",
+      "issue": "2027年4月1日施行の料金を現行料金と分離。現行の原付・普二150円と無料施設を掲載。",
+      "source": "https://www.city.matsudo.chiba.jp/kurashi/douro/jitensha/ryokinkaitei_1.html"
     }
   ],
   "stats": {
-    "records": 184,
-    "accepted": 183,
-    "mapped": 169,
-    "pendingCoordinates": 15,
+    "records": 218,
+    "accepted": 217,
+    "mapped": 197,
+    "pendingCoordinates": 21,
     "prefectures": {
-      "埼玉県": 30,
-      "千葉県": 127,
+      "埼玉県": 37,
+      "千葉県": 154,
       "神奈川県": 27
     },
     "motorcycleScopes": {
-      "over125": 10,
-      "upTo50": 80,
-      "upTo125": 75,
-      "unspecified": 19
+      "over125": 14,
+      "upTo50": 81,
+      "upTo125": 102,
+      "unspecified": 21
     },
-    "researchQueue": 342,
-    "newMapRecords": 169
+    "researchQueue": 415,
+    "newMapRecords": 197
   },
   "expansions": [
     {
@@ -19634,6 +23126,28 @@
         },
         "newMapRecords": 37,
         "researchQueue": 99
+      }
+    },
+    {
+      "batch": "north-2026-10-21",
+      "checked": "2026-10-21",
+      "stats": {
+        "records": 34,
+        "accepted": 34,
+        "mapped": 28,
+        "pendingCoordinates": 6,
+        "cities": {
+          "千葉県松戸市": 24,
+          "千葉県柏市": 3,
+          "埼玉県上尾市": 3,
+          "埼玉県久喜市": 4
+        },
+        "prefectures": {
+          "千葉県": 27,
+          "埼玉県": 7
+        },
+        "newMapRecords": 28,
+        "researchQueue": 73
       }
     }
   ]
