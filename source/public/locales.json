@@ -942,10 +942,10 @@
     "en": "JPEG, PNG or WebP, up to 10MB each. Photos are resized before upload."
   },
   "commentSubmit": {
-    "ja": "確認用に送信",
-    "zh-Hans": "提交审核",
-    "zh-Hant": "提交審核",
-    "en": "Submit for review"
+    "ja": "送信",
+    "zh-Hans": "发送",
+    "zh-Hant": "傳送",
+    "en": "Send"
   },
   "commentSending": {
     "ja": "送信中…",
