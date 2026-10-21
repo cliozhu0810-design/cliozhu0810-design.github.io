@@ -7,7 +7,7 @@
       "name": "浦和パーキングセンター自転車等駐車場",
       "city": "埼玉県さいたま市浦和区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市浦和区仲町1-9-1Google MAP",
+      "address": "埼玉県さいたま市浦和区仲町1-9-1",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-urawaparking/",
       "mapReady": true,
@@ -38,7 +38,7 @@
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。",
             "新規定期受付の停止案内あり。現行受付は管理事務所に確認。"
           ],
-          "hours": "24時間 年中無休※有人管理時間はこちら",
+          "hours": "24時間 年中無休",
           "hoursStatus": "official_facility_published",
           "newRegularApplications": "suspended"
         },
@@ -97,7 +97,7 @@
       "name": "市営さいたま新都心駅東口自転車等駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区吉敷町4-269-1Google MAP",
+      "address": "埼玉県さいたま市大宮区吉敷町4-269-1",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-shintoshin-east/",
       "mapReady": true,
@@ -128,7 +128,7 @@
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。",
             "125cc超の自動二輪は一時利用のみ。定期料金は125cc以下の区画の料金です。"
           ],
-          "hours": "4:00-25:45 年中無休※有人管理時間はこちら",
+          "hours": "4:00-25:45 年中無休",
           "hoursStatus": "official_facility_published"
         },
         "bicycle": {
@@ -186,7 +186,7 @@
       "name": "市営大栄橋錦町自転車駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区錦町682-1Google MAP",
+      "address": "埼玉県さいたま市大宮区錦町682-1",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-omiyawest-taieibashi/",
       "mapReady": true,
@@ -216,7 +216,7 @@
             "運営公社の施設別・現行料金表で確認。窓口受付時間を入出庫時間と混同していません。",
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。"
           ],
-          "hours": "4:00-25:45 年中無休※有人管理時間はこちら",
+          "hours": "4:00-25:45 年中無休",
           "hoursStatus": "official_facility_published"
         },
         "bicycle": {
@@ -274,7 +274,7 @@
       "name": "市営大宮駅西口自転車駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区桜木町1-185Google MAP",
+      "address": "埼玉県さいたま市大宮区桜木町1-185",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-omiyawest-nishiguchi/",
       "mapReady": true,
@@ -304,7 +304,7 @@
             "運営公社の施設別・現行料金表で確認。窓口受付時間を入出庫時間と混同していません。",
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。"
           ],
-          "hours": "4:00-25:45 年中無休※有人管理時間はこちら",
+          "hours": "4:00-25:45 年中無休",
           "hoursStatus": "official_facility_published"
         },
         "bicycle": {
@@ -362,7 +362,7 @@
       "name": "市営シーノ大宮自転車駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区桜木町1-10-19Google MAP",
+      "address": "埼玉県さいたま市大宮区桜木町1-10-19",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-omiyawest-sino/",
       "mapReady": true,
@@ -392,7 +392,7 @@
             "運営公社の施設別・現行料金表で確認。窓口受付時間を入出庫時間と混同していません。",
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。"
           ],
-          "hours": "4:00-25:45 年中無休※有人管理時間はこちら",
+          "hours": "4:00-25:45 年中無休",
           "hoursStatus": "official_facility_published"
         },
         "bicycle": {
@@ -450,7 +450,7 @@
       "name": "大栄橋西臨時自転車駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区桜木町2-385-1Google MAP",
+      "address": "埼玉県さいたま市大宮区桜木町2-385-1",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-omiyawest-taieibashi-rinji/",
       "mapReady": true,
@@ -482,7 +482,7 @@
             "125cc超の自動二輪は一時利用のみ。定期料金は125cc以下の区画の料金です。",
             "新規定期受付の停止案内あり。現行受付は管理事務所に確認。"
           ],
-          "hours": "24時間 年中無休※有人管理時間はこちら",
+          "hours": "24時間 年中無休",
           "hoursStatus": "official_facility_published",
           "newRegularApplications": "suspended"
         },
@@ -541,7 +541,7 @@
       "name": "市営大宮駅東口大門町自転車駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区大門町3-2Google MAP",
+      "address": "埼玉県さいたま市大宮区大門町3-2",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-omiyaeast-daimon/",
       "mapReady": true,
@@ -571,7 +571,7 @@
             "運営公社の施設別・現行料金表で確認。窓口受付時間を入出庫時間と混同していません。",
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。"
           ],
-          "hours": "4:00-25:45 年中無休※有人管理時間はこちら",
+          "hours": "4:00-25:45 年中無休",
           "hoursStatus": "official_facility_published"
         },
         "bicycle": {
@@ -629,7 +629,7 @@
       "name": "市営北大宮駅自転車駐車場",
       "city": "埼玉県さいたま市大宮区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市大宮区土手町3-162-4Google MAP",
+      "address": "埼玉県さいたま市大宮区土手町3-162-4",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-kitaomiya/",
       "mapReady": true,
@@ -706,7 +706,7 @@
         }
       },
       "motorcycleScope": "upTo50",
-      "phone": "NCD駐輪場サポートセンタ―[一時利用の方]0120-3566-21(管理No.6373)[定期利用の方]03-4213-8016(管理No.4564)",
+      "phone": "0120-3566-21",
       "lat": 35.9163033289059,
       "lng": 139.625113547885,
       "mapSource": "https://www.jmpsa.or.jp/society/parking/area11/p-9049.html",
@@ -798,7 +798,7 @@
       "name": "土呂駅第１自転車駐車場",
       "city": "埼玉県さいたま市北区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市北区土呂町1-15-29Google MAP",
+      "address": "埼玉県さいたま市北区土呂町1-15-29",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-toro1/",
       "mapReady": false,
@@ -879,7 +879,7 @@
       "name": "土呂駅第２自転車駐車場",
       "city": "埼玉県さいたま市北区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市北区土呂町1-29-4Google MAP",
+      "address": "埼玉県さいたま市北区土呂町1-29-4",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-toro2/",
       "mapReady": false,
@@ -952,7 +952,7 @@
         }
       },
       "motorcycleScope": "upTo125",
-      "phone": "フリーダイヤル0120-980-319または048-729-6398※月〜金(祝日を除く)9:00-17:00※定期契約の解約手続きについては、下部の「定期解約申請」ボタンにて受付可能です。",
+      "phone": "0120-980-319",
       "coordinateStatus": "pending_named_point_not_using_embed_viewport"
     },
     {
@@ -960,7 +960,7 @@
       "name": "七里駅第２自転車駐車場",
       "city": "埼玉県さいたま市見沼区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市見沼区大字風渡野571Google MAP",
+      "address": "埼玉県さいたま市見沼区大字風渡野571",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-nanasato2/",
       "mapReady": false,
@@ -986,7 +986,7 @@
             "運営公社の施設別・現行料金表で確認。窓口受付時間を入出庫時間と混同していません。",
             "旧協会目録の料金は採用せず、位置の照合にのみ使用。掲載時点の空き・待機人数は現在の空き状況として扱いません。"
           ],
-          "hours": "24時間 年中無休※有人管理時間はこちら",
+          "hours": "24時間 年中無休",
           "hoursStatus": "official_facility_published"
         },
         "bicycle": {
@@ -1041,7 +1041,7 @@
       "name": "日進駅第１自転車駐車場",
       "city": "埼玉県さいたま市北区",
       "prefecture": "埼玉県",
-      "address": "埼玉県さいたま市北区日進町2-1125-30Google MAP",
+      "address": "埼玉県さいたま市北区日進町2-1125-30",
       "station": "",
       "source": "https://www.saitama-toshiseibi.or.jp/bicycle-nisshin1/",
       "mapReady": false,
@@ -1114,7 +1114,7 @@
         }
       },
       "motorcycleScope": "upTo125",
-      "phone": "フリーダイヤル0120-980-319または048-729-6398※月〜金(祝日を除く)9:00-17:00※定期契約の解約手続きについては、下部の「定期解約申請」ボタンにて受付可能です。",
+      "phone": "0120-980-319",
       "coordinateStatus": "pending_named_point_not_using_embed_viewport"
     },
     {
@@ -12707,7 +12707,7 @@
         }
       },
       "motorcycleScope": "upTo125",
-      "phone": "ＮＣＤ駐輪場サポートセンター 0120-3566-21（24時間） （管理番号）橋本駅南口バイク駐車場：4318",
+      "phone": "0120-3566-21",
       "lat": 35.5956772,
       "lng": 139.3424946,
       "mapSource": "https://www.google.com/maps/d/kml?mid=1v3SduRA1lvACjq30Xfg6CVS6AzMhxoc&forcekml=1",
@@ -12791,7 +12791,7 @@
         }
       },
       "motorcycleScope": "over125",
-      "phone": "042-770-6177（受付：橋本駅北口第２自転車駐車場）",
+      "phone": "042-770-6177",
       "lat": 35.594675,
       "lng": 139.34668,
       "mapSource": "https://www.google.com/maps/d/kml?mid=1v3SduRA1lvACjq30Xfg6CVS6AzMhxoc&forcekml=1",
