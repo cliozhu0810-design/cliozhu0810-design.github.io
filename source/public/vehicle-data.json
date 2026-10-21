@@ -44041,13 +44041,15 @@
         "tariffs": [],
         "sources": [
           {
-            "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
+            "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html",
+            "published": "2025-06-20"
           }
         ],
         "currentConditionsRaw": [],
-        "publishedFeesRaw": "一時利用：自転車150円 （最初の2時間は無料）。定期1か月：区内 一般2,500円 学生1,250円／区外 一般3,000円 学生1,500円",
+        "publishedFeesRaw": "当日利用：自転車150円 （最初の2時間は無料）。定期1か月：区内 一般2,500円 学生1,250円／区外 一般3,000円 学生1,500円",
         "hours": "午前4時から 深夜1時30分",
-        "hoursStatus": "official_facility_published"
+        "hoursStatus": "official_facility_published",
+        "sourcePriceDate": "2025-06-20"
       },
       "privateElectricScooter": {
         "admissionStatus": "unknown",
@@ -46961,13 +46963,15 @@
         "tariffs": [],
         "sources": [
           {
-            "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
+            "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html",
+            "published": "2025-06-20"
           }
         ],
         "currentConditionsRaw": [],
-        "publishedFeesRaw": "一時利用：自転車100円 （最初の2時間は無料）。定期1か月：区内 一般1,250円 学生650円／区外 一般1,500円 学生750円",
+        "publishedFeesRaw": "当日利用：自転車100円 （最初の2時間は無料）。定期1か月：区内 一般1,250円 学生650円／区外 一般1,500円 学生750円",
         "hours": "午前4時から 深夜1時30分",
-        "hoursStatus": "official_facility_published"
+        "hoursStatus": "official_facility_published",
+        "sourcePriceDate": "2025-06-20"
       },
       "privateElectricScooter": {
         "admissionStatus": "unknown",
@@ -169145,9 +169149,9 @@
     "cpc-13203041": {
       "bicycle": {
         "admissionStatus": "confirmed",
-        "checked": "2026-10-19",
-        "facilityMatched": false,
-        "temporaryStatus": "unverified",
+        "checked": "2026-10-21",
+        "facilityMatched": true,
+        "temporaryStatus": "confirmed",
         "regularStatus": "confirmed_application_required",
         "classesRaw": [
           "自転車"
@@ -169155,11 +169159,25 @@
         "tariffs": [],
         "sources": [
           {
-            "url": "https://search.jitensha.jp/search/detail/13203041?pref_cd=0013&area_cd=00013203"
+            "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
+            "label": "現行の施設案内・車種別料金",
+            "published": "2026-06-24"
+          },
+          {
+            "url": "https://search.jitensha.jp/search/detail/13203041",
+            "label": "運営者の2026年10月掲載情報",
+            "published": "2026-10-07"
           }
         ],
         "operatingRestrictions": [],
-        "currentConditionsRaw": []
+        "currentConditionsRaw": [
+          "学生等の対象：18歳に達する年度末までの学生、障害者手帳所持者、生活保護受給者。定期利用は申込が必要です。",
+          "三輪自転車などの特殊車両は利用できません。車輪の高さ・太さによってゲートを通過できない場合があります。"
+        ],
+        "hours": "24時間",
+        "hoursStatus": "official_facility_published",
+        "publishedFeesRaw": "一時利用：入庫から2時間無料、以降12時間ごと100円。定期1か月：市内一般2,000円・学生等1,600円、市外一般2,500円・学生等2,100円。長期割引なし。",
+        "sourcePriceDate": "2026-06-24"
       },
       "privateElectricScooter": {
         "admissionStatus": "unknown",
@@ -169185,24 +169203,26 @@
         "classesRaw": [
           "総排気量125cc以下の原付・バイク。125cc超は対象外。"
         ],
-        "publishedFeesRaw": "料金は参考・課金周期に相違あり。市の施設案内：入庫から2時間無料、以降12時間ごと200円。運営者の2026年10月15日掲載：無料時間後6時間ごと200円。現行の課金周期は未確定です。バイクの定期利用はありません。",
+        "publishedFeesRaw": "料金は参考・課金周期に相違あり。市の施設案内：入庫から2時間無料、以降12時間ごと200円。運営者の資料日2026年10月7日：無料時間後6時間ごと200円。現行の課金周期は未確定です。バイクの定期利用はありません。",
         "tariffs": [],
         "hours": "24時間",
         "hoursStatus": "official_facility_published",
         "sources": [
           {
             "url": "https://www.city.musashino.lg.jp/shisetsu_annai/churinjo/musashisakai_eki/1000872.html",
-            "label": "現行の施設案内・車種別料金"
+            "label": "現行の施設案内・車種別料金",
+            "published": "2026-06-24"
           },
           {
             "url": "https://search.jitensha.jp/search/detail/13203041",
-            "label": "運営者の2026年10月掲載情報"
+            "label": "運営者の2026年10月掲載情報",
+            "published": "2026-10-07"
           }
         ],
         "currentConditionsRaw": [
           "2026年度は原付・バイクを一時利用で受入。自転車の定期料金はバイクに適用しません。",
           "受入サイズ：全長2,300mm以下、全幅700mm以下。路面標示内に収まる車両。",
-          "市の2026年6月24日更新ページと運営者の10月15日料金欄で課金周期が一致しません。150円の旧料金は採用していません。"
+          "市の2026年6月24日更新ページと運営者の10月7日現在の料金欄で課金周期が一致しません。150円の旧料金は採用していません。"
         ],
         "feeStatus": "source_difference_requires_reconciliation",
         "sourcePriceDate": "2026-06-24",
@@ -206672,6 +206692,24 @@
           "end": "2027-03-31"
         },
         "annualApplicationFees": {
+          "1": [
+            "1,300円",
+            "650円",
+            "2,610円",
+            "1,300円"
+          ],
+          "2": [
+            "870円",
+            "430円",
+            "1,740円",
+            "870円"
+          ],
+          "3": [
+            "430円",
+            "210円",
+            "870円",
+            "430円"
+          ],
           "4": [
             "5,230円",
             "2,610円",
@@ -206725,24 +206763,6 @@
             "870円",
             "3,490円",
             "1,740円"
-          ],
-          "1": [
-            "1,300円",
-            "650円",
-            "2,610円",
-            "1,300円"
-          ],
-          "2": [
-            "870円",
-            "430円",
-            "1,740円",
-            "870円"
-          ],
-          "3": [
-            "430円",
-            "210円",
-            "870円",
-            "430円"
           ]
         }
       },
@@ -206822,6 +206842,24 @@
           "end": "2027-03-31"
         },
         "annualApplicationFees": {
+          "1": [
+            "1,300円",
+            "650円",
+            "2,610円",
+            "1,300円"
+          ],
+          "2": [
+            "870円",
+            "430円",
+            "1,740円",
+            "870円"
+          ],
+          "3": [
+            "430円",
+            "210円",
+            "870円",
+            "430円"
+          ],
           "4": [
             "5,230円",
             "2,610円",
@@ -206875,24 +206913,6 @@
             "870円",
             "3,490円",
             "1,740円"
-          ],
-          "1": [
-            "1,300円",
-            "650円",
-            "2,610円",
-            "1,300円"
-          ],
-          "2": [
-            "870円",
-            "430円",
-            "1,740円",
-            "870円"
-          ],
-          "3": [
-            "430円",
-            "210円",
-            "870円",
-            "430円"
           ]
         }
       },
@@ -206972,6 +206992,24 @@
           "end": "2027-03-31"
         },
         "annualApplicationFees": {
+          "1": [
+            "1,300円",
+            "650円",
+            "2,610円",
+            "1,300円"
+          ],
+          "2": [
+            "870円",
+            "430円",
+            "1,740円",
+            "870円"
+          ],
+          "3": [
+            "430円",
+            "210円",
+            "870円",
+            "430円"
+          ],
           "4": [
             "5,230円",
             "2,610円",
@@ -207025,24 +207063,6 @@
             "870円",
             "3,490円",
             "1,740円"
-          ],
-          "1": [
-            "1,300円",
-            "650円",
-            "2,610円",
-            "1,300円"
-          ],
-          "2": [
-            "870円",
-            "430円",
-            "1,740円",
-            "870円"
-          ],
-          "3": [
-            "430円",
-            "210円",
-            "870円",
-            "430円"
           ]
         }
       },

@@ -1222,5 +1222,17 @@
     "zh-Hans": "查看过的停车场会显示在这里。",
     "zh-Hant": "查看過的停車場會顯示在這裡。",
     "en": "Places you view will appear here."
+  },
+  "verificationDate": {
+    "ja": "資料確認日：",
+    "zh-Hans": "资料核实日期：",
+    "zh-Hant": "資料核實日期：",
+    "en": "Source checked:"
+  },
+  "verificationMeaning": {
+    "ja": "掲載資料を確認した日です。資料の公開・更新日や、現在の空き状況とは異なります。",
+    "zh-Hans": "表示核对所列资料的日期，区别于资料发布、更新日期，也不代表当前空位。",
+    "zh-Hant": "表示核對所列資料的日期，區別於資料發布、更新日期，也不代表目前空位。",
+    "en": "Date the listed sources were reviewed, separate from their publication dates and live availability."
   }
 }
