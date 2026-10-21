@@ -231,6 +231,10 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
     const cityReports=['kawaguchi','toshima','kanto','motorcycle'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
     const expectedFacilities=new Set(['fk-ikebukuro2','seibu-minami-ikebukuro',...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
+    const coverage=JSON.parse(fs.readFileSync(path.join(out,'area-coverage.json'),'utf8'));
+    assert.equal(coverage.prefectures.length,4);
+    assert.ok(coverage.pages.every(p=>p.count>=3));
+    for(const page of coverage.pages){const html=fs.readFileSync(path.join(out,page.path+'.html'),'utf8');for(const [,id] of html.matchAll(/href="\/parking\/([^"/]+)\.html"/g))expectedFacilities.add(id);}
     assert.deepEqual(new Set(fs.readdirSync(path.join(out,'parking')).map(f=>f.replace(/\.html$/,''))),expectedFacilities);
     assert.equal(fs.readFileSync(path.join(out,'parking.json'),'utf8'),fs.readFileSync(path.join(root,'source/public/parking.json'),'utf8'));
     const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);
@@ -260,6 +264,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
     const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
     for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/kanto-parking','/regional-motorcycle-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    for(const p of ['/areas/index','/areas/tokyo','/areas/saitama','/areas/chiba-prefecture','/areas/kanagawa',...coverage.pages.map(p=>p.path),...Array.from(expectedFacilities,id=>'/parking/'+id)])expectedPaths.add(p);
     assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){
       assert.equal(new URL(url).origin,'https://muko-tomespot.pages.dev');
