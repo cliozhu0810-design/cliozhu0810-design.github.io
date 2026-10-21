@@ -1,15 +1,15 @@
 {
   "title": {
     "ja": "トメスポ｜東京の電動キックボード・自転車・バイク駐輪場",
-    "zh-Hans": "Tomespot｜东京电动滑板车、自行车与摩托车停车地图",
-    "zh-Hant": "Tomespot｜東京電動滑板車、自行車與機車停車地圖",
-    "en": "Tomespot | Tokyo scooter, bicycle and motorcycle parking"
+    "zh-Hans": "Tomespot｜东京、埼玉、千叶、神奈川停车地图",
+    "zh-Hant": "Tomespot｜東京、埼玉、千葉、神奈川停車地圖",
+    "en": "Tomespot | Tokyo, Saitama, Chiba and Kanagawa parking"
   },
   "description": {
     "ja": "トメスポ（Tomespot）は、東京で電動キックボード・自転車・バイクを停める場所を探せる駐輪場マップです。一時利用・月極・定期利用の料金や利用条件を比較し、目的地近くの駐車場を探せます。 横浜市神奈川区の自転車・バイク駐輪場も一部掲載しています。",
-    "zh-Hans": "Tomespot 是东京私人电动滑板车、自行车和摩托车停车地图。查找目的地附近的临时、月租与定期停车场，比较费用和使用条件。 另收录部分横滨市神奈川区自行车与摩托车停车场。",
-    "zh-Hant": "Tomespot 是東京私人電動滑板車、自行車和機車停車地圖。尋找目的地附近的臨時、月租與定期停車場，比較費用和使用條件。 另收錄部分橫濱市神奈川區自行車與機車停車場。",
-    "en": "Find parking for your own electric scooter, bicycle or motorcycle in Tokyo with Tomespot. Compare short-stay, monthly and permit parking fees and conditions near your destination. Selected bicycle and motorcycle parking in Yokohama’s Kanagawa Ward is also included."
+    "zh-Hans": "查找东京、埼玉县、千叶县、神奈川县已收录的电动滑板车、自行车和摩托车停车场，按场所确认50cc、125cc及大型摩托车条件、临停和定期费用。",
+    "zh-Hant": "尋找東京、埼玉縣、千葉縣、神奈川縣已收錄的電動滑板車、自行車及機車停車場，依場所確認50cc、125cc及大型機車條件、臨停和定期費用。",
+    "en": "Find listed scooter, bicycle and motorcycle parking in Tokyo, Saitama, Chiba and Kanagawa. Check facility-specific displacement limits, short-stay fees and permit conditions."
   },
   "home": {
     "ja": "トメスポ ホーム",
