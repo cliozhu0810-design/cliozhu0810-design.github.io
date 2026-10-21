@@ -399,3 +399,17 @@ test('north Chiba and Saitama audit keeps current Matsudo tariffs, Kashiwa annua
  assert.equal(v['kuki-cycle-11232002'].privateElectricScooter.temporaryStatus,'not_offered');assert.match(v['kuki-cycle-11462001'].privateElectricScooter.publishedFeesRaw,/310円/);assert.match(v['kuki-cycle-11462001'].motorcycle.publishedFeesRaw,/370円/);
  assert.equal(report.stats.records,report.records.length);assert.equal(report.stats.mapped,report.records.filter(r=>r.mapReady).length);assert.equal(new Set(parking.map(p=>p.id)).size,parking.length);assert.ok(!JSON.stringify(records).includes('AIza'));
 });
+
+test('Musashisakai restores current 125cc temporary spaces and retains disputed fees without reviving old monthly modes',async()=>{
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),rows=report.records.filter(r=>r.expansionBatch==='musashisakai-2026-10-21'),places=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places,v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles;
+ assert.equal(rows.length,6);const find=id=>rows.find(r=>r.id===id),profile=id=>v[id].motorcycle;
+ for(const r of rows){const p=places.find(p=>p.id===r.id);assert.ok(p);assert.equal(p.displayEligible,true);assert.ok(p.lat>35.69&&p.lat<35.72&&p.lng>139.53&&p.lng<139.56);assert.deepEqual(r.profiles,v[r.id]);assert.equal((await call('/api/comments?facility='+r.id)).status,200);}
+ for(const id of ['cpc-13203041','cpc-13203043','cpc-13203046']){const q=profile(id);assert.equal(q.admissionStatus,'confirmed');assert.equal(q.facilityMatched,true);assert.equal(q.temporaryStatus,'confirmed');assert.equal(q.regularStatus,'not_offered');assert.match(q.classesRaw.join(' '),/125cc以下/);assert.equal(v[id].privateElectricScooter.admissionStatus,'unknown');}
+ const dispute=profile('cpc-13203041');assert.equal(dispute.feeStatus,'source_difference_requires_reconciliation');assert.equal(dispute.feeDiscrepancy.cityPeriodHours,12);assert.equal(dispute.feeDiscrepancy.operatorPeriodHours,6);assert.match(dispute.publishedFeesRaw,/未確定/);assert.ok(!dispute.publishedFeesRaw.includes('150円'));assert.match(dispute.currentConditionsRaw.join(' '),/2,300mm以下.*700mm以下/);
+ for(const id of ['cpc-13203043','cpc-13203046'])assert.match(profile(id).publishedFeesRaw,/2時間まで無料、以降12時間ごとに200円/);
+ const smile=profile('musashisakai-smile-h645');assert.match(smile.publishedFeesRaw,/現金220円、交通系電子マネー200円/);assert.equal(smile.regularStatus,'not_offered');
+ assert.match(profile('27024').publishedFeesRaw,/無料.*7日以上/);assert.match(profile('27024').classesRaw.join(' '),/第一種/);assert.equal(v['27024'].bicycle.admissionStatus,'confirmed');
+ const monthly=profile('musashisakai-bike-p-570');assert.equal(monthly.temporaryStatus,'not_offered');assert.equal(monthly.regularStatus,'confirmed_application_required');assert.match(monthly.publishedFeesRaw,/4,000円.*未確認/);assert.match(monthly.currentConditionsRaw.join(' '),/満車/);assert.equal(monthly.hoursStatus,'unverified');assert.equal(find('musashisakai-bike-p-570').motorcycleScope,'unspecified');assert.ok(monthly.sources.some(s=>s.url==='http://www.bike-p.co.jp/parking_detail.html?id=570'));
+ const generator=fs.readFileSync(path.join(root,'scripts/regional-motorcycle-pages.mjs'),'utf8');assert.ok(generator.includes('<option>東京都</option>'));
+ assert.equal(new Set(places.map(p=>p.id)).size,places.length);
+});
