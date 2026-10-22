@@ -95,7 +95,13 @@
               "url": "https://mstage.i-e.jp/nisikawaguchiekihigasiguchi-coin-cyuurinjyou.html"
             }
           ],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-20"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -121,7 +127,60 @@
           ],
           "hours": "24時間",
           "hoursStatus": "official_facility_published",
-          "publishedFeesRaw": "原付：10時間400円（日本二輪車普及安全協会掲載、2025年2月26日更新）。現在の料金は現地・管理会社に確認。"
+          "publishedFeesRaw": "原付：10時間400円（日本二輪車普及安全協会掲載、2025年2月26日更新）。現在の料金は現地・管理会社に確認。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付限定(排気量上限・新基準原付の可否は管理者に確認)"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付限定（排気量上限・新基準原付の可否は管理者に確認）"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "not_offered",
+              "tariffs": [],
+              "publishedFeesRaw": "原付：10時間400円（日本二輪車普及安全協会掲載、2025年2月26日更新）。現在の料金は現地・管理会社に確認。",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://mstage.i-e.jp/nisikawaguchiekihigasiguchi-coin-cyuurinjyou.html"
+                },
+                {
+                  "url": "https://www.jmpsa.or.jp/society/parking/area11/p-120451.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       }
     },
@@ -189,7 +248,39 @@
           ],
           "hours": "24時間",
           "hoursStatus": "official_facility_published",
-          "publishedFeesRaw": "月額：原付5,000円／中型バイクまで屋根なし7,000円、屋根あり7,500円。税の扱い・初期費用・保証料は契約窓口に確認。"
+          "publishedFeesRaw": "月額：原付5,000円／中型バイクまで屋根なし7,000円、屋根あり7,500円。税の扱い・初期費用・保証料は契約窓口に確認。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付（三輪不可）",
+              "中型バイクまで・区画別制限"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       }
     },
@@ -256,7 +347,42 @@
           ],
           "hours": "24時間（日本二輪車普及安全協会掲載）",
           "hoursStatus": "official_facility_published",
-          "publishedFeesRaw": "月額5,000円（税別）／5,500円（税込）。敷金・契約手数料などの初期費用は契約時に確認。"
+          "publishedFeesRaw": "月額5,000円（税別）／5,500円（税込）。敷金・契約手数料などの初期費用は契約時に確認。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "motorcycle",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "バイク・大型区画あり(車室寸法を確認)"
+                ]
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク・大型区画あり（車室寸法を確認）"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "operator_large_or_unrestricted",
+            "recommendForLargeMotorcycles": true,
+            "basis": "operator_large_label_or_explicit_unrestricted_scope",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [
+              "バイク・大型区画あり(車室寸法を確認)"
+            ],
+            "warnings": []
+          }
         }
       }
     },
@@ -320,7 +446,40 @@
           ],
           "hours": "24時間",
           "hoursStatus": "official_facility_published",
-          "publishedFeesRaw": "月額4,400円（税込）。保証委託料220円、契約時手数料4,400円・初回保証委託料4,400円、更新料4,400円の掲載あり。費用の請求周期・最新条件は契約窓口に確認。"
+          "publishedFeesRaw": "月額4,400円（税込）。保証委託料220円、契約時手数料4,400円・初回保証委託料4,400円、更新料4,400円の掲載あり。費用の請求周期・最新条件は契約窓口に確認。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク専用・区画649679の寸法制限あり"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         }
       }
     },
@@ -369,7 +528,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -443,7 +629,60 @@
           "hours": "SR南鳩ヶ谷駅の始発15分前〜終電15分後",
           "hoursStatus": "official_facility_published",
           "publishedFeesRaw": "1日1回200円。月額：市内3,000円／市外4,500円。2026年10月1日改定後。",
-          "feeEffectiveDate": "2026-10-01"
+          "feeEffectiveDate": "2026-10-01",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "1日1回200円。月額：市内3,000円／市外4,500円。2026年10月1日改定後。",
+              "hours": "SR南鳩ヶ谷駅の始発15分前〜終電15分後",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/jitensyachusyajo/51002.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -526,7 +765,60 @@
           "hours": "24時間（20時〜5時は無人）",
           "hoursStatus": "official_facility_published",
           "publishedFeesRaw": "1日1回200円。月額：市内3,000円／市外4,500円。2026年10月1日改定後。",
-          "feeEffectiveDate": "2026-10-01"
+          "feeEffectiveDate": "2026-10-01",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "1日1回200円。月額：市内3,000円／市外4,500円。2026年10月1日改定後。",
+              "hours": "24時間（20時〜5時は無人）",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/jitensyachusyajo/51001.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -599,7 +891,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -663,7 +982,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -727,7 +1073,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -791,7 +1164,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -865,7 +1265,60 @@
           "hours": "24時間（夜間等は無人）",
           "hoursStatus": "official_facility_published",
           "publishedFeesRaw": "1日1回200円。原付の定期利用不可。2026年10月1日改定後。",
-          "feeEffectiveDate": "2026-10-01"
+          "feeEffectiveDate": "2026-10-01",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "not_offered",
+              "tariffs": [],
+              "publishedFeesRaw": "1日1回200円。原付の定期利用不可。2026年10月1日改定後。",
+              "hours": "24時間（夜間等は無人）",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/jitensyachusyajo/50996.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -939,7 +1392,36 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1004,7 +1486,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1069,7 +1578,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1133,7 +1669,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1207,7 +1770,60 @@
           "hours": "24時間（夜間等は無人）",
           "hoursStatus": "official_facility_published",
           "publishedFeesRaw": "1日1回300円。原付の定期利用不可。2026年10月1日改定後。",
-          "feeEffectiveDate": "2026-10-01"
+          "feeEffectiveDate": "2026-10-01",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "not_offered",
+              "tariffs": [],
+              "publishedFeesRaw": "1日1回300円。原付の定期利用不可。2026年10月1日改定後。",
+              "hours": "24時間（夜間等は無人）",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/jitensyachusyajo/50990.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -1280,7 +1896,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1344,7 +1987,36 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1408,7 +2080,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1496,7 +2195,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8kawaguti1.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -1600,7 +2355,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8nisikawaguchi1.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -1688,7 +2499,36 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1776,7 +2616,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8nisikawaguchi4.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -1864,7 +2760,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -1952,7 +2875,65 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8nisikawaguchi2.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -2056,7 +3037,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8nisikawaguchi5.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -2144,7 +3181,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -2232,7 +3296,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8warabi2.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -2320,7 +3440,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -2392,7 +3539,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -2480,7 +3654,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8warabi7.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -2568,7 +3798,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -2656,7 +3913,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8warabi4.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -2744,7 +4057,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -2832,7 +4172,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8higasikawaguchi1.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -2936,7 +4332,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8higasikawaguchi2.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -3027,7 +4479,63 @@
             "start": "2026-10-01",
             "end": "2027-09-30"
           },
-          "newRegularApplications": "suspended"
+          "newRegularApplications": "suspended",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付:排気量125cc以下の白ナンバーに限定",
+                  "特定小型原動機付自転車を含む"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付：排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "登録手数料（2026年10月〜2027年9月）：市内在住・在勤7,500円／市外11,250円。月額料金ではありません。",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/soshiki/01130/030/4/okibatouroku/tourokugae/51009.html"
+                },
+                {
+                  "url": "https://www.city.kawaguchi.lg.jp/material/files/group/116/r8wakaguchimotogou1.pdf"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": "suspended"
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [
+              "原付:排気量125cc以下の白ナンバーに限定。特定小型原動機付自転車を含む。一般の黄・桃ナンバー125ccや中大型二輪の受入れを意味しません。"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "confirmed",
@@ -3105,7 +4613,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3165,7 +4700,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3227,7 +4789,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3287,7 +4876,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3351,7 +4967,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3413,7 +5056,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3475,7 +5145,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3535,7 +5232,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3595,7 +5319,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3655,7 +5406,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3715,7 +5493,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3775,7 +5580,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3839,7 +5671,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3899,7 +5758,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -3959,7 +5845,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4019,7 +5932,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4081,7 +6021,34 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4143,7 +6110,36 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4212,7 +6208,40 @@
             "現行の運営者料金ページを確認。入口・区画・最新料金は現地でも確認してください。"
           ],
           "feeEffectiveDate": "2026-10-01",
-          "publishedFeesRaw": "125cc以下：24時間220円。月額3,000円。"
+          "publishedFeesRaw": "125cc以下：24時間220円。月額3,000円。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク125cc以下（白ナンバー限定の市営条件とは区別）"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ]
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "published_displacement_ceiling",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4275,7 +6304,36 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4340,7 +6398,59 @@
             "現行の運営者料金ページを確認。入口・区画・最新料金は現地でも確認してください。"
           ],
           "feeEffectiveDate": "2026-10-01",
-          "publishedFeesRaw": "125cc以下：最初12時間350円、以後12時間ごと250円。126cc以上：最初12時間600円、以後12時間ごと400円。"
+          "publishedFeesRaw": "125cc以下：最初12時間350円、以後12時間ごと250円。126cc以上：最初12時間600円、以後12時間ごと400円。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "mixed",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "125cc以下/126cc以上のバイク"
+                ]
+              },
+              "motorcycle": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "125cc以下/126cc以上のバイク"
+                ]
+              }
+            },
+            "sourceLabelsRaw": [
+              "125cc以下／126cc以上のバイク"
+            ],
+            "conditions": [],
+            "mopedData": {
+              "temporaryStatus": "unverified",
+              "regularStatus": "unverified",
+              "tariffs": [],
+              "publishedFeesRaw": "",
+              "hours": "",
+              "hoursStatus": "unverified",
+              "sources": [
+                {
+                  "url": "https://kawaguchi-ud.co.jp/contents/parking_bicycles/kawagutiekimae2.html"
+                }
+              ],
+              "scopeStatus": "class_specific_only",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "over125_upper_limit_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "over125_without_full_large_scope",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [
+              "125cc以下/126cc以上のバイク"
+            ],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4355,7 +6465,13 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-20"
+          }
         }
       }
     },
@@ -4409,7 +6525,42 @@
             "現行の運営者料金ページを確認。入口・区画・最新料金は現地でも確認してください。"
           ],
           "feeEffectiveDate": "2026-10-01",
-          "publishedFeesRaw": "125cc以下：一時24時間220円。月額4,000円。"
+          "publishedFeesRaw": "125cc以下：一時24時間220円。月額4,000円。",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク125cc以下（白ナンバー限定の市営条件とは区別）"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ]
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "published_displacement_ceiling",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -4471,7 +6622,36 @@
             }
           ],
           "classesRaw": [],
-          "currentConditionsRaw": []
+          "currentConditionsRaw": [],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-20",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-20",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",

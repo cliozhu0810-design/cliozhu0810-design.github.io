@@ -696,10 +696,10 @@
     "en": "Bicycle"
   },
   "motorcycleLabel": {
-    "ja": "原付・バイク",
-    "zh-Hans": "原付 / 摩托车",
-    "zh-Hant": "原付 / 摩托車",
-    "en": "Moped / motorcycle"
+    "ja": "バイク",
+    "zh-Hans": "摩托车",
+    "zh-Hant": "摩托車",
+    "en": "Motorcycle"
   },
   "seeTariffs": {
     "ja": "区画別の料金を確認",
@@ -1252,5 +1252,77 @@
     "zh-Hans": "所载信息和投稿不保证当前费用、准入条件或空位情况。",
     "zh-Hant": "所載資訊和投稿不保證目前費用、准入條件或空位情況。",
     "en": "Listed information and user posts do not guarantee current fees, admission rules or availability."
+  },
+  "mopedAvailable": {
+    "ja": "原付駐車可",
+    "zh-Hans": "原付可停",
+    "zh-Hant": "原付可停",
+    "en": "Moped parking available"
+  },
+  "mopedFees": {
+    "ja": "原付料金（参考）",
+    "en": "Moped fees (reference)",
+    "zh-Hans": "原付费用（参考）",
+    "zh-Hant": "原付費用（參考）"
+  },
+  "motorcycleMoped": {
+    "ja": "原付",
+    "en": "Moped",
+    "zh-Hans": "原付",
+    "zh-Hant": "原付"
+  },
+  "motorcycleAutomobile": {
+    "ja": "自動二輪",
+    "en": "Motorcycle",
+    "zh-Hans": "自动二轮",
+    "zh-Hant": "自動二輪"
+  },
+  "generalCommentsEntry": {
+    "ja": "コメント",
+    "zh-Hans": "评论",
+    "zh-Hant": "評論",
+    "en": "Comments"
+  },
+  "generalCommentsTitle": {
+    "ja": "みんなの駐輪場情報",
+    "zh-Hans": "大家分享的停车场",
+    "zh-Hant": "大家分享的停車場",
+    "en": "Community parking tips"
+  },
+  "generalCommentPrompt": {
+    "ja": "駐輪場の情報をシェア",
+    "zh-Hans": "分享停车场信息",
+    "zh-Hant": "分享停車場資訊",
+    "en": "Share a parking tip"
+  },
+  "generalCommentExample": {
+    "ja": "例：池袋駅の近くの「○○駐輪場」に電動キックボードを停められました。場所や料金も教えてください。",
+    "zh-Hans": "例如：池袋站附近的「某某停车场」可以停电动滑板车。也可以补充位置、费用和使用体验。",
+    "zh-Hant": "例如：池袋站附近的「某某停車場」可以停電動滑板車。也可以補充位置、費用和使用體驗。",
+    "en": "For example: I parked my electric scooter at [parking name] near Ikebukuro Station. Share the location, fees or your experience."
+  },
+  "generalCommentsEmpty": {
+    "ja": "まだ投稿はありません。知っている駐輪場を教えてください。",
+    "zh-Hans": "还没有评论，欢迎分享你知道的停车场。",
+    "zh-Hant": "還沒有評論，歡迎分享你知道的停車場。",
+    "en": "No tips yet. Share a parking spot you know."
+  },
+  "legacyMotorcycleLabel": {
+    "ja": "原付・バイク",
+    "zh-Hans": "原付 / 摩托车",
+    "zh-Hant": "原付 / 摩托車",
+    "en": "Moped / motorcycle"
+  },
+  "mopedLabel": {
+    "ja": "原付",
+    "zh-Hans": "原付",
+    "zh-Hant": "原付",
+    "en": "Moped"
+  },
+  "googleMapsListing": {
+    "ja": "Google マップで見る",
+    "zh-Hans": "在 Google 地图查看",
+    "zh-Hant": "在 Google 地圖查看",
+    "en": "View on Google Maps"
   }
 }
