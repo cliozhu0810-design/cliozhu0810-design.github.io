@@ -1,0 +1,140 @@
+{
+  "checkedOn": "2026-10-22",
+  "checks": [
+    {
+      "id": "21108",
+      "result": "moped_only",
+      "url": "https://www.city.adachi.tokyo.jp/kotsu/shisetsu/churinjo/037.html",
+      "scope": "原付バイク（50cc）",
+      "note": "Municipal page separates cars, 50cc mopeds and bicycles. Use the moped section only; car hours and fees do not apply."
+    },
+    {
+      "id": "15128",
+      "result": "up_to_125cc",
+      "url": "https://monthly.mkp.jp/parking/008969-00/",
+      "scope": "月極バイク（排気量125ccまで）",
+      "note": "Monthly motorcycle line has a 125cc ceiling. The linked hourly page quotes bicycle fees; do not use those as motorcycle fees."
+    },
+    {
+      "id": "yk-14102-pd-PK000068358",
+      "result": "up_to_250cc",
+      "url": "https://www.park-direct.jp/parkinglot/PK000068358",
+      "scope": "バイク250cc以下。全長2,300mm・全幅1,100mm以下。",
+      "note": "The generic all-motorcycles vehicle example is overridden by the facility contract condition limiting displacement to 250cc."
+    },
+    {
+      "id": "yk-14102-cyca-943",
+      "result": "up_to_125cc",
+      "url": "https://www.charinavi72.jp/system/Parkings/detail/943",
+      "note": "Facility-specific operator page limits motorcycles to 125cc; the motorcycle fee column differs from bicycles."
+    },
+    {
+      "id": "coinpark-nishishimbashi1-4",
+      "result": "motorcycle_zone_verified_large_unknown",
+      "url": "https://www.coinpark.info/コインパーク西新橋１丁目第４/",
+      "note": "Separate car and motorcycle capacities and tariff sections exist. Stored motorcycle rates match the motorcycle section; large-bike displacement and fit remain unconfirmed."
+    },
+    {
+      "id": "ecolo-shimbashi9-4418",
+      "result": "motorcycle_payment_present_large_and_fee_scope_pending",
+      "url": "https://service.ecolocity.co.jp/park/coin-parking/4418/",
+      "note": "Page includes motorcycle payment methods but the tariff table is not separately labeled by vehicle. Keep large-bike eligibility and motorcycle-specific tariff scope pending."
+    },
+    {
+      "id": "bikepark-karasuyama200284",
+      "result": "operator_large_bays",
+      "url": "https://81989.jp/parking/detail/200284",
+      "note": "Operator identifies two large motorcycle bays, each 1,000mm wide and 2,300mm long. Monthly only; individual vehicle fit required."
+    },
+    {
+      "id": "inzai-akippa-382dc1cf8680",
+      "result": "mixed_car_motorcycle_reservation",
+      "url": "https://www.akippa.com/parking/382dc1cf8680af97736d6785f14257c6",
+      "note": "Reservation listing explicitly accepts motorcycles alongside cars. Its 500cm by 300cm limit is a shared reservable space, not a dedicated motorcycle bay."
+    },
+    {
+      "id": "yk-14102-pd-PK000184097",
+      "result": "motorcycle_zone_verified_large_unknown",
+      "url": "https://www.park-direct.jp/parkinglot/PK000184097",
+      "note": "Motorcycle-specific contract section and monthly fee are present. No published motorcycle dimensions; generic motorcycle acceptance does not confirm large-bike fit."
+    },
+    {
+      "id": "yk-14102-pd-PK000184096",
+      "result": "motorcycle_zone_verified_large_unknown",
+      "url": "https://www.park-direct.jp/parkinglot/PK000184096",
+      "note": "Motorcycle-specific contract section exists. Do not infer large-bike dimensions from the facility name."
+    },
+    {
+      "id": "yk-14102-pd-PK000121591",
+      "result": "mixed_car_motorcycle_zones",
+      "url": "https://www.park-direct.jp/parkinglot/PK000121591",
+      "note": "Separate car and motorcycle contracts. The stored 1,353 yen monthly fee belongs to the motorcycle section; car fee is not imported. Motorcycle dimensions remain unspecified."
+    },
+    {
+      "id": "yk-14102-pd-PK000022093",
+      "result": "mixed_car_motorcycle_zones",
+      "url": "https://www.park-direct.jp/parkinglot/PK000022093",
+      "note": "Motorcycle monthly tiers are separate from mechanical car spaces. Retain only the two motorcycle fee tiers; mechanical car dimensions do not apply."
+    },
+    {
+      "id": "yk-14102-pd-PK000151232",
+      "result": "motorcycle_zone_dimensions_verified",
+      "url": "https://www.park-direct.jp/parkinglot/PK000151232",
+      "note": "Motorcycle contract section lists length 2,400mm and width 940mm. Preserve individual fit conditions without promoting unspecified displacement to large-bike confirmation."
+    },
+    {
+      "id": "yk-14102-navicycle-hazawa",
+      "result": "motorcycle_zone_verified_large_unknown",
+      "url": "https://www.navipark1.com/parkingDetail/N05696.html",
+      "note": "The 60-minute 200-yen rate is explicitly tied to motorcycle spaces 42 through 48. The general bicycle rack restriction is not evidence for large motorcycles."
+    },
+    {
+      "id": "yk-14102-pd-PK000189924",
+      "result": "fetch_unavailable",
+      "url": "https://www.park-direct.jp/parkinglot/PK000189924",
+      "note": "Could not retrieve the source during this check. Preserve prior evidence; do not upgrade large-bike admission."
+    },
+    {
+      "id": "yk-14102-pd-PK000201411",
+      "result": "fetch_unavailable",
+      "url": "https://www.park-direct.jp/parkinglot/PK000201411",
+      "note": "Could not retrieve the source during this check. Preserve prior evidence; do not upgrade large-bike admission."
+    },
+    {
+      "id": "15112",
+      "result": "fetch_unavailable",
+      "url": "https://www.jks-jrg.jp/search/detail_01057/",
+      "note": "Source returned an error. Existing separate small and medium/large reference terms are retained with their original evidence date."
+    },
+    {
+      "group": "shinagawa_municipal",
+      "result": "generic_motorcycle_only",
+      "url": "https://www.city.shinagawa.tokyo.jp/kurashi/chiikikotsu/1009419/1003494/1009760.html",
+      "note": "Municipal list separates motorcycle capacity and tariffs, but its generic motorcycle labels do not establish a large-bike displacement ceiling."
+    },
+    {
+      "group": "kisarazu_moped_facilities",
+      "ids": [
+        "moto-177f9a73f279be",
+        "moto-28bb51b0a79401",
+        "moto-b7830154c2e260",
+        "moto-1d8ccd18c824d1"
+      ],
+      "result": "moped_only_negative_large_statement",
+      "url": "https://www.yurin-net.co.jp/management-facility/kisarazu.php",
+      "note": "Operator conditions limit admission to the first-class moped scope; text saying large bikes have not been confirmed must not be parsed as positive acceptance."
+    },
+    {
+      "id": "moto-480ac0d48f1223",
+      "result": "separate_moped_and_large_inclusive_motorcycle_zones",
+      "url": "https://www.keisei-park.com/motorbike/motorhourly/motorhourly-chiba/kamagaya/bike-kitahatsutomi01.html",
+      "note": "The 50cc moped zone excludes large covered bikes, while a separate motorcycle zone explicitly includes them. Keep the two admissions and fees separate."
+    },
+    {
+      "id": "moto-d5fe98a0fb4dd6",
+      "result": "fetch_unavailable",
+      "url": "https://www.keisei-park.com/motorbike/motorhourly/motorhourly-chiba/funabashi/bike-misaki02.html",
+      "note": "Source unavailable in this check; retained stored moped-only wording excludes large covered motorcycles."
+    }
+  ]
+}

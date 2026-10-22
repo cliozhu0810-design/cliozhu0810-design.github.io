@@ -1233,7 +1233,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前4時から 深夜1時30分",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
@@ -1308,7 +1335,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
@@ -1383,7 +1437,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/020994.html"
@@ -1519,7 +1600,62 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "午前4時から 深夜1時30分",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "午前4時から 深夜1時30分",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
@@ -1595,7 +1731,36 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
@@ -1670,7 +1835,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前4時から 深夜1時30分",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
@@ -1746,7 +1938,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
@@ -1821,7 +2040,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
@@ -1896,7 +2142,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
@@ -1971,7 +2244,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
@@ -2046,7 +2346,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前4時00分から 深夜1時30分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007070.html"
@@ -2100,7 +2427,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -2126,7 +2459,63 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "定期1か月：区内 一般2,800円 学生1,850円／区外 一般3,000円 学生2,000円",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "定期1か月：区内 一般2,800円 学生1,850円／区外 一般3,000円 学生2,000円",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007070.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/2605011407.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007070.html"
@@ -2201,7 +2590,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前4時00分から 深夜1時30分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007070.html"
@@ -2276,7 +2692,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007079.html"
@@ -2330,7 +2773,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -2353,7 +2802,60 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "午前4時00分から 深夜1時30分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "午前4時00分から 深夜1時30分まで",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
@@ -2407,7 +2909,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -2430,7 +2938,60 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
@@ -2554,7 +3115,60 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "午前4時00分から 深夜1時30分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "午前4時00分から 深夜1時30分まで",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
@@ -2629,7 +3243,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
@@ -2683,7 +3324,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -2709,7 +3356,63 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "午前4時00分から 深夜1時30分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "午前4時00分から 深夜1時30分まで",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007076.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/2605011407.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007076.html"
@@ -2784,7 +3487,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前6時00分から 深夜0時15分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007081.html"
@@ -2859,7 +3589,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前6時00分から 深夜0時45分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007080.html"
@@ -2913,7 +3670,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -2936,7 +3699,60 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007080.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007080.html"
@@ -3011,7 +3827,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007080.html"
@@ -3086,7 +3929,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前6時00分から 深夜0時45分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
@@ -3140,7 +4010,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -3168,7 +4044,63 @@
           ],
           "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "5:00〜24:45（原付案内）",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "5:00〜24:45（原付案内）",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/2605011407.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
@@ -3222,7 +4154,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -3250,7 +4188,63 @@
           ],
           "publishedFeesRaw": "定期1か月：区内 一般1,750円 学生1,200円／区外 一般2,100円 学生1,400円",
           "hours": "5:00〜24:45（原付案内）",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "定期1か月：区内 一般1,750円 学生1,200円／区外 一般2,100円 学生1,400円",
+              "hours": "5:00〜24:45（原付案内）",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/2605011407.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
@@ -3325,7 +4319,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
@@ -3400,7 +4421,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007086.html"
@@ -3475,7 +4523,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021596.html"
@@ -3599,7 +4674,60 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "午前5時00分から 深夜1時15分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "当日利用：原付200円（最初の2時間無料）。定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "午前5時00分から 深夜1時15分まで",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007084.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007084.html"
@@ -3674,7 +4802,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
@@ -3749,7 +4904,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
@@ -3824,7 +5006,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022250.html"
@@ -3902,7 +5111,34 @@
           ],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007088.html"
@@ -3958,7 +5194,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -3980,7 +5222,55 @@
           ],
           "publishedFeesRaw": "最初の1時間無料。以降9時間225円。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "原付用区画"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "原付用区画。排気量・車両寸法は運営者確認。"
+            ],
+            "conditions": [],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "not_offered",
+              "tariffs": [],
+              "publishedFeesRaw": "最初の1時間無料。以降9時間225円。",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007088.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007088.html"
@@ -4055,7 +5345,13 @@
               ],
               "checked": "2026-10-21"
             }
-          ]
+          ],
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         },
         "motorcycle": {
           "admissionStatus": "confirmed",
@@ -4095,7 +5391,55 @@
               ],
               "checked": "2026-10-21"
             }
-          ]
+          ],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "バイク・原付用27台"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク・原付用27台。排気量・寸法の上限は管理者へ確認。"
+            ],
+            "conditions": [],
+            "mopedData": {
+              "temporaryStatus": "confirmed",
+              "regularStatus": "not_offered",
+              "tariffs": [],
+              "publishedFeesRaw": "1時間200円。5時間最大500円（繰り返し）。",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
@@ -4169,7 +5513,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "5:00〜25:00",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007084.html"
@@ -4244,7 +5615,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
@@ -4319,7 +5717,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/029129.html"
@@ -4436,7 +5861,40 @@
               ],
               "checked": "2026-10-21"
             }
-          ]
+          ],
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "運営者の施設別ページにバイク料金の記載あり。排気量・寸法は管理者確認。"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         }
       },
       "source": "https://www.repark.jp/parking_user/bicycle/detail.html?park=8240"
@@ -4511,7 +5969,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
@@ -4586,7 +6071,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007070.html"
@@ -4663,7 +6175,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前4時から 深夜1時30分",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
@@ -4741,7 +6280,34 @@
           ],
           "publishedFeesRaw": "",
           "hours": "7:00〜26:00",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
@@ -4816,7 +6382,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.repark.jp/parking_user/bicycle/detail.html?park=11931"
@@ -4891,7 +6484,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007081.html"
@@ -4966,7 +6586,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/021814.html"
@@ -5041,7 +6688,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "午前4時から 翌1時30分まで",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
@@ -5116,7 +6790,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/020994.html"
@@ -5191,7 +6892,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007080.html"
@@ -5266,7 +6994,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.repark.jp/parking_user/bicycle/detail.html?park=17254"
@@ -5346,7 +7101,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022249.html"
@@ -5421,7 +7203,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007076.html"
@@ -5496,7 +7305,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007077.html"
@@ -5571,7 +7407,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/007079.html"
@@ -5646,7 +7509,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         }
       },
       "source": "https://www.repark.jp/parking_user/bicycle/detail.html?park=25946"
@@ -5710,7 +7600,60 @@
           "publishedFeesRaw": "年期登録：一律9,000円 （1年間）",
           "hours": "24時間",
           "hoursStatus": "official_facility_published",
-          "annualRegistrationStatus": "confirmed_application_required"
+          "annualRegistrationStatus": "confirmed_application_required",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_annual_registration_required",
+              "tariffs": [],
+              "publishedFeesRaw": "年期登録：一律9,000円 （1年間）",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022250.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -5730,7 +7673,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         }
       },
       "source": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/022250.html"
@@ -5788,7 +7737,62 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "moped",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "第一種原付:50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー"
+                ]
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "第一種原付：50cc以下、または125cc以下かつ最高出力4.0kW以下・白ナンバー。ミニカー不可。一般の125ccバイクすべてが対象ではありません。"
+            ],
+            "conditions": [
+              "retain_plate_power_and_new_standard_conditions"
+            ],
+            "mopedData": {
+              "temporaryStatus": "not_offered",
+              "regularStatus": "confirmed_application_required",
+              "tariffs": [],
+              "publishedFeesRaw": "定期1か月：区内 一般3,750円 学生2,500円／区外 一般4,500円 学生3,000円",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/016339.html"
+                },
+                {
+                  "url": "https://www.city.toshima.lg.jp/434/machizukuri/kotsu/churinjo/022247/index.html"
+                }
+              ],
+              "scopeStatus": "facility_category",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "moped_only",
+            "displacementCeilingCC": 125,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -5867,7 +7871,36 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -5943,7 +7976,36 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6019,7 +8081,36 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "hidden_or_canonical_alias"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6098,7 +8189,40 @@
           ],
           "publishedFeesRaw": "最初の1時間無料。以降2時間400円（税込）。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク用区画。排気量・寸法条件は管理者に確認。"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6205,7 +8329,34 @@
           ],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6284,7 +8435,34 @@
           ],
           "publishedFeesRaw": "",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6359,7 +8537,40 @@
           ],
           "publishedFeesRaw": "6:00〜24:00：30分100円。0:00〜6:00：30分50円。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "バイク用区画。排気量・寸法条件は管理者に確認。"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6438,7 +8649,42 @@
           ],
           "publishedFeesRaw": "30分100円。入庫から10時間まで1,000円。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "motorcycle",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "オートバイ専用27台"
+                ]
+              }
+            },
+            "sourceLabelsRaw": [
+              "オートバイ専用27台。原付は不可。車両区分・寸法は管理者に確認。"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6511,7 +8757,42 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "60分100円。駐車後24時間最大800円（繰り返し）。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "motorcycle",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "50cc以上の自動二輪"
+                ]
+              }
+            },
+            "sourceLabelsRaw": [
+              "50cc以上の自動二輪。全長2,100mm以下・全幅900mm以下。14台。"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6586,7 +8867,57 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "60分220円。運営者表記「当日24hまで最大料金900円」（繰り返し）。上限の適用区切りは現地表示で確認。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "mixed",
+            "groups": {
+              "moped": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "50cc以下原付用:全長1,900mm以下・全幅700mm以下"
+                ]
+              },
+              "motorcycle": {
+                "status": "confirmed",
+                "evidenceRaw": [
+                  "50cc超の自動二輪:全長2,400mm以下・全幅1,000mm以下"
+                ]
+              }
+            },
+            "sourceLabelsRaw": [
+              "50cc超の自動二輪：全長2,400mm以下・全幅1,000mm以下。50cc以下原付用：全長1,900mm以下・全幅700mm以下。対応区画を現地確認。二輪7台。"
+            ],
+            "conditions": [],
+            "mopedData": {
+              "temporaryStatus": "unverified",
+              "regularStatus": "unverified",
+              "tariffs": [],
+              "publishedFeesRaw": "",
+              "hours": "24時間",
+              "hoursStatus": "official_facility_published",
+              "sources": [
+                {
+                  "url": "https://times-info.net/P13-tokyo/C116/park-detail-BUK0053738/"
+                }
+              ],
+              "scopeStatus": "class_specific_only",
+              "newRegularApplications": null
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "restricted_to_smaller_classes",
+            "recommendForLargeMotorcycles": false,
+            "basis": "published_displacement_ceiling",
+            "displacementCeilingCC": 50,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6606,7 +8937,13 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "mopedFallback": {
+            "basis": "user_moped_default_policy",
+            "classifiedOn": "2026-10-22",
+            "sourceProfile": "motorcycle.categoryClassification.mopedData",
+            "evidenceChecked": "2026-10-21"
+          }
         }
       },
       "source": "https://times-info.net/P13-tokyo/C116/park-detail-BUK0053738/"
@@ -6661,7 +8998,40 @@
           ],
           "publishedFeesRaw": "月額8,800円（税込）。",
           "hours": "24時間",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            },
+            "sourceLabelsRaw": [
+              "屋外・屋根なし4台。区画幅1,000mm×長さ2,400mm。固定アンカーあり。"
+            ],
+            "conditions": []
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "unconfirmed_large",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": [
+              "generic_motorcycle_admission_does_not_confirm_large_fit"
+            ]
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6734,7 +9104,34 @@
           "currentConditionsRaw": [],
           "publishedFeesRaw": "",
           "hours": "",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "unspecified",
+            "groups": {
+              "moped": {
+                "status": "unknown",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "unknown",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "admission_unconfirmed",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
@@ -6813,7 +9210,34 @@
           ],
           "publishedFeesRaw": "",
           "hours": "9:00〜22:00",
-          "hoursStatus": "official_facility_published"
+          "hoursStatus": "official_facility_published",
+          "categoryClassification": {
+            "version": 1,
+            "classifiedOn": "2026-10-22",
+            "evidenceChecked": "2026-10-21",
+            "disposition": "rejected",
+            "groups": {
+              "moped": {
+                "status": "rejected",
+                "evidenceRaw": []
+              },
+              "motorcycle": {
+                "status": "rejected",
+                "evidenceRaw": []
+              }
+            }
+          },
+          "scopeAudit": {
+            "version": 1,
+            "auditedOn": "2026-10-22",
+            "sourceEvidenceChecked": "2026-10-21",
+            "status": "not_accepted",
+            "recommendForLargeMotorcycles": false,
+            "basis": "existing_admission_evidence",
+            "displacementCeilingCC": null,
+            "evidenceRaw": [],
+            "warnings": []
+          }
         },
         "privateElectricScooter": {
           "admissionStatus": "unknown",
