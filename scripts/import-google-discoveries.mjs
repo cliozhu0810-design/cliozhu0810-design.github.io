@@ -3,6 +3,7 @@ import {createHash} from 'node:crypto';
 const file=new URL('../source/public/parking.json',import.meta.url);
 const audit=JSON.parse(fs.readFileSync(new URL('../source/data/google-coverage-audit.json',import.meta.url)));
 const parking=JSON.parse(fs.readFileSync(file));
+if(parking.places.some(p=>p.facilityIdentityConfirmed||p.discoveryResolution))throw Error('Reviewed discoveries are present; preserve confirmation changes instead of reimporting the original queue');
 const baseline=parking.places.filter(p=>!p.discoveryOnly);
 if(createHash('sha256').update(JSON.stringify(baseline)).digest('hex')!==audit.baseline.sha256)throw Error('Existing records changed; review the discovery audit before reimporting');
 parking.places=[...baseline,...audit.additions.map(a=>a.record)];

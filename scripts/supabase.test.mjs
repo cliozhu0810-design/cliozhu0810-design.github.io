@@ -77,7 +77,7 @@ test('private storage adapter does not make missing photos public',async()=>{
 });
 test('general parking tips use the existing moderation queue and stay separate from facility comments',async()=>{
   const id=crypto.randomUUID(),data=new FormData();
-  for(const [k,v] of Object.entries({id,facility:'__general__',vehicle:'privateElectricScooter',body:'池袋站附近的某某停车场可以停滑板车。'}))data.set(k,v);
+  for(const [k,v] of Object.entries({id,facility:'__general__',vehicle:'privateElectricScooter',region:'池袋駅周辺',body:'池袋站附近的某某停车场可以停滑板车。'}))data.set(k,v);
   const submit=()=>call('/api/comments',{method:'POST',headers:{Origin:origin,'x-forwarded-for':'192.0.2.90'},body:data});
   assert.equal((await submit()).status,201);
   assert.equal((await submit()).status,200);
@@ -89,7 +89,7 @@ test('general parking tips use the existing moderation queue and stay separate f
   assert.equal(queue.find(c=>c.id===id).kind,'general');
   assert.equal((await call('/api/admin/comments/'+id,{method:'PATCH',headers:auth,body:JSON.stringify({status:'approved',note:'verify later'})})).status,200);
   const published=(await list()).find(c=>c.id===id);
-  assert.equal(published.body,data.get('body'));assert.equal(published.kind,'general');assert.equal(published.adminNote,undefined);
+  assert.equal(published.region,'池袋駅周辺');assert.equal(published.body,data.get('body'));assert.equal(published.kind,'general');assert.equal(published.adminNote,undefined);
   const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places[0].id;
   assert.ok(!(await (await call('/api/comments?facility='+facility)).json()).comments.some(c=>c.id===id));
   data.set('facility','__not_a_facility__');data.set('id',crypto.randomUUID());assert.equal((await submit()).status,400);

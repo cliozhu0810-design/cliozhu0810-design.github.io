@@ -13,10 +13,12 @@ function context(){const elements={search:{value:''},ward:{value:''},unknown:{ch
  Object.assign(c,{parking,vehicles:read('public/vehicle-data.json'),locales:read('public/locales.json')});
  vm.runInContext('dataset=parking;vehicleData=vehicles;messages=locales;state.places=parking.places;',c);return c;}
 test('Google discoveries preserve every existing record and remain unverified',()=>{
- const baseline=parking.places.filter(p=>!p.discoveryOnly),newRows=parking.places.filter(p=>p.discoveryOnly);
+ const review=read('data/discovery-confirmation-review.json'),originalIds=new Set(audit.additions.map(a=>a.record.id)),before=new Map(review.appliedChanges.map(c=>[c.id,c.before]));
+ const baseline=parking.places.filter(p=>!originalIds.has(p.id)).map(p=>before.get(p.id)||p),newRows=parking.places.filter(p=>p.discoveryOnly);
+ assert.equal(parking.places.filter(p=>originalIds.has(p.id)&&!p.discoveryOnly).length,41);
  assert.equal(baseline.length,audit.baseline.records);
  assert.equal(createHash('sha256').update(JSON.stringify(baseline)).digest('hex'),audit.baseline.sha256);
- assert.equal(newRows.length,audit.summary.added);
+ assert.equal(newRows.length,audit.summary.added-41);
  assert.equal(new Set(parking.places.map(p=>p.id)).size,parking.places.length);
  assert.equal(new Set(newRows.map(p=>p.googleMapsUrl.match(/!1s([^!]+)/)[1])).size,newRows.length);
  const vehicles=read('public/vehicle-data.json');
@@ -27,8 +29,8 @@ test('Google discoveries preserve every existing record and remain unverified',(
 test('unverified category hints appear by default without leaking into scooter or confirmed modes',()=>{
  const c=context();const ids=(vehicle,mode='all')=>{Object.assign(c,{vehicle,mode});return JSON.parse(vm.runInContext('state.vehicle=vehicle;state.mode=mode;JSON.stringify(filtered().map(p=>p.id))',c));};
  const sets=Object.fromEntries(['bicycle','moped','motorcycle','privateElectricScooter'].map(v=>[v,new Set(ids(v))]));
- for(const p of parking.places.filter(p=>p.discoveryOnly))for(const [v,set] of Object.entries(sets))assert.equal(set.has(p.id),p.discoveryVehicleHints.includes(v),p.name+' '+v);
- const confirmed=new Set(ids('bicycle','temporary'));for(const p of audit.additions)assert.ok(!confirmed.has(p.record.id));
+ for(const p of parking.places.filter(p=>p.discoveryOnly))for(const [v,set] of Object.entries(sets))assert.equal(set.has(p.id),p.displayEligible!==false&&p.discoveryVehicleHints.includes(v),p.name+' '+v);
+ const confirmed=new Set(ids('bicycle','temporary'));for(const p of parking.places.filter(p=>p.discoveryOnly))assert.ok(!confirmed.has(p.id));
  assert.ok(sets.privateElectricScooter.has('jks-00800'));
 });
 test('discovery cards and marker details expose exactly one safe Google Maps destination',()=>{

@@ -7,7 +7,7 @@ const labels={bicycle:'自転車',privateElectricScooter:'電動キックボー�
 export function addAreaPages({root,output,siteUrl}){
  const read=f=>JSON.parse(fs.readFileSync(path.join(root,'source/public',f),'utf8'));
  const parking=read('parking.json'),vehicles=read('vehicle-data.json'),locales=read('locales.json'),dataLocales=read('data-locales.json');
- const viewProfiles=Object.fromEntries(Object.entries(vehicles.profiles).map(([id,row])=>[id,categoryProfiles(row)]));
+ const viewProfiles=Object.fromEntries(Object.entries({...vehicles.profiles,...vehicles.reviewedProfiles}).map(([id,row])=>[id,categoryProfiles(row)]));
  const places=parking.places.filter(p=>p.displayEligible!==false);
  const pref=p=>p.ward.startsWith('埼玉県')?'埼玉県':p.ward.startsWith('千葉県')?'千葉県':p.ward.startsWith('神奈川県')||p.ward.startsWith('横浜市')?'神奈川県':'東京都';
  const known=p=>Object.values(viewProfiles[p.id]||{}).some(q=>q.admissionStatus==='confirmed'&&q.facilityMatched);
