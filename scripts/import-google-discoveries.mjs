@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const file=new URL('../source/public/parking.json',import.meta.url);
+const audit=JSON.parse(fs.readFileSync(new URL('../source/data/google-coverage-audit.json',import.meta.url)));
+const parking=JSON.parse(fs.readFileSync(file));
+const baseline=parking.places.filter(p=>!p.discoveryOnly);
+if(createHash('sha256').update(JSON.stringify(baseline)).digest('hex')!==audit.baseline.sha256)throw Error('Existing records changed; review the discovery audit before reimporting');
+parking.places=[...baseline,...audit.additions.map(a=>a.record)];
+if(new Set(parking.places.map(p=>p.id)).size!==parking.places.length)throw Error('Duplicate facility IDs');
+fs.writeFileSync(file,(JSON.stringify(parking,null,2)+'\n').replace(/\n/g,'\r\n'));
+console.log(`Preserved ${baseline.length} records; added ${audit.additions.length} unverified Google Maps listings.`);

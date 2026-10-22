@@ -159,7 +159,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
     .replace(/<meta name="google-site-verification"[^>]*\/?\s*>/g,'')
     .replace(/(href=")([^"\s]+)(")/g,(_,a,p,b)=>a+htmlPath(p)+b)
     .replace(new RegExp(siteUrl.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(/[^"<\\s]*)','g'),(_,p)=>siteUrl+htmlPath(p));
-  const allowed = /^(parking\/[^/]+\.html|vendor\/.+|(?:station-search\.js|app\.js|comments\.js|comments\.css|data-locales\.json|icon\.svg|locales\.json|parking\.json|vehicle-data\.json|prefectures\.json|prefectures-license\.txt|style\.css|search-pages\.css|parking-directory\.html|kickboard-parking\.html|bicycle-parking\.html|motorcycle-parking\.html|robots\.txt|sitemap\.xml))$/;
+  const allowed = /^(parking\/[^/]+\.html|vendor\/.+|(?:station-search\.js|scooter-screening\.js|vehicle-categories\.js|discovery-listings\.js|app\.js|comments\.js|comments\.css|data-locales\.json|icon\.svg|locales\.json|parking\.json|vehicle-data\.json|prefectures\.json|prefectures-license\.txt|style\.css|search-pages\.css|parking-directory\.html|kickboard-parking\.html|bicycle-parking\.html|motorcycle-parking\.html|robots\.txt|sitemap\.xml))$/;
   function copy(dir,relative='') {
     for(const item of fs.readdirSync(dir,{withFileTypes:true})) {
       const rel=relative+item.name, full=path.join(dir,item.name);

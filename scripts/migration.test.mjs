@@ -377,7 +377,7 @@ test('eastern Chiba and Saitama expansion keeps annual fees, motorcycle classes 
  assert.equal(records.length,41);assert.equal(records.filter(r=>r.mapReady).length,37);const prior=report.records.filter(r=>!r.expansionBatch||r.expansionBatch==='east-2026-10-21');assert.equal(prior.length,184);assert.equal(prior.filter(r=>r.profiles.motorcycle.admissionStatus==='confirmed').length,183);assert.equal(prior.filter(r=>r.mapReady).length,169);
  for(const [city,count] of [['千葉県印西市',6],['千葉県成田市',15],['千葉県木更津市',4],['埼玉県越谷市',9]])assert.equal(records.filter(r=>r.city===city).length,count);
  const find=name=>records.find(r=>r.name===name),q=id=>records.find(r=>r.id===id).profiles.motorcycle;
- for(const r of records){assert.deepEqual(v[r.id],r.profiles);assert.equal(r.profiles.bicycle.admissionStatus,'unknown');assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');if(r.mapReady){assert.equal(parking.filter(p=>p.id===r.id).length,1);assert.ok(Number.isFinite(r.lat)&&Number.isFinite(r.lng));assert.equal((await call('/api/comments?facility='+r.id)).status,200);}else assert.ok(!parking.some(p=>p.id===r.id));}
+ for(const r of records){assert.deepEqual(v[r.id],r.profiles);assert.equal(r.profiles.bicycle.admissionStatus,r.id.startsWith('inzai-cyca-')?'confirmed':'unknown');assert.equal(r.profiles.privateElectricScooter.admissionStatus,'unknown');if(r.mapReady){assert.equal(parking.filter(p=>p.id===r.id).length,1);assert.ok(Number.isFinite(r.lat)&&Number.isFinite(r.lng));assert.equal((await call('/api/comments?facility='+r.id)).status,200);}else assert.ok(!parking.some(p=>p.id===r.id));}
  for(const r of records.filter(r=>r.city==='千葉県印西市')){const p=r.profiles.motorcycle;assert.equal(r.motorcycleScope,'upTo125');assert.equal(p.regularStatus,'confirmed_annual_registration_required');assert.match(p.publishedFeesRaw,/200円／24時間/);assert.match(p.publishedFeesRaw,/7,700円/);assert.equal(p.registrationPeriod.end,'2027-03-31');}
  const narita=find('JR成田駅西口駐輪場').profiles.motorcycle;assert.equal(narita.temporaryStatus,'not_offered');assert.deepEqual(narita.annualApplicationFees['10'],['2,610円','1,300円','5,230円','2,610円']);assert.match(narita.publishedFeesRaw,/郵送料110円/);
  const free=find('成田駅西口 無料第1駐輪場');assert.equal(free.motorcycleScope,'upTo50');assert.equal(free.profiles.motorcycle.temporaryStatus,'confirmed');assert.match(free.profiles.motorcycle.publishedFeesRaw,/無料/);
@@ -438,4 +438,58 @@ test('Ukimafunado scooter reference is visible without claiming official accepta
  vm.runInContext('state.places=[fixture];state.vehicle="privateElectricScooter";vehicleData={profiles};messages=l;dataMessages=d;',c);
  assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',c),'jks-00800');assert.equal(vm.runInContext('filtered()[0].status',c),'unknown');vm.runInContext('state.mode="temporary"',c);assert.equal(vm.runInContext('filtered().length',c),1);
  for(const lang of ['ja','zh-Hans','zh-Hant','en']){c.lang=lang;vm.runInContext('locale=lang',c);const html=vm.runInContext('referenceEvidenceHtml(profiles[fixture.id].privateElectricScooter)',c);assert.ok(html.includes(dataLocales[q.referenceEvidence[0].summary][lang]));assert.ok(html.includes('lang="'+lang+'"'));assert.ok(!html.includes('undefined'));assert.equal(vm.runInContext('statusText(filtered()[0])',c),locales.reportedUse[lang]);}
+});
+
+test('moped defaults include scooter candidates without inventing official admission, fees or user reviews',()=>{
+ const v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))),l=JSON.parse(fs.readFileSync(path.join(root,'source/public/locales.json')));
+ const elements={search:{value:''},ward:{value:''},unknown:{checked:false}};
+ const c=vm.createContext({URL,localStorage:{getItem:()=>null},document:{getElementById:id=>elements[id]}});
+ vm.runInContext(fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0],c);
+ const m={admissionStatus:'confirmed',facilityMatched:true,classesRaw:['原付50cc以下'],temporaryStatus:'confirmed',regularStatus:'confirmed_application_required',checked:'2026-10-22',publishedFeesRaw:'100円',sources:[{url:'https://example.com/moped'}]};
+ const q={admissionStatus:'unknown',facilityMatched:true,temporaryStatus:'unverified',regularStatus:'unverified',tariffs:[],sources:[]};
+ c.rows={candidate:{motorcycle:m,privateElectricScooter:q},rejected:{motorcycle:m,privateElectricScooter:{...q,admissionStatus:'rejected'}},unmatched:{motorcycle:{...m,facilityMatched:false},privateElectricScooter:q},bikeOnly:{motorcycle:{...m,classesRaw:['自動二輪125cc超のみ']},privateElectricScooter:q},closed:{motorcycle:{...m,temporaryClosureNotice:{startDate:'2020-01-01',endDateInclusive:'2099-12-31'}},privateElectricScooter:q},explicitBan:{motorcycle:m,privateElectricScooter:{...q,currentConditionsRaw:['電動キックボードは駐車できません']}},annual:{motorcycle:{...m,temporaryStatus:'not_offered',regularStatus:'confirmed_annual_registration_required'},privateElectricScooter:q}};
+ c.messagesFixture=l;c.policy=v.scooterDefaultPolicy;
+ vm.runInContext('dataset={source:"https://example.com/"};vehicleData={profiles:rows,scooterDefaultPolicy:policy};messages=messagesFixture;state.vehicle="privateElectricScooter";state.places=Object.keys(rows).map(id=>({id,name:id,displayEligible:true}));',c);
+ assert.deepEqual(JSON.parse(vm.runInContext('JSON.stringify(filtered().map(p=>p.id).sort())',c)),['annual','candidate']);
+ const derived=JSON.parse(vm.runInContext('JSON.stringify(mopedDefaultProfile(rows.candidate))',c));assert.equal(derived.admissionStatus,'unknown');assert.equal(derived.publishedFeesRaw,undefined);assert.deepEqual(derived.tariffs,[]);assert.equal(derived.referenceEvidence,undefined);
+ for(const lang of ['ja','zh-Hans','zh-Hant','en']){c.lang=lang;assert.equal(vm.runInContext('locale=lang;statusText(profilePlace(state.places[0]))',c),l.mopedAvailable[lang]);}
+ assert.equal(vm.runInContext('state.mode="temporary";filtered().map(p=>p.id).join(",")',c),'candidate');
+ assert.deepEqual(JSON.parse(vm.runInContext('state.mode="monthly";JSON.stringify(filtered().map(p=>p.id).sort())',c)),['annual','candidate']);
+ assert.equal(vm.runInContext('state.mode="annual";filtered().map(p=>p.id).join(",")',c),'annual');
+ assert.equal(q.admissionStatus,'unknown');assert.equal(q.includeInVehicleResults,undefined);
+});
+
+test('priority motorcycle batch keeps large bay dimensions, current fees, suspended reservations and moped-only modes separate',()=>{
+ const report=JSON.parse(fs.readFileSync(path.join(root,'source/public/motorcycle-review.json'))),v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))).profiles,parking=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places;
+ const rows=report.records.filter(r=>r.expansionBatch==='shimbashi-uchisaiwaicho-karasuyama-2026-10-22');assert.equal(rows.length,11);assert.equal(rows.filter(r=>r.mapReady).length,8);
+ for(const r of rows){assert.deepEqual(r.profiles,v[r.id]);assert.equal(parking.filter(p=>p.id===r.id).length,r.mapReady?1:0);}
+ const q=id=>v[id].motorcycle;
+ assert.match(q('tokyopublic-shimbashi3-51').publishedFeesRaw,/60分200円/);assert.match(q('tokyopublic-shimbashi3-51').classesRaw.join(' '),/2.5m/);
+ assert.equal(q('tokyopublic-higashishimbashi1-53').newRegularApplications,'suspended');assert.match(q('tokyopublic-higashishimbashi1-53').classesRaw.join(' '),/50cc以下.*不可/);
+ assert.match(q('times-hibiya-buk0048641').classesRaw.join(' '),/2,000mm/);assert.match(q('times-hibiya-buk0048641').publishedFeesRaw,/17,500円/);assert.ok(!q('times-hibiya-buk0048641').publishedFeesRaw.includes('15,710'));
+ assert.match(q('karasuyama-nirin1745').publishedFeesRaw,/8,800円.*11,000円.*4,400円/);assert.match(q('bikepark-karasuyama200333').classesRaw.join(' '),/大型.*2,200mm/);
+ assert.equal(q('12014').regularStatus,'not_offered');assert.equal(q('12014').temporaryStatus,'confirmed');assert.match(q('12014').publishedFeesRaw,/4時間以内100円.*24時間以内400円/);
+ assert.equal(v['bikepark-karasuyama200284'].bicycle.admissionStatus,'unknown');assert.equal(v['bikepark-karasuyama200284'].privateElectricScooter.admissionStatus,'unknown');
+});
+
+test('motorcycle category preparation respects negative clauses, restricted mopeds and class-specific modes',async()=>{
+ const {classifyMotorcycle}=await import('./motorcycle-classification.mjs');
+ const make=classesRaw=>classifyMotorcycle({admissionStatus:'confirmed',facilityMatched:true,classesRaw,temporaryStatus:'confirmed',regularStatus:'confirmed_application_required',publishedFeesRaw:'原付100円／自動二輪200円'});
+ for(const text of ['原動機付自転車50cc以下。公式の50cc超125cc以下欄は○ではない。','第一種原付：125cc以下かつ最高出力4.0kW以下・白ナンバー。','原動機付自転車（新基準125cc以下・最高出力4kW以下を含む。全125ccではない）']){const c=make([text]);assert.equal(c.disposition,'moped');assert.equal(c.groups.motorcycle.status,'unknown');assert.equal(c.mopedData.publishedFeesRaw,'');}
+ assert.equal(make(['125cc以下のミニバイク。125cc超は対象外。']).disposition,'mixed');
+ assert.equal(make(['自動二輪車125cc超。原付不可。']).disposition,'motorcycle');
+ assert.equal(make(['バイク（排気量上限は未確認）']).disposition,'unspecified');
+ const mixed=make(['原付50cc以下・普通自動二輪50cc超125cc以下']);assert.equal(mixed.mopedData.regularStatus,'unverified');assert.equal(mixed.mopedData.temporaryStatus,'unverified');
+ const structured=classifyMotorcycle({admissionStatus:'confirmed',classes:[{classCode:'原',scope:'50cc以下／新基准原付',admissionStatus:'confirmed',temporaryStatus:'confirmed',regularStatus:'not_offered',tariffs:[{sourceVehicle:'原',temporary:{amountJPY:100,status:'confirmed'}}]},{classCode:'大',scope:'125cc以上',admissionStatus:'confirmed',temporaryStatus:'confirmed',regularStatus:'confirmed_application_required',tariffs:[{sourceVehicle:'大',temporary:{amountJPY:300,status:'confirmed'}}]}]});
+ assert.equal(structured.disposition,'mixed');assert.equal(structured.mopedData.regularStatus,'not_offered');assert.equal(structured.mopedData.tariffs.length,1);assert.equal(structured.mopedData.tariffs[0].temporary.amountJPY,100);
+});
+
+test('stored moped fallbacks preserve official scooter status and render fees only as moped references in four languages',()=>{
+ const v=JSON.parse(fs.readFileSync(path.join(root,'source/public/vehicle-data.json'))),l=JSON.parse(fs.readFileSync(path.join(root,'source/public/locales.json'))),d=JSON.parse(fs.readFileSync(path.join(root,'source/public/data-locales.json')));
+ const c=vm.createContext({URL,localStorage:{getItem:()=>null},document:{getElementById:()=>null}});vm.runInContext(fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0],c);c.v=v;c.l=l;c.d=d;
+ vm.runInContext('vehicleData=v;messages=l;dataMessages=d;dataset={source:"https://example.com"};state.vehicle="privateElectricScooter";',c);
+ for(const [id,row] of Object.entries(v.profiles)){if(!row.privateElectricScooter?.mopedFallback)continue;assert.equal(row.privateElectricScooter.admissionStatus,'unknown');assert.equal(row.motorcycle.categoryClassification.groups.moped.status,'confirmed');const fees=row.motorcycle.categoryClassification.mopedData.publishedFeesRaw;if(fees)for(const lang of ['ja','zh-Hans','zh-Hant','en'])assert.ok(d[fees]?.[lang],id);}
+ c.place={id:'12014',name:'烏山中央自転車等駐車場',address:'東京都世田谷区南烏山5-17-23',ward:'世田谷区'};
+ for(const lang of ['ja','zh-Hans','zh-Hant','en']){c.lang=lang;const html=vm.runInContext('locale=lang;profileDetailHtml(profilePlace(place),{compact:true})',c);assert.ok(html.includes(l.mopedFees[lang]));assert.ok(html.includes(d[v.profiles['12014'].motorcycle.publishedFeesRaw][lang]));assert.ok(html.includes(l.mopedAvailable[lang]));assert.ok(!html.includes('undefined'));}
+ assert.ok(JSON.stringify(v.profiles['jks-00800'].privateElectricScooter).includes('user_supplied_review_text'));
 });

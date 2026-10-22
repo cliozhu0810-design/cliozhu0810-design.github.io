@@ -75,6 +75,44 @@ test('Supabase private-photo and moderation flow, CORS and rate limit work throu
 test('private storage adapter does not make missing photos public',async()=>{
   assert.equal(await createStorage(env).BUCKET.get('missing'),null);
 });
+test('general parking tips use the existing moderation queue and stay separate from facility comments',async()=>{
+  const id=crypto.randomUUID(),data=new FormData();
+  for(const [k,v] of Object.entries({id,facility:'__general__',vehicle:'privateElectricScooter',body:'池袋站附近的某某停车场可以停滑板车。'}))data.set(k,v);
+  const submit=()=>call('/api/comments',{method:'POST',headers:{Origin:origin,'x-forwarded-for':'192.0.2.90'},body:data});
+  assert.equal((await submit()).status,201);
+  assert.equal((await submit()).status,200);
+  assert.equal(comments.get(id).status,'pending');
+  const list=async()=> (await (await call('/api/comments?facility=__general__')).json()).comments;
+  assert.deepEqual(await list(),[]);
+  const auth={Authorization:'Bearer valid-admin',Origin:origin,'Content-Type':'application/json'};
+  const queue=(await (await call('/api/admin/comments?status=pending',{headers:auth})).json()).comments;
+  assert.equal(queue.find(c=>c.id===id).kind,'general');
+  assert.equal((await call('/api/admin/comments/'+id,{method:'PATCH',headers:auth,body:JSON.stringify({status:'approved',note:'verify later'})})).status,200);
+  const published=(await list()).find(c=>c.id===id);
+  assert.equal(published.body,data.get('body'));assert.equal(published.kind,'general');assert.equal(published.adminNote,undefined);
+  const facility=JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places[0].id;
+  assert.ok(!(await (await call('/api/comments?facility='+facility)).json()).comments.some(c=>c.id===id));
+  data.set('facility','__not_a_facility__');data.set('id',crypto.randomUUID());assert.equal((await submit()).status,400);
+  data.set('facility','__general__');data.set('body','');assert.equal((await submit()).status,400);
+  data.set('body','x'.repeat(2001));assert.equal((await submit()).status,400);
+  assert.ok(!JSON.parse(fs.readFileSync(path.join(root,'source/public/parking.json'))).places.some(p=>p.id==='__general__'));
+});
+test('new moped and motorcycle comments stay separate while old combined comments retain their label',async()=>{
+ const ids=[];
+ for(const vehicle of ['moped','motorcycle']){
+  const id=crypto.randomUUID(),data=new FormData();ids.push(id);
+  for(const [key,value]of Object.entries({id,facility:'__general__',vehicle,body:'four-category test'}))data.set(key,value);
+  assert.equal((await call('/api/comments',{method:'POST',headers:{Origin:origin,'x-forwarded-for':'192.0.2.93'},body:data})).status,201);
+  assert.equal(comments.get(id).vehicle,vehicle==='motorcycle'?'motorcycleV2':'moped');
+  comments.get(id).status='approved';
+ }
+ const legacyId=crypto.randomUUID();comments.set(legacyId,{...comments.get(ids[1]),id:legacyId,vehicle:'motorcycle'});
+ const published=(await (await call('/api/comments?facility=__general__')).json()).comments;
+ assert.equal(published.find(c=>c.id===ids[0]).vehicle,'moped');
+ assert.equal(published.find(c=>c.id===ids[1]).vehicle,'motorcycle');
+ assert.equal(published.find(c=>c.id===ids[1]).legacyMotorcycle,false);
+ assert.equal(published.find(c=>c.id===legacyId).legacyMotorcycle,true);
+});
 test('Pages build uses function path, static administrator page and public keys only',()=>{
   const out=fs.mkdtempSync(path.join(os.tmpdir(),'tomespot-supabase-'));
   const saved=process.env.TOMESPOT_SUPABASE_KEY;
