@@ -1324,5 +1324,17 @@
     "zh-Hans": "在 Google 地图查看",
     "zh-Hant": "在 Google 地圖查看",
     "en": "View on Google Maps"
+  },
+  "commentRegion": {
+    "ja": "地域",
+    "zh-Hans": "留言地区",
+    "zh-Hant": "留言地區",
+    "en": "Area"
+  },
+  "commentRegionPlaceholder": {
+    "ja": "例：池袋駅周辺",
+    "zh-Hans": "例如：池袋站附近",
+    "zh-Hant": "例如：池袋站附近",
+    "en": "e.g. around Ikebukuro Station"
   }
 }

@@ -32,6 +32,6 @@
   const temporaryStatus=admissionStatus==='confirmed'?mode('temporaryStatus'):'unverified',regularStatus=admissionStatus==='confirmed'?mode('regularStatus'):'unverified';
   return {...m,category:kind,sourceCategory:'motorcycle',admissionStatus,classes:[],classesRaw:group?.evidenceRaw||[],scope:undefined,tariffs:admissionStatus==='confirmed'?tariffs:[],publishedFeesRaw:admissionStatus==='confirmed'?publishedFeesRaw:'',temporaryStatus,regularStatus,annualRegistrationStatus:regular.includes(regularStatus)&&regularStatus.includes('annual')?'confirmed_application_required':undefined,includeInVehicleResults:false};
  }
- function profiles(row){if(!row)return Object.fromEntries(types.map(k=>[k,empty()]));if(cache.has(row))return cache.get(row);const result={bicycle:normalize(row.bicycle),privateElectricScooter:normalize(row.privateElectricScooter),moped:normalize(derive(row.motorcycle,'moped')),motorcycle:normalize(derive(row.motorcycle,'motorcycle'))};cache.set(row,result);return result;}
+ function profiles(row){if(!row)return Object.fromEntries(types.map(k=>[k,empty()]));if(row.reviewedCategories)return Object.fromEntries(types.map(k=>[k,normalize(row.reviewedCategories[k])]));if(cache.has(row))return cache.get(row);const result={bicycle:normalize(row.bicycle),privateElectricScooter:normalize(row.privateElectricScooter),moped:normalize(derive(row.motorcycle,'moped')),motorcycle:normalize(derive(row.motorcycle,'motorcycle'))};cache.set(row,result);return result;}
  root.TomespotVehicleCategories={types,profiles,derive};
 })(globalThis);

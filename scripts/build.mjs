@@ -1,3 +1,4 @@
+import {unifyHeaders} from './shared-header.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {stripTypeScriptTypes} from 'node:module';
@@ -159,7 +160,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
     .replace(/<meta name="google-site-verification"[^>]*\/?\s*>/g,'')
     .replace(/(href=")([^"\s]+)(")/g,(_,a,p,b)=>a+htmlPath(p)+b)
     .replace(new RegExp(siteUrl.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(/[^"<\\s]*)','g'),(_,p)=>siteUrl+htmlPath(p));
-  const allowed = /^(parking\/[^/]+\.html|vendor\/.+|(?:station-search\.js|scooter-screening\.js|vehicle-categories\.js|discovery-listings\.js|app\.js|comments\.js|comments\.css|data-locales\.json|icon\.svg|locales\.json|parking\.json|vehicle-data\.json|prefectures\.json|prefectures-license\.txt|style\.css|search-pages\.css|parking-directory\.html|kickboard-parking\.html|bicycle-parking\.html|motorcycle-parking\.html|robots\.txt|sitemap\.xml))$/;
+  const allowed = /^(parking\/[^/]+\.html|vendor\/.+|(?:header\.css|header\.js|station-search\.js|scooter-screening\.js|vehicle-categories\.js|discovery-listings\.js|app\.js|comments\.js|comments\.css|data-locales\.json|icon\.svg|locales\.json|parking\.json|vehicle-data\.json|prefectures\.json|prefectures-license\.txt|style\.css|search-pages\.css|parking-directory\.html|kickboard-parking\.html|bicycle-parking\.html|motorcycle-parking\.html|robots\.txt|sitemap\.xml))$/;
   function copy(dir,relative='') {
     for(const item of fs.readdirSync(dir,{withFileTypes:true})) {
       const rel=relative+item.name, full=path.join(dir,item.name);
@@ -202,6 +203,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   addKantoPages({root,output,siteUrl});
   addRegionalMotorcyclePages({root,output,siteUrl});
   addAreaPages({root,output,siteUrl});
+  unifyHeaders(output);
   write(path.join(output,'config.js'),`window.TOMESPOT_CONFIG=${JSON.stringify({apiBase,siteUrl,...(isSupabase?{supabaseUrl:apiBase.split('/functions/')[0],supabaseKey}:{})})};\nfunction tomespotApi(p){return /^(https?:|blob:)/.test(p)?p:window.TOMESPOT_CONFIG.apiBase+p;}\n`);
   if(isSupabase){
     let admin=serializedHTML(read('source/app/admin/route.ts'),'const html=');
