@@ -41,6 +41,10 @@ test('station suggestions rank kana, Chinese variants and typos without changing
  context.fixture=[{id:'near',name:'施設A',lat:ike.lat,lng:ike.lng,status:'confirmed',temporary:true},{id:'far',name:'施設B',lat:nishi.lat,lng:nishi.lng,status:'confirmed',temporary:true},{id:'rejected',name:'施設C',lat:ike.lat,lng:ike.lng,status:'rejected'}];
  vm.runInContext('state.places=fixture',context);assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'near');
  elements.search.value='にしかわぐち';assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'far');
+ const meguro=engine.suggest('目黒駅')[0];assert.equal(meguro.name,'目黒');
+ context.fixture=[{id:'meguro-near',name:'駅前施設',ward:'品川区',lat:meguro.lat,lng:meguro.lng,status:'confirmed',temporary:true},{id:'meguro-ward-far',name:'遠い施設',ward:'目黒区',address:'東京都目黒区',lat:meguro.lat+0.05,lng:meguro.lng,status:'confirmed',temporary:true}];
+ vm.runInContext('state.places=fixture',context);elements.search.value='目黒駅';
+ assert.equal(vm.runInContext('filtered().map(p=>p.id).join(",")',context),'meguro-near');
 });
 
 test('vehicle and recent facility history survive reload, deduplicate and limit local records',()=>{
