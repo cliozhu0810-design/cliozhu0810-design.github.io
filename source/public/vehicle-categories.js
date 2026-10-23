@@ -33,5 +33,21 @@
   return {...m,category:kind,sourceCategory:'motorcycle',admissionStatus,classes:[],classesRaw:group?.evidenceRaw||[],scope:undefined,tariffs:admissionStatus==='confirmed'?tariffs:[],publishedFeesRaw:admissionStatus==='confirmed'?publishedFeesRaw:'',temporaryStatus,regularStatus,annualRegistrationStatus:regular.includes(regularStatus)&&regularStatus.includes('annual')?'confirmed_application_required':undefined,includeInVehicleResults:false};
  }
  function profiles(row){if(!row)return Object.fromEntries(types.map(k=>[k,empty()]));if(row.reviewedCategories)return Object.fromEntries(types.map(k=>[k,normalize(row.reviewedCategories[k])]));if(cache.has(row))return cache.get(row);const result={bicycle:normalize(row.bicycle),privateElectricScooter:normalize(row.privateElectricScooter),moped:normalize(derive(row.motorcycle,'moped')),motorcycle:normalize(derive(row.motorcycle,'motorcycle'))};cache.set(row,result);return result;}
- root.TomespotVehicleCategories={types,profiles,derive};
+ function combined(row){
+  const views=profiles(row),parts=[views.moped,views.motorcycle];
+  const admitted=parts.filter(q=>q.admissionStatus==='confirmed');
+  const status=admitted.length?'confirmed':parts.every(q=>q.admissionStatus==='rejected')?'rejected':'unknown';
+  // Retain original class labels and tariffs; combining the picker must not
+  // turn moped-only evidence into permission for larger motorcycles.
+  const source=row?.motorcycle||{};
+  const mode=key=>{const values=[...new Set(admitted.map(q=>q[key]))];return source[key]&&source[key]!=='unverified'?source[key]:values.length===1?values[0]:'class_dependent';};
+  return normalize({...source,category:'motorcycle',admissionStatus:status,
+   classesRaw:source.classesRaw||[...new Set(admitted.flatMap(q=>q.classesRaw))],
+   tariffs:source.tariffs||admitted.flatMap(q=>q.tariffs),
+   sources:source.sources||admitted.flatMap(q=>q.sources),
+   temporaryStatus:admitted.some(q=>q.temporaryStatus==='confirmed')?'confirmed':mode('temporaryStatus'),
+   regularStatus:admitted.some(q=>q.regularStatus==='confirmed_application_required')?'confirmed_application_required':mode('regularStatus'),
+   annualRegistrationStatus:admitted.some(q=>q.annualRegistrationStatus==='confirmed_application_required')?'confirmed_application_required':source.annualRegistrationStatus});
+ }
+ root.TomespotVehicleCategories={types,profiles,derive,combined};
 })(globalThis);

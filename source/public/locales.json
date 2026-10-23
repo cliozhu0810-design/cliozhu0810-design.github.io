@@ -696,10 +696,10 @@
     "en": "Bicycle"
   },
   "motorcycleLabel": {
-    "ja": "バイク",
-    "zh-Hans": "摩托车",
-    "zh-Hant": "摩托車",
-    "en": "Motorcycle"
+    "ja": "原付・バイク",
+    "zh-Hans": "轻便摩托车・摩托车",
+    "zh-Hant": "輕型機車・機車",
+    "en": "Mopeds & motorcycles"
   },
   "seeTariffs": {
     "ja": "区画別の料金を確認",
