@@ -10,6 +10,7 @@ import {addScooterReferencePage} from './scooter-reference-pages.mjs';
 import {addKantoPages} from './kanto-pages.mjs';
 import {addRegionalMotorcyclePages} from './regional-motorcycle-pages.mjs';
 import {addAreaPages} from './area-pages.mjs';
+import {addVehicleCategoryPages} from './vehicle-category-pages.mjs';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = p => fs.readFileSync(path.join(root,p), 'utf8');
 const write = (p, value) => {fs.mkdirSync(path.dirname(p), {recursive:true});fs.writeFileSync(p,value);};
@@ -203,6 +204,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   addKantoPages({root,output,siteUrl});
   addRegionalMotorcyclePages({root,output,siteUrl});
   addAreaPages({root,output,siteUrl});
+  addVehicleCategoryPages({root,output,siteUrl});
   unifyHeaders(output);
   write(path.join(output,'config.js'),`window.TOMESPOT_CONFIG=${JSON.stringify({apiBase,siteUrl,...(isSupabase?{supabaseUrl:apiBase.split('/functions/')[0],supabaseKey}:{})})};\nfunction tomespotApi(p){return /^(https?:|blob:)/.test(p)?p:window.TOMESPOT_CONFIG.apiBase+p;}\n`);
   if(isSupabase){

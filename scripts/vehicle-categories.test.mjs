@@ -3,7 +3,35 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {categoryProfiles,vehicleCategories} from './vehicle-categories.mjs';
+import {addVehicleCategoryPages} from './vehicle-category-pages.mjs';
+import os from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 const read=f=>JSON.parse(fs.readFileSync(new URL('../source/public/'+f,import.meta.url)));
+
+test('separate category URLs include only the matching confirmed facilities and enter the sitemap once',()=>{
+ const output=fs.mkdtempSync(path.join(os.tmpdir(),'tomespot-category-'));
+ try {
+  const siteUrl='https://muko-tomespot.pages.dev';
+  fs.writeFileSync(path.join(output,'sitemap.xml'),`<urlset><url><loc>${siteUrl}/motorcycle-parking</loc></url></urlset>`);
+  fs.writeFileSync(path.join(output,'about.html'),'<a href="/motorcycle-parking.html">バイク・原付の駐輪場</a>');
+  const options={root:fileURLToPath(new URL('..',import.meta.url)),output,siteUrl};
+  addVehicleCategoryPages(options);addVehicleCategoryPages(options);
+  const v=read('vehicle-data.json'),parking=read('parking.json');
+  for(const kind of ['moped','motorcycle']) {
+   const html=fs.readFileSync(path.join(output,kind+'-parking.html'),'utf8');
+   const ids=[...html.matchAll(/data-place="([^"]+)"/g)].map(m=>m[1]);
+   const expected=parking.places.filter(p=>p.displayEligible!==false&&!p.discoveryOnly&&(!p.canonicalFacilityId||p.canonicalFacilityId===p.id)&&categoryProfiles(v.reviewedProfiles?.[p.id]||v.profiles[p.id])[kind].admissionStatus==='confirmed').map(p=>p.id);
+   assert.deepEqual(new Set(ids),new Set(expected));
+   assert.ok(html.includes(`rel="canonical" href="${siteUrl}/${kind}-parking"`));
+   assert.ok(html.includes(`vehicle=${kind}&amp;place=`));
+   assert.equal(ids.includes('21108'),kind==='moped');
+  }
+  const xml=fs.readFileSync(path.join(output,'sitemap.xml'),'utf8');
+  for(const kind of ['moped','motorcycle'])assert.equal(xml.split(`<loc>${siteUrl}/${kind}-parking</loc>`).length-1,1);
+  assert.match(fs.readFileSync(path.join(output,'about.html'),'utf8'),/moped-parking\.html/);
+ } finally {fs.rmSync(output,{recursive:true,force:true});}
+});
 test('mopeds and motorcycles have independent admission, class-specific fees and modes',()=>{
  const source={admissionStatus:'confirmed',facilityMatched:true,temporaryStatus:'confirmed',regularStatus:'confirmed_application_required',publishedFeesRaw:'DO NOT COPY MIXED FEES',categoryClassification:{disposition:'mixed',groups:{moped:{status:'confirmed',evidenceRaw:['原付50cc以下']},motorcycle:{status:'confirmed',evidenceRaw:['自動二輪125cc超']}},mopedData:{temporaryStatus:'confirmed',regularStatus:'not_offered',publishedFeesRaw:'原付100円',tariffs:[]}},classes:[{classCode:'大',scope:'125cc超',admissionStatus:'confirmed',temporaryStatus:'not_offered',regularStatus:'confirmed_application_required',tariffs:[{mode:'regular',amountJPY:6000,sourceVehicle:'自動二輪'}]}]};
  const row={motorcycle:source};const views=categoryProfiles(row);
