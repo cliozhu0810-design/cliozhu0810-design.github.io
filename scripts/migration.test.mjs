@@ -285,7 +285,7 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.equal(new Set(urls).size,urls.length,'sitemap must not contain duplicate canonical URLs');
     const originalXML=fs.readFileSync(path.join(root,'source/public/sitemap.xml'),'utf8');
     const expectedPaths=new Set([...originalXML.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>new URL(m[1]).pathname.replace(/\.html$/,'')));
-    for(const p of ['/moped-parking','/about','/kawaguchi-parking','/toshima-parking','/kanto-parking','/regional-motorcycle-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
+    for(const p of ['/about','/kawaguchi-parking','/toshima-parking','/kanto-parking','/regional-motorcycle-parking','/parking/fk-ikebukuro2','/parking/seibu-minami-ikebukuro',...cityReports.flatMap(r=>r.records.map(x=>'/parking/'+x.id))])expectedPaths.add(p);
     for(const p of ['/areas/index','/areas/tokyo','/areas/saitama','/areas/chiba-prefecture','/areas/kanagawa',...coverage.pages.map(p=>p.path),...Array.from(expectedFacilities,id=>'/parking/'+id)])expectedPaths.add(p);
     assert.deepEqual(new Set(urls.map(u=>new URL(u).pathname)),expectedPaths);
     for(const url of urls){

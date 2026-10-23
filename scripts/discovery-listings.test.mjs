@@ -29,8 +29,16 @@ test('Google discoveries preserve every existing record and remain unverified',(
 test('unverified category hints appear by default without leaking into scooter or confirmed modes',()=>{
  const c=context();const ids=(vehicle,mode='all')=>{Object.assign(c,{vehicle,mode});return JSON.parse(vm.runInContext('state.vehicle=vehicle;state.mode=mode;JSON.stringify(filtered().map(p=>p.id))',c));};
  const sets=Object.fromEntries(['bicycle','moped','motorcycle','privateElectricScooter'].map(v=>[v,new Set(ids(v))]));
- for(const p of parking.places.filter(p=>p.discoveryOnly))for(const [v,set] of Object.entries(sets))assert.equal(set.has(p.id),p.displayEligible!==false&&p.discoveryVehicleHints.includes(v),p.name+' '+v);
+ for(const p of parking.places.filter(p=>p.discoveryOnly))for(const [v,set] of Object.entries(sets))assert.equal(set.has(p.id),p.displayEligible!==false&&p.discoveryVehicleHints.some(h=>h===v||v==='motorcycle'&&h==='moped'),p.name+' '+v);
  const confirmed=new Set(ids('bicycle','temporary'));for(const p of parking.places.filter(p=>p.discoveryOnly))assert.ok(!confirmed.has(p.id));
+ for(const mode of ['temporary','monthly','annual']){
+  const combined=new Set(ids('motorcycle',mode));
+  for(const p of parking.places.filter(p=>p.discoveryOnly))assert.ok(!combined.has(p.id),'unverified discoveries must not become confirmed '+mode+' parking');
+ }
+ for(const p of parking.places.filter(p=>p.discoveryOnly&&p.discoveryVehicleHints.includes('moped'))){
+  const q=c.TomespotDiscoveryListings.profile(p,'motorcycle');
+  assert.equal(q.admissionStatus,'unknown');assert.equal(q.temporaryStatus,'unverified');assert.deepEqual([...q.tariffs],[]);
+ }
  assert.ok(sets.privateElectricScooter.has('jks-00800'));
 });
 test('discovery cards and marker details expose exactly one safe Google Maps destination',()=>{
