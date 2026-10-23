@@ -31,14 +31,15 @@ function aboutHTML(){
 const searchPages = {
   'index.html': {
     title:'電動キックボード・自転車・バイクの駐輪場｜トメスポ',
-    description:'電動キックボード・自転車・バイクの駐輪場を地図で検索。東京を中心に、埼玉・千葉・神奈川の一部施設を掲載しています。料金・利用条件・公式案内を施設ごとに確認できます。'
+    description:'電動キックボード・自転車・バイクの駐輪場を地図で検索。駅名・住所・施設名から停める場所を探し、一時利用・定期利用の料金、車両ごとの利用条件、公式案内を確認できます。'
   },
   'kickboard-parking.html': {
-    title:'東京の電動キックボード駐輪場｜停める場所・料金を探す｜トメスポ',
-    heading:'東京の電動キックボード駐輪場・停める場所',
-    description:'電動キックボードをどこに止めるか迷ったら、東京の電動キックボード駐輪場を地域別に検索。一時利用・定期利用の料金、個人所有のキックボードの受入条件、公式案内を確認できます。',
+    title:'電動キックボードの駐輪場｜停める場所・料金を探す｜トメスポ',
+    heading:'電動キックボードの駐輪場を探す',
+    description:'電動キックボードの駐輪場・駐車場を地図と一覧で検索。個人所有の電動キックボードを停める場所、一時利用・定期利用の料金、受入条件、公式案内を施設ごとに確認できます。',
     questions:[
-      ['電動キックボードをどこに止める？','目的地近くの電動キックボード駐輪場を探し、特定小型原動機付自転車など自分の車両区分が利用できるか確認してください。自転車対応だけでは電動キックボードも停められるとは限りません。'],
+      ['電動キックボードは駐輪場に停められますか？','電動キックボードの受入条件は施設ごとに異なります。自転車や原付が利用できる駐輪場でも、電動キックボードを停められるとは限りません。自分の車両区分、大きさ、指定区画、申請の要否を公式案内で確認してください。'],
+      ['近くの電動キックボード駐輪場はどう探せますか？','「電動キックボードの駐輪場を地図で探す」から地図を開き、目的地の駅名・住所・施設名で検索してください。施設を選ぶと、一時利用・定期利用の料金や受入条件を確認できます。掲載範囲は「トメスポについて」でご案内しています。'],
       ['「キックボード駐車場」で探している場合も使えますか？','トメスポでは、個人所有の電動キックボードを停める場所を駐輪場として掲載しています。施設ごとの車両条件、指定区画、料金、申請の要否を確認できます。シェアサービスの返却ポートとは異なります。'],
       ['一時利用と定期利用はどう違いますか？','短時間の買い物などには一時利用、通勤など継続して利用する場合には定期利用の条件を確認してください。年度・年期登録の施設も定期利用から探せます。申請や登録シールが必要な場合があります。']
     ]
@@ -80,11 +81,17 @@ function searchHTML(html,file,siteUrl) {
       html=html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g,'').replace('</head>','<script type="application/ld+json">'+JSON.stringify(website)+'</script></head>');
     }else{
       html=html.replace(/<h1>[^<]*<\/h1><p>[^<]*<\/p>/,`<h1>${escape(page.heading)}</h1><p>${escape(page.description)}</p>`);
+      if(file==='kickboard-parking.html'){
+        html=html.replace('>この車種を地図で探す</a>','>電動キックボードの駐輪場を地図で探す</a>')
+          .replace('<h2>地域別の駐車場・駐輪場 ','<h2>電動キックボードの受入条件を確認した駐輪場 ')
+          .replace('東京の電動キックボード駐車場・停める場所</a>','電動キックボードの駐輪場</a>');
+        html=html.replace('<h2>停める前に確認すること</h2>','<p>料金や受入条件は施設の詳細と公式案内をご確認ください。<a href="/about.html">掲載範囲・トメスポについて</a></p><h2>停める前に確認すること</h2>');
+      }
       html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(_,data)=>{
         const obj=JSON.parse(data);if(obj['@type']==='CollectionPage')Object.assign(obj,{name:page.heading,description:page.description,url:canonical});
         return '<script type="application/ld+json">'+JSON.stringify(obj).replaceAll('<','\\u003c')+'</script>';
       });
-      html=html.replace('<h2>地域別の',`<section aria-labelledby="parking-guide"><h2 id="parking-guide">駐輪場の探し方・よくある質問</h2>${page.questions.map(([q,a])=>`<h3>${escape(q)}</h3><p>${escape(a)}</p>`).join('')}</section><h2>地域別の`);
+      html=html.replace(/<h2>(?:地域別の|電動キックボードの受入条件を確認した)/,match=>`<section aria-labelledby="parking-guide"><h2 id="parking-guide">駐輪場の探し方・よくある質問</h2>${page.questions.map(([q,a])=>`<h3>${escape(q)}</h3><p>${escape(a)}</p>`).join('')}</section>${match}`);
     }
   }
   return html;
