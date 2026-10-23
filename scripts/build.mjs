@@ -11,6 +11,7 @@ import {addKantoPages} from './kanto-pages.mjs';
 import {addRegionalMotorcyclePages} from './regional-motorcycle-pages.mjs';
 import {addAreaPages} from './area-pages.mjs';
 import {addVehicleCategoryPages} from './vehicle-category-pages.mjs';
+import {writeKickboardMap} from './kickboard-map-page.mjs';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = p => fs.readFileSync(path.join(root,p), 'utf8');
 const write = (p, value) => {fs.mkdirSync(path.dirname(p), {recursive:true});fs.writeFileSync(p,value);};
@@ -36,10 +37,10 @@ const searchPages = {
   'kickboard-parking.html': {
     title:'電動キックボードの駐輪場｜停める場所・料金を探す｜トメスポ',
     heading:'電動キックボードの駐輪場を探す',
-    description:'電動キックボードの駐輪場・駐車場を地図と一覧で検索。個人所有の電動キックボードを停める場所、一時利用・定期利用の料金、受入条件、公式案内を施設ごとに確認できます。',
+    description:'マイ電動キックボードの駐輪場・駐車場を地図で検索。駅名・住所から停める場所を探し、一時利用・定期利用の料金、受入条件、公式案内を確認できます。',
     questions:[
       ['電動キックボードは駐輪場に停められますか？','電動キックボードの受入条件は施設ごとに異なります。自転車や原付が利用できる駐輪場でも、電動キックボードを停められるとは限りません。自分の車両区分、大きさ、指定区画、申請の要否を公式案内で確認してください。'],
-      ['近くの電動キックボード駐輪場はどう探せますか？','「電動キックボードの駐輪場を地図で探す」から地図を開き、目的地の駅名・住所・施設名で検索してください。施設を選ぶと、一時利用・定期利用の料金や受入条件を確認できます。掲載範囲は「トメスポについて」でご案内しています。'],
+      ['目黒駅など、駅の近くでマイ電動キックボードの駐輪場を探すには？','地図の検索欄に「目黒駅」など目的地の駅名・住所・施設名を入力してください。駅周辺の掲載施設を絞り込み、施設ごとの受入条件や料金を確認できます。駅によっては受入確認済みの施設が見つからない場合もあります。掲載範囲は「トメスポについて」でご案内しています。'],
       ['「キックボード駐車場」で探している場合も使えますか？','トメスポでは、個人所有の電動キックボードを停める場所を駐輪場として掲載しています。施設ごとの車両条件、指定区画、料金、申請の要否を確認できます。シェアサービスの返却ポートとは異なります。'],
       ['一時利用と定期利用はどう違いますか？','短時間の買い物などには一時利用、通勤など継続して利用する場合には定期利用の条件を確認してください。年度・年期登録の施設も定期利用から探せます。申請や登録シールが必要な場合があります。']
     ]
@@ -230,6 +231,7 @@ export function buildFrontend({apiBase,siteUrl,output=path.join(root,'dist')}={}
   // Keep directions in Google Maps; position-accuracy prose is not part of facility UI.
   function cleanLocationProse(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory()){cleanLocationProse(file);continue;}if(!file.endsWith('.html'))continue;const before=fs.readFileSync(file,'utf8'),after=before.replace(/（[^（）]*(?:入口位置|バイク入口)[^（）]*(?:確認中|未確認)[^（）]*）/g,'').replace(/<div class="source-stamp">[^<]*<\/div>/g,'').replace(/(?:<br>\s*)?<strong>[^<]*(?:正確な入口|入口位置|施設の参考位置)[^<]*<\/strong>/g,'').replace(/<p(?:\s[^>]*)?>[^<]*(?:正確な入口|入口位置|施設の参考位置)[^<]*<\/p>/g,'');if(after!==before)fs.writeFileSync(file,after);}}
   cleanLocationProse(output);
+  writeKickboardMap({output,siteUrl,...searchPages['kickboard-parking.html']});
   return output;
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {

@@ -54,6 +54,17 @@ test('vehicle and recent facility history survive reload, deduplicate and limit 
  values.set('tomespot:vehicle','not-a-vehicle');values.set('tomespot:history','invalid JSON');assert.equal(vm.runInContext('state.vehicle',run()),'privateElectricScooter');
 });
 
+test('kickboard search entry overrides saved language and vehicle without replacing preferences',()=>{
+ const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0];
+ const values=new Map([['tomespot:vehicle','motorcycle'],['tomespot:language','zh-Hans']]);
+ const c=vm.createContext({window:{TOMESPOT_ENTRY:{vehicle:'privateElectricScooter',language:'ja'}},localStorage:{getItem:k=>values.get(k)||null},document:{getElementById:()=>null}});
+ vm.runInContext(app,c);
+ assert.equal(vm.runInContext('state.vehicle',c),'privateElectricScooter');
+ assert.equal(vm.runInContext('locale',c),'ja');
+ assert.equal(values.get('tomespot:vehicle'),'motorcycle');
+ assert.equal(values.get('tomespot:language'),'zh-Hans');
+});
+
 test('persisted motorcycle choice renders real profiles and keeps admission and closure rules',()=>{
  const app=fs.readFileSync(path.join(root,'source/public/app.js'),'utf8').split("$('search').addEventListener")[0],elements={search:{value:''},ward:{value:''},unknown:{checked:false}};
  const c=vm.createContext({localStorage:{getItem:k=>k==='tomespot:vehicle'?'motorcycle':null},document:{getElementById:id=>elements[id]},URL});vm.runInContext(app,c);
@@ -229,6 +240,13 @@ test('static build preserves data and all local HTML links resolve on Pages',()=
     assert.match(index,/href="\/about.html"/);
     assert.match(index,/name="google-site-verification"/);
     assert.match(index,/config\.js/);assert.match(index,/href="https:\/\/tomespot-api\.example\.workers\.dev\/admin"/);
+    const kickboard=fs.readFileSync(path.join(out,'kickboard-parking.html'),'utf8');
+    assert.match(kickboard,/class="workspace"/);
+    assert.match(kickboard,/window.TOMESPOT_ENTRY=\{"language":"ja","vehicle":"privateElectricScooter"/);
+    assert.match(kickboard,/<title>電動キックボードの駐輪場｜/);
+    assert.ok(!kickboard.match(/<title>[^<]*東京/));
+    assert.match(kickboard,/目黒駅周辺のマイ電動キックボード駐輪場を地図で検索/);
+    assert.match(kickboard,/class="kickboard-guide"/);
     const cityReports=['kawaguchi','toshima','kanto','motorcycle'].map(city=>JSON.parse(fs.readFileSync(path.join(root,'source/public/'+city+'-review.json'),'utf8')));
     const expectedFacilities=new Set(['fk-ikebukuro2','seibu-minami-ikebukuro',...fs.readdirSync(path.join(root,'source/public/parking')).map(f=>f.replace(/\.html$/,'')),...cityReports.flatMap(r=>r.records.map(x=>x.id))]);
     const coverage=JSON.parse(fs.readFileSync(path.join(out,'area-coverage.json'),'utf8'));
